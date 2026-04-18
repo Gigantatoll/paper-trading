@@ -8,7 +8,7 @@ on:
   workflow_dispatch:           # allow manual trigger from GitHub UI
 
 permissions:
-  contents: write              # needed to commit portfolio data back
+  contents: write
 
 jobs:
   trade:
@@ -28,13 +28,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run trading cycle
+      - name: Run trading cycle + generate dashboard
         run: python run_headless.py
 
-      - name: Commit updated portfolio data
+      - name: Commit updated data and dashboard
         run: |
           git config user.name  "Paper Trading Bot"
           git config user.email "bot@paper-trading"
-          git add data/
-          git diff --cached --quiet || git commit -m "portfolio update $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git add data/ docs/
+          git diff --cached --quiet || git commit -m "cycle $(date -u '+%Y-%m-%d %H:%M') UTC"
           git push

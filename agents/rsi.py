@@ -18,6 +18,17 @@ class RSIAgent(BaseAgent):
                 continue
 
             if rsi < self.BUY_LEVEL:
-                self._buy(symbol, f"RSI={rsi:.1f} oversold")
+                reason = (
+                    f"{symbol}'s RSI is {rsi:.1f}, which is below {self.BUY_LEVEL}. "
+                    f"RSI below 35 means the stock has been sold off heavily and is "
+                    f"considered oversold — statistically likely to bounce back up."
+                )
+                self._buy(symbol, reason)
+
             elif rsi > self.SELL_LEVEL and symbol in self.portfolio.positions:
-                self._sell(symbol, f"RSI={rsi:.1f} overbought")
+                reason = (
+                    f"{symbol}'s RSI climbed to {rsi:.1f}, above {self.SELL_LEVEL}. "
+                    f"RSI above 65 means the stock is overbought — buyers are exhausted "
+                    f"and a pullback is likely. Selling to lock in gains."
+                )
+                self._sell(symbol, reason)

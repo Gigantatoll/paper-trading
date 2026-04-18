@@ -4,8 +4,8 @@ from config import WATCHLIST
 
 class MovingAverageAgent(BaseAgent):
     """
-    Buys when the 10-period MA is above the 30-period MA (bullish).
-    Sells when the 10-period MA drops back below the 30-period MA (bearish).
+    Buys when the 10-period MA is above the 30-period MA (bullish trend).
+    Sells when the 10-period MA drops back below (bearish trend).
     """
 
     FAST = 10
@@ -20,6 +20,17 @@ class MovingAverageAgent(BaseAgent):
             bullish = fast > slow
 
             if bullish:
-                self._buy(symbol, f"MA{self.FAST}({fast:.2f}) > MA{self.SLOW}({slow:.2f})")
+                reason = (
+                    f"{symbol}'s {self.FAST}-hour average price (${fast:.2f}) is above "
+                    f"its {self.SLOW}-hour average (${slow:.2f}). This means short-term "
+                    f"momentum is stronger than the longer trend — a bullish signal."
+                )
+                self._buy(symbol, reason)
+
             elif not bullish and symbol in self.portfolio.positions:
-                self._sell(symbol, f"MA{self.FAST}({fast:.2f}) < MA{self.SLOW}({slow:.2f})")
+                reason = (
+                    f"{symbol}'s {self.FAST}-hour average (${fast:.2f}) dropped below "
+                    f"its {self.SLOW}-hour average (${slow:.2f}). This crossover is a "
+                    f"classic bearish signal — the short-term trend has turned down."
+                )
+                self._sell(symbol, reason)

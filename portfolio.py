@@ -20,7 +20,7 @@ class Portfolio:
 
     # ------------------------------------------------------------------ #
 
-    def buy(self, symbol: str, shares: int, price: float) -> bool:
+    def buy(self, symbol: str, shares: int, price: float, reason: str = "") -> bool:
         cost = shares * price
         if cost > self.cash or shares <= 0:
             return False
@@ -41,20 +41,23 @@ class Portfolio:
             "shares": shares,
             "price": price,
             "total": cost,
+            "reason": reason,
         })
         self._save()
         return True
 
-    def sell(self, symbol: str, shares: int, price: float) -> bool:
+    def sell(self, symbol: str, shares: int, price: float, reason: str = "") -> bool:
         if symbol not in self.positions or self.positions[symbol]["shares"] < shares:
             return False
 
         revenue = shares * price
+        entry_price = self.positions[symbol]["avg_price"]
         self.cash += revenue
         self.positions[symbol]["shares"] -= shares
         if self.positions[symbol]["shares"] == 0:
             del self.positions[symbol]
 
+        pnl = (price - entry_price) * shares
         self.trades.append({
             "time": datetime.now().isoformat(),
             "action": "SELL",
@@ -62,6 +65,8 @@ class Portfolio:
             "shares": shares,
             "price": price,
             "total": revenue,
+            "reason": reason,
+            "trade_pnl": round(pnl, 2),
         })
         self._save()
         return True

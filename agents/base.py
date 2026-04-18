@@ -43,8 +43,8 @@ class BaseAgent:
             return
 
         shares = self._shares_to_buy(price)
-        if shares > 0 and self.portfolio.buy(symbol, shares, price):
-            msg = f"BUY {shares}x {symbol} @ ${price:.2f}  [{reason}]"
+        if shares > 0 and self.portfolio.buy(symbol, shares, price, reason):
+            msg = f"BUY {shares}x {symbol} @ ${price:.2f}"
             self.last_action = msg
             self._log(msg)
 
@@ -54,8 +54,8 @@ class BaseAgent:
             return
 
         shares = self.portfolio.positions[symbol]["shares"]
-        if self.portfolio.sell(symbol, shares, price):
-            msg = f"SELL {shares}x {symbol} @ ${price:.2f}  [{reason}]"
+        if self.portfolio.sell(symbol, shares, price, reason):
+            msg = f"SELL {shares}x {symbol} @ ${price:.2f}"
             self.last_action = msg
             self._log(msg)
 

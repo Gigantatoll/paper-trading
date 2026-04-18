@@ -10,7 +10,7 @@ class MomentumAgent(BaseAgent):
     """
 
     PERIOD = 10
-    MIN_MOMENTUM = 0.005   # at least +0.5% to qualify as a buy
+    MIN_MOMENTUM = 0.005
 
     def _execute_strategy(self, prices: dict):
         scores = {}
@@ -25,11 +25,27 @@ class MomentumAgent(BaseAgent):
         ranked = sorted(scores, key=lambda s: scores[s], reverse=True)
         top = [s for s in ranked[:MAX_POSITIONS] if scores[s] >= self.MIN_MOMENTUM]
 
-        # Exit positions no longer in the top list
         for symbol in list(self.portfolio.positions):
             if symbol not in top:
-                self._sell(symbol, f"momentum dropped ({scores.get(symbol, 0):.3f})")
+                m = scores.get(symbol, 0)
+                if m < 0:
+                    reason = (
+                        f"{symbol} lost momentum: down {abs(m)*100:.2f}% over the last "
+                        f"{self.PERIOD} hours. Selling to avoid further losses."
+                    )
+                else:
+                    reason = (
+                        f"{symbol} dropped out of the top {MAX_POSITIONS} momentum stocks "
+                        f"(current momentum: {m*100:.2f}%). Rotating into stronger performers."
+                    )
+                self._sell(symbol, reason)
 
-        # Enter new top-list positions
-        for symbol in top:
-            self._buy(symbol, f"momentum={scores[symbol]:.3f}")
+        for i, symbol in enumerate(top):
+            m = scores[symbol]
+            rank = ranked.index(symbol) + 1
+            reason = (
+                f"{symbol} is ranked #{rank} out of {len(scores)} stocks by momentum. "
+                f"It gained {m*100:.2f}% over the last {self.PERIOD} hours, "
+                f"showing strong upward price pressure."
+            )
+            self._buy(symbol, reason)

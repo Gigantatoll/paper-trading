@@ -92,6 +92,10 @@ def main():
 
     log("=== Cycle complete. Portfolios saved. ===")
 
+    log("Generating dashboard…")
+    from generate_report import generate
+    generate()
+
 
 if __name__ == "__main__":
     main()
