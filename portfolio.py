@@ -95,7 +95,7 @@ class Portfolio:
                 "cash": self.cash,
                 "starting_capital": self.starting_capital,
                 "positions": self.positions,
-                "trades": self.trades[-200:],
+                "trades": self.trades[-5000:],
             }, f, indent=2)
 
     def _load(self):

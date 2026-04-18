@@ -2,19 +2,21 @@ from __future__ import annotations
 
 import yfinance as yf
 import pandas as pd
-import numpy as np
 from datetime import datetime
 from typing import Optional, Tuple
 import pytz
 
-from config import WATCHLIST, HIST_PERIOD, HIST_INTERVAL
+from config import WATCHLIST, DIVIDEND_WATCHLIST, HIST_PERIOD, HIST_INTERVAL
 
 
 class MarketData:
     def __init__(self):
         self.current_prices: dict = {}
         self._historical: dict = {}
+        self._dividend_yields: dict = {}
+        self._sentiment_scores: dict = {}
         self._last_hist_update: Optional[datetime] = None
+        self._last_sentiment_update: Optional[datetime] = None
         self.status = "Initializing…"
         self.last_updated: Optional[datetime] = None
 
@@ -24,12 +26,18 @@ class MarketData:
         self.status = "Fetching…"
         try:
             self._fetch_prices()
-            # Refresh hourly
             if (
                 self._last_hist_update is None
                 or (datetime.now() - self._last_hist_update).seconds > 3600
             ):
                 self._fetch_historical()
+                self._fetch_dividend_yields()
+            # Refresh sentiment every 30 minutes
+            if (
+                self._last_sentiment_update is None
+                or (datetime.now() - self._last_sentiment_update).seconds > 1800
+            ):
+                self._fetch_sentiment()
             self.last_updated = datetime.now()
             self.status = "Live ✓" if self.is_market_open() else "Market Closed"
         except Exception as exc:
@@ -52,6 +60,12 @@ class MarketData:
     def get_history(self, symbol: str) -> pd.Series:
         return self._historical.get(symbol, pd.Series(dtype=float))
 
+    def dividend_yield(self, symbol: str) -> Optional[float]:
+        return self._dividend_yields.get(symbol)
+
+    def sentiment_score(self, symbol: str) -> Optional[float]:
+        return self._sentiment_scores.get(symbol)
+
     # ------------------------------------------------------------------ #
 
     def rsi(self, symbol: str, period: int = 14) -> Optional[float]:
@@ -62,8 +76,7 @@ class MarketData:
         gain = delta.clip(lower=0).rolling(period).mean()
         loss = (-delta.clip(upper=0)).rolling(period).mean()
         rs = gain / loss
-        value = 100 - (100 / (1 + rs))
-        return float(value.iloc[-1])
+        return float((100 - (100 / (1 + rs))).iloc[-1])
 
     def momentum(self, symbol: str, period: int = 10) -> Optional[float]:
         prices = self.get_history(symbol)
@@ -83,31 +96,58 @@ class MarketData:
     # ------------------------------------------------------------------ #
 
     def _fetch_prices(self):
+        all_symbols = list(set(WATCHLIST + DIVIDEND_WATCHLIST))
         data = yf.download(
-            WATCHLIST, period="1d", interval="1m",
+            all_symbols, period="1d", interval="1m",
             progress=False, auto_adjust=True, threads=True,
         )
         if data.empty:
             return
-
         close = data["Close"] if isinstance(data.columns, pd.MultiIndex) else data
-        for symbol in WATCHLIST:
+        for symbol in all_symbols:
             if symbol in close.columns:
                 series = close[symbol].dropna()
                 if not series.empty:
                     self.current_prices[symbol] = float(series.iloc[-1])
 
     def _fetch_historical(self):
+        all_symbols = list(set(WATCHLIST + DIVIDEND_WATCHLIST))
         data = yf.download(
-            WATCHLIST, period=HIST_PERIOD, interval=HIST_INTERVAL,
+            all_symbols, period=HIST_PERIOD, interval=HIST_INTERVAL,
             progress=False, auto_adjust=True, threads=True,
         )
         if data.empty:
             return
-
         close = data["Close"] if isinstance(data.columns, pd.MultiIndex) else data
-        for symbol in WATCHLIST:
+        for symbol in all_symbols:
             if symbol in close.columns:
                 self._historical[symbol] = close[symbol].dropna()
-
         self._last_hist_update = datetime.now()
+
+    def _fetch_dividend_yields(self):
+        for symbol in DIVIDEND_WATCHLIST:
+            try:
+                info = yf.Ticker(symbol).info
+                yield_val = info.get("dividendYield") or 0.0
+                self._dividend_yields[symbol] = float(yield_val)
+            except Exception:
+                self._dividend_yields[symbol] = 0.0
+
+    def _fetch_sentiment(self):
+        try:
+            from textblob import TextBlob
+        except ImportError:
+            return
+        for symbol in WATCHLIST:
+            try:
+                news = yf.Ticker(symbol).news
+                if not news:
+                    continue
+                titles = [n.get("title", "") for n in news[:8] if n.get("title")]
+                if not titles:
+                    continue
+                scores = [TextBlob(t).sentiment.polarity for t in titles]
+                self._sentiment_scores[symbol] = round(sum(scores) / len(scores), 4)
+            except Exception:
+                pass
+        self._last_sentiment_update = datetime.now()

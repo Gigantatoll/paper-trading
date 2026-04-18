@@ -7,67 +7,77 @@
 <title>Paper Trading Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: #0d1117; color: #e6edf3; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 24px; max-width: 1400px; margin: 0 auto; }
-  h1 { font-size: 1.6rem; font-weight: 700; }
-  .subtitle { color: #8b949e; font-size: 0.85rem; margin: 6px 0 28px; }
-  .cards { display: flex; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
-  .card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 20px; flex: 1; min-width: 260px; }
-  .card h2 { font-size: 0.9rem; color: #8b949e; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .05em; }
-  .big-value { font-size: 2rem; font-weight: 700; margin-bottom: 4px; }
-  .pnl { font-size: 1rem; font-weight: 600; margin-bottom: 10px; }
-  .pos { color: #3fb950; }
-  .neg { color: #f85149; }
-  .meta { display: flex; gap: 14px; font-size: 0.8rem; color: #8b949e; margin-bottom: 10px; }
-  .positions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .tag { background: #21262d; border: 1px solid #30363d; border-radius: 4px; padding: 2px 8px; font-size: 0.78rem; }
-  .muted { color: #8b949e; }
-  .chart-box { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 20px; margin-bottom: 28px; }
-  .chart-box h2 { font-size: 0.9rem; color: #8b949e; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 16px; }
-  table { width: 100%; border-collapse: collapse; background: #161b22; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; font-size: 0.83rem; }
-  th { background: #21262d; padding: 10px 12px; text-align: left; font-size: 0.75rem; color: #8b949e; text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
-  td { padding: 10px 12px; border-top: 1px solid #21262d; vertical-align: top; }
-  .buy { color: #3fb950; font-weight: 700; }
-  .sell { color: #f85149; font-weight: 700; }
-  .reason-cell { color: #8b949e; font-size: 0.78rem; max-width: 420px; line-height: 1.4; }
-  h3 { font-size: 0.9rem; color: #8b949e; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;padding:24px;max-width:1500px;margin:0 auto}
+  h1{font-size:1.6rem;font-weight:700}
+  .subtitle{color:#8b949e;font-size:.85rem;margin:6px 0 28px}
+  .cards{display:flex;gap:14px;margin-bottom:28px;flex-wrap:wrap}
+  .card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:18px;flex:1;min-width:220px}
+  .card h2{font-size:.8rem;color:#8b949e;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+  .big-value{font-size:1.8rem;font-weight:700;margin-bottom:4px}
+  .pnl{font-size:.95rem;font-weight:600;margin-bottom:10px}
+  .pos{color:#3fb950}.neg{color:#f85149}
+  .meta{display:flex;gap:12px;font-size:.78rem;color:#8b949e;margin-bottom:10px;flex-wrap:wrap}
+  .positions{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+  .tag{background:#21262d;border:1px solid #30363d;border-radius:4px;padding:2px 7px;font-size:.76rem}
+  .muted{color:#8b949e}
+  .chart-box{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:20px;margin-bottom:28px}
+  .chart-box h2{font-size:.85rem;color:#8b949e;text-transform:uppercase;letter-spacing:.05em;margin-bottom:16px}
+  .section-title{font-size:.85rem;color:#8b949e;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px}
+  .csv-note{font-size:.8rem;color:#8b949e;margin-bottom:12px}
+  table{width:100%;border-collapse:collapse;background:#161b22;border:1px solid #30363d;border-radius:10px;overflow:hidden;font-size:.82rem}
+  th{background:#21262d;padding:10px 12px;text-align:left;font-size:.74rem;color:#8b949e;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+  td{padding:9px 12px;border-top:1px solid #21262d;vertical-align:top}
+  .buy{color:#3fb950;font-weight:700}.sell{color:#f85149;font-weight:700}
+  .reason-cell{color:#8b949e;font-size:.77rem;max-width:400px;line-height:1.45}
 </style>
 </head>
 <body>
 <h1>Paper Trading Dashboard</h1>
-<p class="subtitle">Last updated: 2026-04-18 01:18 UTC &nbsp;·&nbsp; Stock data delayed ~15 min (yfinance free tier) &nbsp;·&nbsp; Page auto-refreshes every 10 min</p>
+<p class="subtitle">
+  Last updated: 2026-04-18 01:33 UTC &nbsp;·&nbsp;
+  Stock data delayed ~15 min (yfinance free tier) &nbsp;·&nbsp;
+  Stop-loss: −8% &nbsp;·&nbsp; Take-profit: +15% &nbsp;·&nbsp;
+  Page auto-refreshes every 10 min
+</p>
 
-<div class="cards"><div class="card"><h2>Momentum Agent</h2><p class="muted">No data yet</p></div><div class="card"><h2>RSI Agent</h2><p class="muted">No data yet</p></div><div class="card"><h2>MA Crossover</h2><p class="muted">No data yet</p></div></div>
+<div class="cards"><div class="card" style="border-top:3px solid #f0883e"><h2>Momentum Agent</h2><p class="muted">No data yet</p></div><div class="card" style="border-top:3px solid #58a6ff"><h2>RSI Agent</h2><p class="muted">No data yet</p></div><div class="card" style="border-top:3px solid #3fb950"><h2>MA Crossover</h2><p class="muted">No data yet</p></div><div class="card" style="border-top:3px solid #d2a8ff"><h2>Dividend Agent</h2><p class="muted">No data yet</p></div><div class="card" style="border-top:3px solid #ffa657"><h2>Sentiment Agent</h2><p class="muted">No data yet</p></div></div>
 
 <div class="chart-box">
   <h2>Portfolio Value Over Time</h2>
-  <canvas id="chart" height="70"></canvas>
+  <canvas id="chart" height="60"></canvas>
 </div>
 
-<h3>Trade History &amp; Agent Reasoning</h3>
+<p class="section-title">Trade History &amp; Agent Reasoning</p>
+<p class="csv-note">
+  Full trade history also available as a spreadsheet:
+  <a href="https://github.com/Gigantatoll/paper-trading/blob/main/data/trades.csv" style="color:#58a6ff">data/trades.csv</a>
+  (updates automatically after every cycle)
+</p>
 <table>
   <thead>
     <tr>
       <th>Time (UTC)</th><th>Agent</th><th>Action</th><th>Stock</th>
-      <th>Shares</th><th>Price</th><th>Total</th><th>Trade P&amp;L</th><th>Why the agent did this</th>
+      <th>Shares</th><th>Price</th><th>Total</th><th>Trade P&amp;L</th>
+      <th>Why the agent did this</th>
     </tr>
   </thead>
   <tbody><tr><td colspan="9" class="muted" style="text-align:center;padding:20px">No trades yet — waiting for market open</td></tr></tbody>
 </table>
 
 <script>
-const chartData = {"labels": ["04-18 01:18"], "datasets": [{"label": "Momentum Agent", "data": [null], "borderColor": "#f0883e", "backgroundColor": "#f0883e22", "fill": false, "tension": 0.3, "pointRadius": 2}, {"label": "RSI Agent", "data": [null], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff22", "fill": false, "tension": 0.3, "pointRadius": 2}, {"label": "MA Crossover", "data": [null], "borderColor": "#3fb950", "backgroundColor": "#3fb95022", "fill": false, "tension": 0.3, "pointRadius": 2}]};
-const ctx = document.getElementById('chart').getContext('2d');
-new Chart(ctx, {
-  type: 'line',
-  data: { labels: chartData.labels, datasets: chartData.datasets },
-  options: {
-    responsive: true,
-    interaction: { mode: 'index', intersect: false },
-    plugins: { legend: { labels: { color: '#e6edf3', boxWidth: 12 } } },
-    scales: {
-      x: { ticks: { color: '#8b949e', maxTicksLimit: 12 }, grid: { color: '#21262d' } },
-      y: { ticks: { color: '#8b949e', callback: v => '$' + v.toLocaleString() }, grid: { color: '#21262d' } }
+const cd={"labels": ["04-18 01:18", "04-18 01:33"], "datasets": [{"label": "Momentum Agent", "data": [null, null], "borderColor": "#f0883e", "backgroundColor": "#f0883e22", "fill": false, "tension": 0.3, "pointRadius": 2}, {"label": "RSI Agent", "data": [null, null], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff22", "fill": false, "tension": 0.3, "pointRadius": 2}, {"label": "MA Crossover", "data": [null, null], "borderColor": "#3fb950", "backgroundColor": "#3fb95022", "fill": false, "tension": 0.3, "pointRadius": 2}, {"label": "Dividend Agent", "data": [null, null], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff22", "fill": false, "tension": 0.3, "pointRadius": 2}, {"label": "Sentiment Agent", "data": [null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65722", "fill": false, "tension": 0.3, "pointRadius": 2}]};
+const ctx=document.getElementById('chart').getContext('2d');
+new Chart(ctx,{
+  type:'line',
+  data:{labels:cd.labels,datasets:cd.datasets},
+  options:{
+    responsive:true,
+    interaction:{mode:'index',intersect:false},
+    plugins:{legend:{labels:{color:'#e6edf3',boxWidth:12}}},
+    scales:{
+      x:{ticks:{color:'#8b949e',maxTicksLimit:14},grid:{color:'#21262d'}},
+      y:{ticks:{color:'#8b949e',callback:v=>'$'+v.toLocaleString()},grid:{color:'#21262d'}}
     }
   }
 });
