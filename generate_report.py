@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 Generates:
-  docs/index.html  — GitHub Pages live dashboard
-  data/trades.csv  — running trade log, updated each cycle (not recreated)
+  docs/index.html   — GitHub Pages live dashboard
+  data/trades.csv   — running trade log, appended each cycle
+  data/trades.xlsx  — formatted Excel workbook, rebuilt each cycle
 """
 import csv
 import json
@@ -112,6 +113,161 @@ def update_csv(portfolios: dict):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# Excel (.xlsx) — fully formatted, rebuilt each cycle
+# ─────────────────────────────────────────────────────────────────────────────
+
+XLSX_PATH = os.path.join(DATA_DIR, "trades.xlsx")
+
+AGENT_COLORS_HEX = {
+    "Momentum Agent":  "F0883E",
+    "RSI Agent":       "58A6FF",
+    "MA Crossover":    "3FB950",
+    "Dividend Agent":  "D2A8FF",
+    "Sentiment Agent": "FFA657",
+}
+
+
+def rebuild_xlsx(portfolios: dict):
+    try:
+        from openpyxl import Workbook
+        from openpyxl.styles import (
+            PatternFill, Font, Alignment, Border, Side, numbers
+        )
+        from openpyxl.utils import get_column_letter
+    except ImportError:
+        print("openpyxl not installed — skipping xlsx")
+        return
+
+    wb = Workbook()
+
+    # ── Sheet 1: All Trades ──────────────────────────────────────────────
+    ws = wb.active
+    ws.title = "All Trades"
+
+    headers = ["Time", "Agent", "Action", "Stock", "Shares", "Price ($)", "Total ($)", "Trade P&L ($)", "Why the agent did this"]
+    col_widths = [18, 18, 8, 8, 8, 11, 12, 14, 80]
+
+    header_fill  = PatternFill("solid", fgColor="1C2128")
+    header_font  = Font(bold=True, color="E6EDF3", size=10)
+    buy_fill     = PatternFill("solid", fgColor="0D2B1A")
+    sell_fill    = PatternFill("solid", fgColor="2B0D0D")
+    border_side  = Side(style="thin", color="30363D")
+    cell_border  = Border(bottom=Border(bottom=border_side).bottom)
+    wrap         = Alignment(wrap_text=True, vertical="top")
+    center       = Alignment(horizontal="center", vertical="top")
+
+    # Write headers
+    for col, (h, w) in enumerate(zip(headers, col_widths), 1):
+        cell = ws.cell(row=1, column=col, value=h)
+        cell.fill = header_fill
+        cell.font = header_font
+        cell.alignment = Alignment(horizontal="center", vertical="center")
+        ws.column_dimensions[get_column_letter(col)].width = w
+    ws.row_dimensions[1].height = 20
+    ws.freeze_panes = "A2"
+    ws.auto_filter.ref = f"A1:I1"
+
+    # Collect and sort all trades
+    all_trades = []
+    for name, pf in portfolios.items():
+        for t in pf.get("trades", []):
+            all_trades.append({**t, "agent": name})
+    all_trades.sort(key=lambda x: x["time"])
+
+    for row_idx, t in enumerate(all_trades, 2):
+        is_buy  = t["action"] == "BUY"
+        row_fill = buy_fill if is_buy else sell_fill
+        agent_color = AGENT_COLORS_HEX.get(t["agent"], "FFFFFF")
+
+        vals = [
+            t["time"][:16].replace("T", " "),
+            t["agent"],
+            t["action"],
+            t["symbol"],
+            int(t["shares"]),
+            round(t["price"], 2),
+            round(t["total"], 2),
+            t.get("trade_pnl", ""),
+            t.get("reason", ""),
+        ]
+        for col, val in enumerate(vals, 1):
+            cell = ws.cell(row=row_idx, column=col, value=val)
+            cell.fill = row_fill
+            cell.font = Font(color="E6EDF3", size=9)
+            cell.alignment = wrap if col == 9 else center
+
+        # Colour the agent name cell with the agent's own colour
+        agent_cell = ws.cell(row=row_idx, column=2)
+        agent_cell.font = Font(color=agent_color, bold=True, size=9)
+
+        # Colour P&L cell green/red
+        pnl_cell = ws.cell(row=row_idx, column=8)
+        if isinstance(vals[7], (int, float)):
+            pnl_cell.font = Font(
+                color="3FB950" if vals[7] >= 0 else "F85149",
+                bold=True, size=9
+            )
+
+        ws.row_dimensions[row_idx].height = 40
+
+    # ── Sheet 2: Agent Summary ───────────────────────────────────────────
+    ws2 = wb.create_sheet("Agent Summary")
+    ws2.column_dimensions["A"].width = 20
+    ws2.column_dimensions["B"].width = 14
+    ws2.column_dimensions["C"].width = 14
+    ws2.column_dimensions["D"].width = 14
+    ws2.column_dimensions["E"].width = 14
+    ws2.column_dimensions["F"].width = 10
+
+    sum_headers = ["Agent", "Portfolio Value", "Cash", "Started With", "P&L ($)", "P&L (%)"]
+    for col, h in enumerate(sum_headers, 1):
+        cell = ws2.cell(row=1, column=col, value=h)
+        cell.fill = header_fill
+        cell.font = header_font
+        cell.alignment = Alignment(horizontal="center", vertical="center")
+    ws2.row_dimensions[1].height = 20
+    ws2.freeze_panes = "A2"
+
+    for row_idx, name in enumerate(AGENT_NAMES, 2):
+        pf = portfolios.get(name, {})
+        if not pf:
+            ws2.cell(row=row_idx, column=1, value=name)
+            ws2.cell(row=row_idx, column=2, value="No data yet")
+            continue
+
+        cash    = pf["cash"]
+        start   = pf["starting_capital"]
+        pos_val = sum(p["shares"] * p["avg_price"] for p in pf.get("positions", {}).values())
+        total   = cash + pos_val
+        pnl     = total - start
+        pnl_pct = (pnl / start) * 100
+
+        row_data = [name, round(total, 2), round(cash, 2), round(start, 2), round(pnl, 2), round(pnl_pct, 2)]
+        agent_hex = AGENT_COLORS_HEX.get(name, "FFFFFF")
+
+        for col, val in enumerate(row_data, 1):
+            cell = ws2.cell(row=row_idx, column=col, value=val)
+            cell.fill = PatternFill("solid", fgColor="161B22")
+            cell.alignment = Alignment(horizontal="center", vertical="center")
+            if col == 1:
+                cell.font = Font(color=agent_hex, bold=True, size=10)
+            elif col in (5, 6):
+                cell.font = Font(
+                    color="3FB950" if val >= 0 else "F85149",
+                    bold=True, size=10
+                )
+            else:
+                cell.font = Font(color="E6EDF3", size=10)
+        ws2.row_dimensions[row_idx].height = 22
+
+    ws2.cell(row=len(AGENT_NAMES) + 3, column=1,
+             value=f"Generated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}").font = Font(color="8B949E", size=9)
+
+    wb.save(XLSX_PATH)
+    print(f"Excel file rebuilt → {XLSX_PATH}")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # HTML dashboard
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -205,6 +361,7 @@ def generate():
     portfolios = {name: load_portfolio(name) for name in AGENT_NAMES}
     save_snapshot(portfolios)
     update_csv(portfolios)
+    rebuild_xlsx(portfolios)
     snapshots  = load_snapshots()
 
     cards_html  = "".join(build_agent_card(n, portfolios[n]) for n in AGENT_NAMES)
