@@ -1,0 +1,40 @@
+name: Paper Trading Agents
+
+on:
+  schedule:
+    # Every 5 minutes, Mon–Fri, 9:30am–4:00pm ET (= 13:30–20:00 UTC)
+    - cron: "*/5 13-19 * * 1-5"
+    - cron: "0 20 * * 1-5"   # final run at market close (4pm ET)
+  workflow_dispatch:           # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write              # needed to commit portfolio data back
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run trading cycle
+        run: python run_headless.py
+
+      - name: Commit updated portfolio data
+        run: |
+          git config user.name  "Paper Trading Bot"
+          git config user.email "bot@paper-trading"
+          git add data/
+          git diff --cached --quiet || git commit -m "portfolio update $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push
