@@ -85,7 +85,7 @@ tr:hover td { background: #ffffff06; }
   <div class="topbar-right">
     <div>
       <div class="ov-label">Data fetched</div>
-      <div style="color:var(--text);font-size:.82rem">2026-04-20 15:16 UTC</div>
+      <div style="color:var(--text);font-size:.82rem">2026-04-20 15:20 UTC</div>
     </div>
     <div>
       <div class="ov-label">Data delay</div>
@@ -107,17 +107,17 @@ tr:hover td { background: #ffffff06; }
 <div class="overview-grid">
   <div class="ov-card">
     <div class="ov-label">Combined Portfolio Value</div>
-    <div class="ov-value">$600.00</div>
+    <div class="ov-value">—</div>
     <div class="ov-sub">Total P&amp;L: <span class="pos">+$0.00</span></div>
   </div>
   <div class="ov-card">
     <div class="ov-label">Best Performing Agent</div>
-    <div class="ov-value" style="font-size:1.1rem">MA Crossover (+0.00%)</div>
+    <div class="ov-value" style="font-size:1.1rem">—</div>
   </div>
   <div class="ov-card">
     <div class="ov-label">Overall Win Rate</div>
     <div class="ov-value">No closed trades yet</div>
-    <div class="ov-sub">3 total trades executed</div>
+    <div class="ov-sub">0 total trades executed</div>
   </div>
   <div class="ov-card">
     <div class="ov-label">Best Trade</div>
@@ -126,7 +126,7 @@ tr:hover td { background: #ffffff06; }
   </div>
   <div class="ov-card">
     <div class="ov-label">Most Traded Stock</div>
-    <div class="ov-value" style="font-size:1.1rem">BAC (1 trades)</div>
+    <div class="ov-value" style="font-size:1.1rem">—</div>
   </div>
 </div>
 
@@ -141,30 +141,14 @@ tr:hover td { background: #ffffff06; }
             <div class="agent-desc">Buys stocks that have been heavily sold off (RSI &lt; 35, oversold). Sells when the market gets too excited (RSI &gt; 65, overbought).</div>
             <div class="muted" style="margin-top:12px">No data yet</div>
         </div><div class="agent-card" style="border-top:3px solid #3fb950">
-        <div class="agent-name" style="color:#3fb950">MA Crossover</div>
-        <div class="agent-desc">Buys when the short-term (10h) moving average crosses above the long-term (30h). Sells when it crosses back below.</div>
-        <div class="agent-value">$300.00</div>
-        <div class="pnl pos">+$0.00 (+0.00%)</div>
-        <div class="agent-meta">
-            <span>Cash: $246.50</span>
-            <span>Started: $300.00</span>
-            <span>1 trades</span>
-        </div>
-        <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
-        <div class="positions"><span class="tag" style="border-color:#3fb95033">BAC × 1</span></div>
-    </div><div class="agent-card" style="border-top:3px solid #d2a8ff">
-        <div class="agent-name" style="color:#d2a8ff">Dividend Agent</div>
-        <div class="agent-desc">Focuses on high dividend-yield stocks (2%+) that are in a healthy uptrend — steady income while avoiding value traps.</div>
-        <div class="agent-value">$300.00</div>
-        <div class="pnl pos">+$0.00 (+0.00%)</div>
-        <div class="agent-meta">
-            <span>Cash: $199.77</span>
-            <span>Started: $300.00</span>
-            <span>2 trades</span>
-        </div>
-        <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
-        <div class="positions"><span class="tag" style="border-color:#d2a8ff33">VZ × 1</span><span class="tag" style="border-color:#d2a8ff33">T × 2</span></div>
-    </div><div class="agent-card" style="border-top:3px solid #ffa657">
+            <div class="agent-name">MA Crossover</div>
+            <div class="agent-desc">Buys when the short-term (10h) moving average crosses above the long-term (30h). Sells when it crosses back below.</div>
+            <div class="muted" style="margin-top:12px">No data yet</div>
+        </div><div class="agent-card" style="border-top:3px solid #d2a8ff">
+            <div class="agent-name">Dividend Agent</div>
+            <div class="agent-desc">Focuses on high dividend-yield stocks (2%+) that are in a healthy uptrend — steady income while avoiding value traps.</div>
+            <div class="muted" style="margin-top:12px">No data yet</div>
+        </div><div class="agent-card" style="border-top:3px solid #ffa657">
             <div class="agent-name">Sentiment Agent</div>
             <div class="agent-desc">Reads recent Yahoo Finance news headlines and scores them. Buys positive coverage, sells negative news cycles.</div>
             <div class="muted" style="margin-top:12px">No data yet</div>
@@ -187,44 +171,14 @@ tr:hover td { background: #ffffff06; }
       <th>Shares</th><th>Price</th><th>Total</th><th>Trade P&amp;L</th>
       <th>Why the agent did this</th>
     </tr></thead>
-    <tbody><tr>
-            <td class="muted mono">04-20 15:16</td>
-            <td style="color:#d2a8ff;font-weight:600;font-size:.8rem">Dividend Agent</td>
-            <td><span class="badge buy">BUY</span></td>
-            <td class="bold">T</td>
-            <td class="muted">2</td>
-            <td>$26.64</td>
-            <td>$53.27</td>
-            <td></td>
-            <td class="reason-cell">T pays a 419.00% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($26.64) is above its 30-hour average ($26.04), confirming a healthy trend. Buying to collect steady income while holding.</td>
-        </tr><tr>
-            <td class="muted mono">04-20 15:16</td>
-            <td style="color:#d2a8ff;font-weight:600;font-size:.8rem">Dividend Agent</td>
-            <td><span class="badge buy">BUY</span></td>
-            <td class="bold">VZ</td>
-            <td class="muted">1</td>
-            <td>$46.96</td>
-            <td>$46.96</td>
-            <td></td>
-            <td class="reason-cell">VZ pays a 608.00% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($46.96) is above its 30-hour average ($45.97), confirming a healthy trend. Buying to collect steady income while holding.</td>
-        </tr><tr>
-            <td class="muted mono">04-20 15:16</td>
-            <td style="color:#3fb950;font-weight:600;font-size:.8rem">MA Crossover</td>
-            <td><span class="badge buy">BUY</span></td>
-            <td class="bold">BAC</td>
-            <td class="muted">1</td>
-            <td>$53.50</td>
-            <td>$53.50</td>
-            <td></td>
-            <td class="reason-cell">BAC's 10-hour average price ($53.95) is above its 30-hour average ($53.86). This means short-term momentum is stronger than the longer trend — a bullish signal.</td>
-        </tr></tbody>
+    <tbody><tr><td colspan="9" class="muted" style="text-align:center;padding:28px">No trades yet — waiting for market open</td></tr></tbody>
   </table>
 
 </div><!-- /content -->
 
 <script>
 // ── Chart ──────────────────────────────────────────────────────────────
-const cd = {"labels": ["04-18 01:18", "04-18 01:33", "04-18 01:41", "04-18 01:47", "04-20 15:16"], "datasets": [{"label": "Momentum Agent", "data": [null, null, null, null, null], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [null, null, null, null, null], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [null, null, null, null, 300.0], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [null, null, null, null, 300.0], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null, null, null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
+const cd = {"labels": ["04-20 15:20"], "datasets": [{"label": "Momentum Agent", "data": [null], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [null], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [null], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [null], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
 new Chart(document.getElementById('chart').getContext('2d'), {
   type: 'line',
   data: { labels: cd.labels, datasets: cd.datasets },

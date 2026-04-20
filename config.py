@@ -13,7 +13,6 @@ DIVIDEND_WATCHLIST = [
 ]
 
 UPDATE_INTERVAL  = 300    # seconds between agent cycles
-MAX_POSITION_PCT = 0.20   # max 20% of portfolio per stock
 MAX_POSITIONS    = 5      # max open positions per agent
 STOP_LOSS_PCT    = 0.08   # sell if down 8% from entry
 TAKE_PROFIT_PCT  = 0.15   # sell if up 15% from entry

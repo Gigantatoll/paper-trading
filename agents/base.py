@@ -4,7 +4,7 @@ import math
 from datetime import datetime
 from typing import Optional
 from portfolio import Portfolio
-from config import MAX_POSITION_PCT, MAX_POSITIONS, STOP_LOSS_PCT, TAKE_PROFIT_PCT
+from config import MAX_POSITIONS, STOP_LOSS_PCT, TAKE_PROFIT_PCT
 
 
 class BaseAgent:
@@ -88,9 +88,10 @@ class BaseAgent:
             self._log(msg)
 
     def _shares_to_buy(self, price: float) -> int:
-        prices = self.market_data.current_prices
-        total = self.portfolio.total_value(prices)
-        invest = min(total * MAX_POSITION_PCT, self.portfolio.cash * 0.95)
+        # Split remaining cash equally across remaining position slots — no per-stock cap
+        slots_used = len(self.portfolio.positions)
+        slots_left = max(1, MAX_POSITIONS - slots_used)
+        invest = (self.portfolio.cash / slots_left) * 0.99
         if invest < price:
             return 0
         return math.floor(invest / price)

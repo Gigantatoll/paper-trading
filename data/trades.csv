@@ -1,4 +1,1 @@
 time,agent,action,symbol,shares,price,total,trade_pnl,reason
-2026-04-20 15:16,MA Crossover,BUY,BAC,1,53.5,53.5,,BAC's 10-hour average price ($53.95) is above its 30-hour average ($53.86). This means short-term momentum is stronger than the longer trend — a bullish signal.
-2026-04-20 15:16,Dividend Agent,BUY,VZ,1,46.955,46.96,,"VZ pays a 608.00% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($46.96) is above its 30-hour average ($45.97), confirming a healthy trend. Buying to collect steady income while holding."
-2026-04-20 15:16,Dividend Agent,BUY,T,2,26.635,53.27,,"T pays a 419.00% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($26.64) is above its 30-hour average ($26.04), confirming a healthy trend. Buying to collect steady income while holding."
