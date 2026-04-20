@@ -60,7 +60,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .dl-link { font-size: .8rem; color: var(--accent); text-decoration: none; }
 .dl-link:hover { text-decoration: underline; }
 table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; font-size: .81rem; }
-thead { position: sticky; top: 57px; z-index: 10; }
+thead { position: static; }
 th { background: var(--surface2); padding: 10px 12px; text-align: left; font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
 td { padding: 9px 12px; border-top: 1px solid var(--surface2); vertical-align: top; }
 tr:hover td { background: #ffffff06; }
@@ -85,7 +85,7 @@ tr:hover td { background: #ffffff06; }
   <div class="topbar-right">
     <div>
       <div class="ov-label">Data fetched</div>
-      <div style="color:var(--text);font-size:.82rem">2026-04-20 15:20 UTC</div>
+      <div style="color:var(--text);font-size:.82rem">2026-04-20 15:25 UTC</div>
     </div>
     <div>
       <div class="ov-label">Data delay</div>
@@ -161,10 +161,11 @@ tr:hover td { background: #ffffff06; }
   </div>
 
   <!-- Trades -->
-  <div class="table-header">
+  <div class="table-header" style="margin-top:8px">
     <p class="section-title" style="margin:0">Trade History &amp; Reasoning</p>
     <a class="dl-link" href="https://github.com/Gigantatoll/paper-trading/raw/main/data/trades.xlsx">⬇ Download Excel</a>
   </div>
+  <div style="height:10px"></div>
   <table>
     <thead><tr>
       <th>Time (UTC)</th><th>Agent</th><th>Action</th><th>Stock</th>
@@ -178,7 +179,7 @@ tr:hover td { background: #ffffff06; }
 
 <script>
 // ── Chart ──────────────────────────────────────────────────────────────
-const cd = {"labels": ["04-20 15:20"], "datasets": [{"label": "Momentum Agent", "data": [null], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [null], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [null], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [null], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
+const cd = {"labels": ["04-20 15:20", "04-20 15:25"], "datasets": [{"label": "Momentum Agent", "data": [null, null], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [null, null], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [null, null], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [null, null], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
 new Chart(document.getElementById('chart').getContext('2d'), {
   type: 'line',
   data: { labels: cd.labels, datasets: cd.datasets },
