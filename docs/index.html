@@ -85,7 +85,7 @@ tr:hover td { background: #ffffff06; }
   <div class="topbar-right">
     <div>
       <div class="ov-label">Data fetched</div>
-      <div style="color:var(--text);font-size:.82rem">2026-04-20 15:40 UTC</div>
+      <div style="color:var(--text);font-size:.82rem">2026-04-20 16:45 UTC</div>
     </div>
     <div>
       <div class="ov-label">Data delay</div>
@@ -107,26 +107,26 @@ tr:hover td { background: #ffffff06; }
 <div class="overview-grid">
   <div class="ov-card">
     <div class="ov-label">Combined Portfolio Value</div>
-    <div class="ov-value">$2,400.00</div>
-    <div class="ov-sub">Total P&amp;L: <span class="pos">+$0.00</span></div>
+    <div class="ov-value">$2,399.75</div>
+    <div class="ov-sub">Total P&amp;L: <span class="neg">$-0.25</span></div>
   </div>
   <div class="ov-card">
     <div class="ov-label">Best Performing Agent</div>
-    <div class="ov-value" style="font-size:1.1rem">Momentum Agent (+0.00%)</div>
+    <div class="ov-value" style="font-size:1.1rem">RSI Agent (+0.00%)</div>
   </div>
   <div class="ov-card">
     <div class="ov-label">Overall Win Rate</div>
-    <div class="ov-value">No closed trades yet</div>
-    <div class="ov-sub">7 total trades executed</div>
+    <div class="ov-value">0.0%</div>
+    <div class="ov-sub">11 total trades executed</div>
   </div>
   <div class="ov-card">
     <div class="ov-label">Best Trade</div>
-    <div class="ov-value" style="font-size:1rem">—</div>
-    <div class="ov-sub">Worst: —</div>
+    <div class="ov-value" style="font-size:1rem"><span class="pos">+$-0.25</span> on MRK</div>
+    <div class="ov-sub">Worst: <span class="neg">$-0.25</span> on MRK</div>
   </div>
   <div class="ov-card">
     <div class="ov-label">Most Traded Stock</div>
-    <div class="ov-value" style="font-size:1.1rem">MRK (1 trades)</div>
+    <div class="ov-value" style="font-size:1.1rem">MRK (3 trades)</div>
   </div>
 </div>
 
@@ -135,15 +135,19 @@ tr:hover td { background: #ffffff06; }
   <div class="agents-grid"><div class="agent-card" style="border-top:3px solid #f0883e">
         <div class="agent-name" style="color:#f0883e">Momentum Agent</div>
         <div class="agent-desc">Ranks all 25 stocks by recent price gain and holds the top 5 with positive momentum. Rotates out when momentum fades.</div>
-        <div class="agent-value">$600.00</div>
-        <div class="pnl pos">+$0.00 (+0.00%)</div>
+        <div class="agent-value">$599.75</div>
+        <div class="pnl neg">$-0.25 (-0.04%)</div>
         <div class="agent-meta">
-            <span>Cash: $481.44</span>
+            <span>Cash: $599.75</span>
             <span>Started: $600.00</span>
-            <span>1 trades</span>
+            <span>2 trades</span>
         </div>
-        <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
-        <div class="positions"><span class="tag" style="border-color:#f0883e33">MRK × 1</span></div>
+        <div class="win-rate-row">
+            <span class="ov-label">Win rate</span>
+            <span class="neg">0%</span>
+        </div>
+        <div class="win-bar-bg"><div class="win-bar" style="width:0%;background:#f0883e"></div></div>
+        <div class="positions"><span class="muted">No open positions</span></div>
     </div><div class="agent-card" style="border-top:3px solid #58a6ff">
         <div class="agent-name" style="color:#58a6ff">RSI Agent</div>
         <div class="agent-desc">Buys stocks that have been heavily sold off (RSI &lt; 35, oversold). Sells when the market gets too excited (RSI &gt; 65, overbought).</div>
@@ -162,12 +166,12 @@ tr:hover td { background: #ffffff06; }
         <div class="agent-value">$600.00</div>
         <div class="pnl pos">+$0.00 (+0.00%)</div>
         <div class="agent-meta">
-            <span>Cash: $416.77</span>
+            <span>Cash: $13.53</span>
             <span>Started: $600.00</span>
-            <span>2 trades</span>
+            <span>5 trades</span>
         </div>
         <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
-        <div class="positions"><span class="tag" style="border-color:#3fb95033">BAC × 2</span><span class="tag" style="border-color:#3fb95033">KO × 1</span></div>
+        <div class="positions"><span class="tag" style="border-color:#3fb95033">BAC × 2</span><span class="tag" style="border-color:#3fb95033">KO × 1</span><span class="tag" style="border-color:#3fb95033">WMT × 1</span><span class="tag" style="border-color:#3fb95033">MRK × 1</span><span class="tag" style="border-color:#3fb95033">PEP × 1</span></div>
     </div><div class="agent-card" style="border-top:3px solid #d2a8ff">
         <div class="agent-name" style="color:#d2a8ff">Dividend Agent</div>
         <div class="agent-desc">Focuses on high dividend-yield stocks (2%+) that are in a healthy uptrend — steady income while avoiding value traps.</div>
@@ -205,6 +209,46 @@ tr:hover td { background: #ffffff06; }
       <th>Why the agent did this</th>
     </tr></thead>
     <tbody><tr>
+            <td class="muted mono">04-20 16:45</td>
+            <td style="color:#3fb950;font-weight:600;font-size:.8rem">MA Crossover</td>
+            <td><span class="badge buy">BUY</span></td>
+            <td class="bold">PEP</td>
+            <td class="muted">1</td>
+            <td>$156.76</td>
+            <td>$156.76</td>
+            <td></td>
+            <td class="reason-cell">PEP's 10-hour average price ($157.38) is above its 30-hour average ($156.64). This means short-term momentum is stronger than the longer trend — a bullish signal.</td>
+        </tr><tr>
+            <td class="muted mono">04-20 16:45</td>
+            <td style="color:#3fb950;font-weight:600;font-size:.8rem">MA Crossover</td>
+            <td><span class="badge buy">BUY</span></td>
+            <td class="bold">MRK</td>
+            <td class="muted">1</td>
+            <td>$118.31</td>
+            <td>$118.31</td>
+            <td></td>
+            <td class="reason-cell">MRK's 10-hour average price ($118.25) is above its 30-hour average ($117.84). This means short-term momentum is stronger than the longer trend — a bullish signal.</td>
+        </tr><tr>
+            <td class="muted mono">04-20 16:45</td>
+            <td style="color:#3fb950;font-weight:600;font-size:.8rem">MA Crossover</td>
+            <td><span class="badge buy">BUY</span></td>
+            <td class="bold">WMT</td>
+            <td class="muted">1</td>
+            <td>$128.17</td>
+            <td>$128.17</td>
+            <td></td>
+            <td class="reason-cell">WMT's 10-hour average price ($127.17) is above its 30-hour average ($125.47). This means short-term momentum is stronger than the longer trend — a bullish signal.</td>
+        </tr><tr>
+            <td class="muted mono">04-20 16:45</td>
+            <td style="color:#f0883e;font-weight:600;font-size:.8rem">Momentum Agent</td>
+            <td><span class="badge sell">SELL</span></td>
+            <td class="bold">MRK</td>
+            <td class="muted">1</td>
+            <td>$118.31</td>
+            <td>$118.31</td>
+            <td><span class="neg bold">-0.25</span></td>
+            <td class="reason-cell">MRK dropped out of the top 5 momentum stocks (current momentum: 0.70%). Rotating into stronger performers.</td>
+        </tr><tr>
             <td class="muted mono">04-20 15:22</td>
             <td style="color:#d2a8ff;font-weight:600;font-size:.8rem">Dividend Agent</td>
             <td><span class="badge buy">BUY</span></td>
@@ -281,7 +325,7 @@ tr:hover td { background: #ffffff06; }
 
 <script>
 // ── Chart ──────────────────────────────────────────────────────────────
-const cd = {"labels": ["04-20 15:22", "04-20 15:39"], "datasets": [{"label": "Momentum Agent", "data": [600.0, 600.0], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [600.0, 600.0], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [600.0, 600.0], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [600.0, 600.0], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
+const cd = {"labels": ["04-20 15:22", "04-20 15:39", "04-20 16:45"], "datasets": [{"label": "Momentum Agent", "data": [600.0, 600.0, 599.75], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [600.0, 600.0, 600.0], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [600.0, 600.0, 600.0], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [600.0, 600.0, 600.0], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
 new Chart(document.getElementById('chart').getContext('2d'), {
   type: 'line',
   data: { labels: cd.labels, datasets: cd.datasets },
