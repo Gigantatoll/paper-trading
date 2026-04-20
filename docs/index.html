@@ -85,7 +85,7 @@ tr:hover td { background: #ffffff06; }
   <div class="topbar-right">
     <div>
       <div class="ov-label">Data fetched</div>
-      <div style="color:var(--text);font-size:.82rem">2026-04-20 20:06 UTC</div>
+      <div style="color:var(--text);font-size:.82rem">2026-04-20 22:30 UTC</div>
     </div>
     <div>
       <div class="ov-label">Data delay</div>
@@ -325,7 +325,7 @@ tr:hover td { background: #ffffff06; }
 
 <script>
 // ── Chart ──────────────────────────────────────────────────────────────
-const cd = {"labels": ["04-20 15:22", "04-20 15:39", "04-20 16:45", "04-20 20:06"], "datasets": [{"label": "Momentum Agent", "data": [600.0, 600.0, 599.75, 599.75], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [600.0, 600.0, 600.0, 600.0], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [600.0, 600.0, 600.0, 600.0], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [600.0, 600.0, 600.0, 600.0], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null, null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
+const cd = {"labels": ["04-20 15:22", "04-20 15:39", "04-20 16:45", "04-20 20:06", "04-20 22:29"], "datasets": [{"label": "Momentum Agent", "data": [600.0, 600.0, 599.75, 599.75, 599.75], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [600.0, 600.0, 600.0, 600.0, 600.0], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [600.0, 600.0, 600.0, 600.0, 600.0], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [600.0, 600.0, 600.0, 600.0, 600.0], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null, null, null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
 new Chart(document.getElementById('chart').getContext('2d'), {
   type: 'line',
   data: { labels: cd.labels, datasets: cd.datasets },
