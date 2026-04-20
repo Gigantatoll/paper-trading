@@ -1,0 +1,22 @@
+{
+  "name": "RSI Agent",
+  "cash": 506.0250015258789,
+  "starting_capital": 600.0,
+  "positions": {
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 93.9749984741211
+    }
+  },
+  "trades": [
+    {
+      "time": "2026-04-20T15:22:16.515089",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 93.9749984741211,
+      "total": 93.9749984741211,
+      "reason": "NFLX's RSI is 10.6, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    }
+  ]
+}
