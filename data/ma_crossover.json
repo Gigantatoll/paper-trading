@@ -1,0 +1,22 @@
+{
+  "name": "MA Crossover",
+  "cash": 246.5,
+  "starting_capital": 300.0,
+  "positions": {
+    "BAC": {
+      "shares": 1,
+      "avg_price": 53.5
+    }
+  },
+  "trades": [
+    {
+      "time": "2026-04-20T15:16:03.698214",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 53.5,
+      "total": 53.5,
+      "reason": "BAC's 10-hour average price ($53.95) is above its 30-hour average ($53.86). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    }
+  ]
+}
