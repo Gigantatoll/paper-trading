@@ -128,8 +128,11 @@ class MarketData:
         for symbol in DIVIDEND_WATCHLIST:
             try:
                 info = yf.Ticker(symbol).info
-                yield_val = info.get("dividendYield") or 0.0
-                self._dividend_yields[symbol] = float(yield_val)
+                yield_val = float(info.get("dividendYield") or 0.0)
+                # yfinance sometimes returns 6.08 instead of 0.0608 for 6.08%
+                if yield_val > 1:
+                    yield_val = yield_val / 100
+                self._dividend_yields[symbol] = yield_val
             except Exception:
                 self._dividend_yields[symbol] = 0.0
 
