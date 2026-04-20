@@ -558,7 +558,7 @@ body {{ background: var(--bg); color: var(--text); font-family: -apple-system, B
 .dl-link {{ font-size: .8rem; color: var(--accent); text-decoration: none; }}
 .dl-link:hover {{ text-decoration: underline; }}
 table {{ width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; font-size: .81rem; }}
-thead {{ position: sticky; top: 57px; z-index: 10; }}
+thead {{ position: static; }}
 th {{ background: var(--surface2); padding: 10px 12px; text-align: left; font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }}
 td {{ padding: 9px 12px; border-top: 1px solid var(--surface2); vertical-align: top; }}
 tr:hover td {{ background: #ffffff06; }}
@@ -614,10 +614,11 @@ tr:hover td {{ background: #ffffff06; }}
   </div>
 
   <!-- Trades -->
-  <div class="table-header">
+  <div class="table-header" style="margin-top:8px">
     <p class="section-title" style="margin:0">Trade History &amp; Reasoning</p>
     <a class="dl-link" href="https://github.com/Gigantatoll/paper-trading/raw/main/data/trades.xlsx">⬇ Download Excel</a>
   </div>
+  <div style="height:10px"></div>
   <table>
     <thead><tr>
       <th>Time (UTC)</th><th>Agent</th><th>Action</th><th>Stock</th>
