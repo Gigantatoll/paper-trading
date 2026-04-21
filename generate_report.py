@@ -427,31 +427,25 @@ def build_agent_card(name: str, pf: dict, win_rate, prices: dict = None) -> str:
     else:
         wr_html = '<div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>'
 
-    # Build positions table with unrealized P&L
+    # Build compact positions list with unrealized P&L
     open_positions = pf.get("positions", {})
     if open_positions:
         pos_rows = ""
         for sym, pos in open_positions.items():
-            shares    = int(pos["shares"])
-            avg_p     = pos["avg_price"]
-            cur_p     = prices.get(sym, avg_p)
-            unreal    = (cur_p - avg_p) * shares
+            shares     = int(pos["shares"])
+            avg_p      = pos["avg_price"]
+            cur_p      = prices.get(sym, avg_p)
+            unreal     = (cur_p - avg_p) * shares
             unreal_pct = (cur_p - avg_p) / avg_p * 100
-            u_sign    = "+" if unreal >= 0 else ""
-            u_cls     = "pos" if unreal >= 0 else "neg"
-            pos_rows += f'''<tr>
-                <td class="pt-sym" style="color:{color};font-weight:700">{sym}</td>
-                <td class="pt-num">{shares}</td>
-                <td class="pt-num muted">${avg_p:.2f}</td>
-                <td class="pt-num">${cur_p:.2f}</td>
-                <td class="pt-num {u_cls} bold">{u_sign}${unreal:.2f}<br><span style="font-size:.68rem;opacity:.8">{u_sign}{unreal_pct:.1f}%</span></td>
-            </tr>'''
-        positions_html = f'''<table class="pos-table">
-            <thead><tr>
-                <th>Stock</th><th>Shares</th><th>Paid</th><th>Now</th><th>Unrealized</th>
-            </tr></thead>
-            <tbody>{pos_rows}</tbody>
-        </table>'''
+            u_sign     = "+" if unreal >= 0 else ""
+            u_cls      = "pos" if unreal >= 0 else "neg"
+            pos_rows += f'''<div class="pos-row">
+                <span class="pos-sym" style="color:{color}">{sym}</span>
+                <span class="pos-shares muted">{shares}×</span>
+                <span class="pos-prices muted">${avg_p:.2f} → ${cur_p:.2f}</span>
+                <span class="pos-pnl {u_cls}">{u_sign}${unreal:.2f} <span class="pos-pct">({u_sign}{unreal_pct:.1f}%)</span></span>
+            </div>'''
+        positions_html = f'<div class="pos-list">{pos_rows}</div>'
     else:
         positions_html = '<div class="muted" style="font-size:.76rem;margin-top:8px">No open positions</div>'
 
@@ -617,12 +611,13 @@ body {{ background: var(--bg); color: var(--text); font-family: -apple-system, B
 .win-bar {{ height: 5px; border-radius: 4px; transition: width .5s; }}
 .positions {{ display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }}
 .tag {{ background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; font-size: .74rem; }}
-.pos-table {{ width: 100%; border-collapse: collapse; font-size: .74rem; margin-top: 2px; }}
-.pos-table th {{ color: var(--muted); font-size: .66rem; text-transform: uppercase; letter-spacing: .04em; padding: 3px 6px; text-align: left; border-bottom: 1px solid var(--border); }}
-.pos-table td {{ padding: 5px 6px; border-bottom: 1px solid var(--surface2); line-height: 1.3; }}
-.pos-table tr:last-child td {{ border-bottom: none; }}
-.pt-sym {{ font-size: .8rem; }}
-.pt-num {{ text-align: right; }}
+.pos-list {{ display: flex; flex-direction: column; gap: 5px; margin-top: 4px; }}
+.pos-row {{ display: flex; align-items: center; gap: 6px; font-size: .76rem; background: var(--surface2); border-radius: 6px; padding: 5px 8px; flex-wrap: wrap; }}
+.pos-sym {{ font-weight: 700; font-size: .82rem; min-width: 38px; }}
+.pos-shares {{ font-size: .72rem; }}
+.pos-prices {{ font-size: .72rem; flex: 1; }}
+.pos-pnl {{ font-weight: 700; font-size: .78rem; margin-left: auto; white-space: nowrap; }}
+.pos-pct {{ font-weight: 400; opacity: .85; }}
 
 /* ── Chart ── */
 .chart-box {{ background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 28px; }}
