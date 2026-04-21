@@ -85,6 +85,11 @@ def main():
         if agent.last_action:
             log(f"  Action: {agent.last_action}")
 
+    # Save current prices so generate_report.py can show unrealized P&L
+    prices_path = os.path.join(DATA_DIR, "prices.json")
+    with open(prices_path, "w") as f:
+        json.dump(market_data.current_prices, f)
+
     log("Generating dashboard and CSV…")
     from generate_report import generate
     generate()

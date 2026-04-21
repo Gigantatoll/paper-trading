@@ -41,6 +41,14 @@ def load_portfolio(name: str) -> dict:
     return {}
 
 
+def load_prices() -> dict:
+    path = os.path.join(DATA_DIR, "prices.json")
+    if os.path.exists(path):
+        with open(path) as f:
+            return json.load(f)
+    return {}
+
+
 def load_snapshots() -> list:
     path = os.path.join(DATA_DIR, "snapshots.json")
     if os.path.exists(path):
@@ -49,13 +57,17 @@ def load_snapshots() -> list:
     return []
 
 
-def save_snapshot(portfolios: dict):
+def save_snapshot(portfolios: dict, prices: dict = None):
+    prices = prices or load_prices()
     path = os.path.join(DATA_DIR, "snapshots.json")
     snapshots = load_snapshots()
     entry = {"time": datetime.utcnow().strftime("%Y-%m-%d %H:%M")}
     for name, pf in portfolios.items():
         if pf:
-            pos_val = sum(p["shares"] * p["avg_price"] for p in pf.get("positions", {}).values())
+            pos_val = sum(
+                p["shares"] * prices.get(sym, p["avg_price"])
+                for sym, p in pf.get("positions", {}).items()
+            )
             entry[name] = round(pf["cash"] + pos_val, 2)
     snapshots.append(entry)
     snapshots = snapshots[-1000:]
@@ -295,6 +307,7 @@ def compute_stats(portfolios: dict) -> dict:
     worst_trade = min(sell_trades, key=lambda t: t["trade_pnl"])  if sell_trades else None
     most_traded = Counter(t["symbol"] for t in all_trades).most_common(1)[0] if all_trades else None
 
+    prices = load_prices()
     total_pnl = 0
     total_value = 0
     best_agent = None
@@ -306,7 +319,10 @@ def compute_stats(portfolios: dict) -> dict:
             agent_win_rates[name] = None
             continue
         start   = pf["starting_capital"]
-        pos_val = sum(p["shares"] * p["avg_price"] for p in pf.get("positions", {}).values())
+        pos_val = sum(
+            p["shares"] * prices.get(sym, p["avg_price"])
+            for sym, p in pf.get("positions", {}).items()
+        )
         total   = pf["cash"] + pos_val
         pnl_pct = (total - start) / start * 100
         total_pnl   += (total - start)
@@ -377,9 +393,10 @@ def build_overview(stats: dict, portfolios: dict) -> str:
 </div>"""
 
 
-def build_agent_card(name: str, pf: dict, win_rate) -> str:
+def build_agent_card(name: str, pf: dict, win_rate, prices: dict = None) -> str:
     color = COLORS.get(name, "#888")
     desc  = AGENT_DESCRIPTIONS.get(name, "")
+    prices = prices or {}
 
     if not pf:
         return f'''<div class="agent-card" style="border-top:3px solid {color}">
@@ -390,7 +407,10 @@ def build_agent_card(name: str, pf: dict, win_rate) -> str:
 
     cash    = pf["cash"]
     start   = pf["starting_capital"]
-    pos_val = sum(p["shares"] * p["avg_price"] for p in pf.get("positions", {}).values())
+    pos_val = sum(
+        p["shares"] * prices.get(sym, p["avg_price"])
+        for sym, p in pf.get("positions", {}).items()
+    )
     total   = cash + pos_val
     pnl     = total - start
     pnl_pct = (pnl / start) * 100
@@ -407,10 +427,33 @@ def build_agent_card(name: str, pf: dict, win_rate) -> str:
     else:
         wr_html = '<div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>'
 
-    positions_html = "".join(
-        f'<span class="tag" style="border-color:{color}33">{sym} × {int(pos["shares"])}</span>'
-        for sym, pos in pf.get("positions", {}).items()
-    ) or '<span class="muted">No open positions</span>'
+    # Build positions table with unrealized P&L
+    open_positions = pf.get("positions", {})
+    if open_positions:
+        pos_rows = ""
+        for sym, pos in open_positions.items():
+            shares    = int(pos["shares"])
+            avg_p     = pos["avg_price"]
+            cur_p     = prices.get(sym, avg_p)
+            unreal    = (cur_p - avg_p) * shares
+            unreal_pct = (cur_p - avg_p) / avg_p * 100
+            u_sign    = "+" if unreal >= 0 else ""
+            u_cls     = "pos" if unreal >= 0 else "neg"
+            pos_rows += f'''<tr>
+                <td class="pt-sym" style="color:{color};font-weight:700">{sym}</td>
+                <td class="pt-num">{shares}</td>
+                <td class="pt-num muted">${avg_p:.2f}</td>
+                <td class="pt-num">${cur_p:.2f}</td>
+                <td class="pt-num {u_cls} bold">{u_sign}${unreal:.2f}<br><span style="font-size:.68rem;opacity:.8">{u_sign}{unreal_pct:.1f}%</span></td>
+            </tr>'''
+        positions_html = f'''<table class="pos-table">
+            <thead><tr>
+                <th>Stock</th><th>Shares</th><th>Paid</th><th>Now</th><th>Unrealized</th>
+            </tr></thead>
+            <tbody>{pos_rows}</tbody>
+        </table>'''
+    else:
+        positions_html = '<div class="muted" style="font-size:.76rem;margin-top:8px">No open positions</div>'
 
     return f'''<div class="agent-card" style="border-top:3px solid {color}">
         <div class="agent-name" style="color:{color}">{name}</div>
@@ -423,11 +466,21 @@ def build_agent_card(name: str, pf: dict, win_rate) -> str:
             <span>{len(pf.get("trades",[]))} trades</span>
         </div>
         {wr_html}
-        <div class="positions">{positions_html}</div>
+        <div class="positions-section" style="margin-top:10px">
+            <div class="ov-label" style="margin-bottom:6px">Open Positions</div>
+            {positions_html}
+        </div>
     </div>'''
 
 
-def build_trade_rows(portfolios: dict) -> str:
+def build_trade_rows(portfolios: dict, prices: dict = None) -> str:
+    prices = prices or {}
+    # Build a map of currently open positions: (agent, symbol) -> avg_price
+    open_pos = {}
+    for name, pf in portfolios.items():
+        for sym, pos in pf.get("positions", {}).items():
+            open_pos[(name, sym)] = pos["avg_price"]
+
     all_trades = []
     for name, pf in portfolios.items():
         for t in pf.get("trades", []):
@@ -436,14 +489,28 @@ def build_trade_rows(portfolios: dict) -> str:
 
     rows = ""
     for t in all_trades[:100]:
-        ts  = t["time"][5:16].replace("T", " ")
-        ac  = "buy" if t["action"] == "BUY" else "sell"
+        ts    = t["time"][5:16].replace("T", " ")
+        ac    = "buy" if t["action"] == "BUY" else "sell"
         color = COLORS.get(t["agent"], "#fff")
         pnl_cell = ""
+
         if t["action"] == "SELL" and "trade_pnl" in t:
             p  = t["trade_pnl"]
             pc = "pos" if p >= 0 else "neg"
-            pnl_cell = f'<span class="{pc} bold">{("+" if p >= 0 else "")}{p:.2f}</span>'
+            pnl_cell = f'<span class="{pc} bold">{("+" if p >= 0 else "")}${p:.2f}</span>'
+        elif t["action"] == "BUY":
+            # Show unrealized P&L if this position is still open
+            key = (t["agent"], t["symbol"])
+            if key in open_pos:
+                cur_p  = prices.get(t["symbol"], t["price"])
+                shares = int(t["shares"])
+                avg_p  = open_pos[key]
+                unreal = (cur_p - avg_p) * shares
+                u_pct  = (cur_p - avg_p) / avg_p * 100
+                u_sign = "+" if unreal >= 0 else ""
+                u_cls  = "pos" if unreal >= 0 else "neg"
+                pnl_cell = f'<span class="{u_cls} bold">{u_sign}${unreal:.2f}</span><br><span class="{u_cls}" style="font-size:.7rem">{u_sign}{u_pct:.1f}% open</span>'
+
         reason = t.get("reason", "—")
         rows += f"""<tr>
             <td class="muted mono">{ts}</td>
@@ -484,15 +551,16 @@ def build_chart_data(snapshots: list) -> str:
 
 def generate():
     portfolios  = {name: load_portfolio(name) for name in AGENT_NAMES}
-    save_snapshot(portfolios)
+    prices      = load_prices()
+    save_snapshot(portfolios, prices)
     update_csv(portfolios)
     rebuild_xlsx(portfolios)
     snapshots   = load_snapshots()
     stats       = compute_stats(portfolios)
 
     overview_html = build_overview(stats, portfolios)
-    cards_html    = "".join(build_agent_card(n, portfolios[n], stats["agent_win_rates"].get(n)) for n in AGENT_NAMES)
-    trade_rows    = build_trade_rows(portfolios)
+    cards_html    = "".join(build_agent_card(n, portfolios[n], stats["agent_win_rates"].get(n), prices) for n in AGENT_NAMES)
+    trade_rows    = build_trade_rows(portfolios, prices)
     chart_data    = build_chart_data(snapshots)
     updated       = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
@@ -549,6 +617,12 @@ body {{ background: var(--bg); color: var(--text); font-family: -apple-system, B
 .win-bar {{ height: 5px; border-radius: 4px; transition: width .5s; }}
 .positions {{ display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }}
 .tag {{ background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; font-size: .74rem; }}
+.pos-table {{ width: 100%; border-collapse: collapse; font-size: .74rem; margin-top: 2px; }}
+.pos-table th {{ color: var(--muted); font-size: .66rem; text-transform: uppercase; letter-spacing: .04em; padding: 3px 6px; text-align: left; border-bottom: 1px solid var(--border); }}
+.pos-table td {{ padding: 5px 6px; border-bottom: 1px solid var(--surface2); line-height: 1.3; }}
+.pos-table tr:last-child td {{ border-bottom: none; }}
+.pt-sym {{ font-size: .8rem; }}
+.pt-num {{ text-align: right; }}
 
 /* ── Chart ── */
 .chart-box {{ background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 28px; }}

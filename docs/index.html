@@ -51,6 +51,12 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .win-bar { height: 5px; border-radius: 4px; transition: width .5s; }
 .positions { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
 .tag { background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; font-size: .74rem; }
+.pos-table { width: 100%; border-collapse: collapse; font-size: .74rem; margin-top: 2px; }
+.pos-table th { color: var(--muted); font-size: .66rem; text-transform: uppercase; letter-spacing: .04em; padding: 3px 6px; text-align: left; border-bottom: 1px solid var(--border); }
+.pos-table td { padding: 5px 6px; border-bottom: 1px solid var(--surface2); line-height: 1.3; }
+.pos-table tr:last-child td { border-bottom: none; }
+.pt-sym { font-size: .8rem; }
+.pt-num { text-align: right; }
 
 /* ── Chart ── */
 .chart-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 28px; }
@@ -85,7 +91,7 @@ tr:hover td { background: #ffffff06; }
   <div class="topbar-right">
     <div>
       <div class="ov-label">Data fetched</div>
-      <div style="color:var(--text);font-size:.82rem">2026-04-20 15:40 UTC</div>
+      <div style="color:var(--text);font-size:.82rem">2026-04-21 16:08 UTC</div>
     </div>
     <div>
       <div class="ov-label">Data delay</div>
@@ -107,12 +113,12 @@ tr:hover td { background: #ffffff06; }
 <div class="overview-grid">
   <div class="ov-card">
     <div class="ov-label">Combined Portfolio Value</div>
-    <div class="ov-value">$2,400.00</div>
-    <div class="ov-sub">Total P&amp;L: <span class="pos">+$0.00</span></div>
+    <div class="ov-value">$2,389.61</div>
+    <div class="ov-sub">Total P&amp;L: <span class="neg">$-10.39</span></div>
   </div>
   <div class="ov-card">
     <div class="ov-label">Best Performing Agent</div>
-    <div class="ov-value" style="font-size:1.1rem">Momentum Agent (+0.00%)</div>
+    <div class="ov-value" style="font-size:1.1rem">RSI Agent (-0.10%)</div>
   </div>
   <div class="ov-card">
     <div class="ov-label">Overall Win Rate</div>
@@ -135,51 +141,125 @@ tr:hover td { background: #ffffff06; }
   <div class="agents-grid"><div class="agent-card" style="border-top:3px solid #f0883e">
         <div class="agent-name" style="color:#f0883e">Momentum Agent</div>
         <div class="agent-desc">Ranks all 25 stocks by recent price gain and holds the top 5 with positive momentum. Rotates out when momentum fades.</div>
-        <div class="agent-value">$600.00</div>
-        <div class="pnl pos">+$0.00 (+0.00%)</div>
+        <div class="agent-value">$594.13</div>
+        <div class="pnl neg">$-5.87 (-0.98%)</div>
         <div class="agent-meta">
             <span>Cash: $481.44</span>
             <span>Started: $600.00</span>
             <span>1 trades</span>
         </div>
         <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
-        <div class="positions"><span class="tag" style="border-color:#f0883e33">MRK × 1</span></div>
+        <div class="positions-section" style="margin-top:10px">
+            <div class="ov-label" style="margin-bottom:6px">Open Positions</div>
+            <table class="pos-table">
+            <thead><tr>
+                <th>Stock</th><th>Shares</th><th>Paid</th><th>Now</th><th>Unrealized</th>
+            </tr></thead>
+            <tbody><tr>
+                <td class="pt-sym" style="color:#f0883e;font-weight:700">MRK</td>
+                <td class="pt-num">1</td>
+                <td class="pt-num muted">$118.56</td>
+                <td class="pt-num">$112.69</td>
+                <td class="pt-num neg bold">$-5.87<br><span style="font-size:.68rem;opacity:.8">-5.0%</span></td>
+            </tr></tbody>
+        </table>
+        </div>
     </div><div class="agent-card" style="border-top:3px solid #58a6ff">
         <div class="agent-name" style="color:#58a6ff">RSI Agent</div>
         <div class="agent-desc">Buys stocks that have been heavily sold off (RSI &lt; 35, oversold). Sells when the market gets too excited (RSI &gt; 65, overbought).</div>
-        <div class="agent-value">$600.00</div>
-        <div class="pnl pos">+$0.00 (+0.00%)</div>
+        <div class="agent-value">$599.41</div>
+        <div class="pnl neg">$-0.59 (-0.10%)</div>
         <div class="agent-meta">
             <span>Cash: $506.03</span>
             <span>Started: $600.00</span>
             <span>1 trades</span>
         </div>
         <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
-        <div class="positions"><span class="tag" style="border-color:#58a6ff33">NFLX × 1</span></div>
+        <div class="positions-section" style="margin-top:10px">
+            <div class="ov-label" style="margin-bottom:6px">Open Positions</div>
+            <table class="pos-table">
+            <thead><tr>
+                <th>Stock</th><th>Shares</th><th>Paid</th><th>Now</th><th>Unrealized</th>
+            </tr></thead>
+            <tbody><tr>
+                <td class="pt-sym" style="color:#58a6ff;font-weight:700">NFLX</td>
+                <td class="pt-num">1</td>
+                <td class="pt-num muted">$93.97</td>
+                <td class="pt-num">$93.39</td>
+                <td class="pt-num neg bold">$-0.59<br><span style="font-size:.68rem;opacity:.8">-0.6%</span></td>
+            </tr></tbody>
+        </table>
+        </div>
     </div><div class="agent-card" style="border-top:3px solid #3fb950">
         <div class="agent-name" style="color:#3fb950">MA Crossover</div>
         <div class="agent-desc">Buys when the short-term (10h) moving average crosses above the long-term (30h). Sells when it crosses back below.</div>
-        <div class="agent-value">$600.00</div>
-        <div class="pnl pos">+$0.00 (+0.00%)</div>
+        <div class="agent-value">$599.32</div>
+        <div class="pnl neg">$-0.68 (-0.11%)</div>
         <div class="agent-meta">
             <span>Cash: $416.77</span>
             <span>Started: $600.00</span>
             <span>2 trades</span>
         </div>
         <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
-        <div class="positions"><span class="tag" style="border-color:#3fb95033">BAC × 2</span><span class="tag" style="border-color:#3fb95033">KO × 1</span></div>
+        <div class="positions-section" style="margin-top:10px">
+            <div class="ov-label" style="margin-bottom:6px">Open Positions</div>
+            <table class="pos-table">
+            <thead><tr>
+                <th>Stock</th><th>Shares</th><th>Paid</th><th>Now</th><th>Unrealized</th>
+            </tr></thead>
+            <tbody><tr>
+                <td class="pt-sym" style="color:#3fb950;font-weight:700">BAC</td>
+                <td class="pt-num">2</td>
+                <td class="pt-num muted">$53.58</td>
+                <td class="pt-num">$53.83</td>
+                <td class="pt-num pos bold">+$0.48<br><span style="font-size:.68rem;opacity:.8">+0.4%</span></td>
+            </tr><tr>
+                <td class="pt-sym" style="color:#3fb950;font-weight:700">KO</td>
+                <td class="pt-num">1</td>
+                <td class="pt-num muted">$76.06</td>
+                <td class="pt-num">$74.89</td>
+                <td class="pt-num neg bold">$-1.17<br><span style="font-size:.68rem;opacity:.8">-1.5%</span></td>
+            </tr></tbody>
+        </table>
+        </div>
     </div><div class="agent-card" style="border-top:3px solid #d2a8ff">
         <div class="agent-name" style="color:#d2a8ff">Dividend Agent</div>
         <div class="agent-desc">Focuses on high dividend-yield stocks (2%+) that are in a healthy uptrend — steady income while avoiding value traps.</div>
-        <div class="agent-value">$600.00</div>
-        <div class="pnl pos">+$0.00 (+0.00%)</div>
+        <div class="agent-value">$596.76</div>
+        <div class="pnl neg">$-3.24 (-0.54%)</div>
         <div class="agent-meta">
             <span>Cash: $308.12</span>
             <span>Started: $600.00</span>
             <span>3 trades</span>
         </div>
         <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
-        <div class="positions"><span class="tag" style="border-color:#d2a8ff33">VZ × 2</span><span class="tag" style="border-color:#d2a8ff33">O × 1</span><span class="tag" style="border-color:#d2a8ff33">T × 5</span></div>
+        <div class="positions-section" style="margin-top:10px">
+            <div class="ov-label" style="margin-bottom:6px">Open Positions</div>
+            <table class="pos-table">
+            <thead><tr>
+                <th>Stock</th><th>Shares</th><th>Paid</th><th>Now</th><th>Unrealized</th>
+            </tr></thead>
+            <tbody><tr>
+                <td class="pt-sym" style="color:#d2a8ff;font-weight:700">VZ</td>
+                <td class="pt-num">2</td>
+                <td class="pt-num muted">$46.90</td>
+                <td class="pt-num">$46.77</td>
+                <td class="pt-num neg bold">$-0.25<br><span style="font-size:.68rem;opacity:.8">-0.3%</span></td>
+            </tr><tr>
+                <td class="pt-sym" style="color:#d2a8ff;font-weight:700">O</td>
+                <td class="pt-num">1</td>
+                <td class="pt-num muted">$65.14</td>
+                <td class="pt-num">$64.28</td>
+                <td class="pt-num neg bold">$-0.87<br><span style="font-size:.68rem;opacity:.8">-1.3%</span></td>
+            </tr><tr>
+                <td class="pt-sym" style="color:#d2a8ff;font-weight:700">T</td>
+                <td class="pt-num">5</td>
+                <td class="pt-num muted">$26.59</td>
+                <td class="pt-num">$26.17</td>
+                <td class="pt-num neg bold">$-2.12<br><span style="font-size:.68rem;opacity:.8">-1.6%</span></td>
+            </tr></tbody>
+        </table>
+        </div>
     </div><div class="agent-card" style="border-top:3px solid #ffa657">
             <div class="agent-name">Sentiment Agent</div>
             <div class="agent-desc">Reads recent Yahoo Finance news headlines and scores them. Buys positive coverage, sells negative news cycles.</div>
@@ -212,7 +292,7 @@ tr:hover td { background: #ffffff06; }
             <td class="muted">5</td>
             <td>$26.59</td>
             <td>$132.95</td>
-            <td></td>
+            <td><span class="neg bold">$-2.12</span><br><span class="neg" style="font-size:.7rem">-1.6% open</span></td>
             <td class="reason-cell">T pays a 4.19% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($26.59) is above its 30-hour average ($26.04), confirming a healthy trend. Buying to collect steady income while holding.</td>
         </tr><tr>
             <td class="muted mono">04-20 15:22</td>
@@ -222,7 +302,7 @@ tr:hover td { background: #ffffff06; }
             <td class="muted">1</td>
             <td>$65.14</td>
             <td>$65.14</td>
-            <td></td>
+            <td><span class="neg bold">$-0.87</span><br><span class="neg" style="font-size:.7rem">-1.3% open</span></td>
             <td class="reason-cell">O pays a 4.97% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($65.14) is above its 30-hour average ($64.24), confirming a healthy trend. Buying to collect steady income while holding.</td>
         </tr><tr>
             <td class="muted mono">04-20 15:22</td>
@@ -232,7 +312,7 @@ tr:hover td { background: #ffffff06; }
             <td class="muted">2</td>
             <td>$46.90</td>
             <td>$93.79</td>
-            <td></td>
+            <td><span class="neg bold">$-0.25</span><br><span class="neg" style="font-size:.7rem">-0.3% open</span></td>
             <td class="reason-cell">VZ pays a 6.08% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($46.90) is above its 30-hour average ($45.96), confirming a healthy trend. Buying to collect steady income while holding.</td>
         </tr><tr>
             <td class="muted mono">04-20 15:22</td>
@@ -242,7 +322,7 @@ tr:hover td { background: #ffffff06; }
             <td class="muted">1</td>
             <td>$76.06</td>
             <td>$76.06</td>
-            <td></td>
+            <td><span class="neg bold">$-1.17</span><br><span class="neg" style="font-size:.7rem">-1.5% open</span></td>
             <td class="reason-cell">KO's 10-hour average price ($75.80) is above its 30-hour average ($75.66). This means short-term momentum is stronger than the longer trend — a bullish signal.</td>
         </tr><tr>
             <td class="muted mono">04-20 15:22</td>
@@ -252,7 +332,7 @@ tr:hover td { background: #ffffff06; }
             <td class="muted">2</td>
             <td>$53.58</td>
             <td>$107.17</td>
-            <td></td>
+            <td><span class="pos bold">+$0.48</span><br><span class="pos" style="font-size:.7rem">+0.4% open</span></td>
             <td class="reason-cell">BAC's 10-hour average price ($53.96) is above its 30-hour average ($53.87). This means short-term momentum is stronger than the longer trend — a bullish signal.</td>
         </tr><tr>
             <td class="muted mono">04-20 15:22</td>
@@ -262,7 +342,7 @@ tr:hover td { background: #ffffff06; }
             <td class="muted">1</td>
             <td>$93.97</td>
             <td>$93.97</td>
-            <td></td>
+            <td><span class="neg bold">$-0.59</span><br><span class="neg" style="font-size:.7rem">-0.6% open</span></td>
             <td class="reason-cell">NFLX's RSI is 10.6, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up.</td>
         </tr><tr>
             <td class="muted mono">04-20 15:22</td>
@@ -272,7 +352,7 @@ tr:hover td { background: #ffffff06; }
             <td class="muted">1</td>
             <td>$118.56</td>
             <td>$118.56</td>
-            <td></td>
+            <td><span class="neg bold">$-5.87</span><br><span class="neg" style="font-size:.7rem">-5.0% open</span></td>
             <td class="reason-cell">MRK is ranked #3 out of 25 stocks by momentum. It gained 2.53% over the last 10 hours, showing strong upward price pressure.</td>
         </tr></tbody>
   </table>
@@ -281,7 +361,7 @@ tr:hover td { background: #ffffff06; }
 
 <script>
 // ── Chart ──────────────────────────────────────────────────────────────
-const cd = {"labels": ["04-20 15:22", "04-20 15:39"], "datasets": [{"label": "Momentum Agent", "data": [600.0, 600.0], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [600.0, 600.0], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [600.0, 600.0], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [600.0, 600.0], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
+const cd = {"labels": ["04-20 15:22", "04-20 15:39", "04-21 16:08"], "datasets": [{"label": "Momentum Agent", "data": [600.0, 600.0, 594.13], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [600.0, 600.0, 599.41], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [600.0, 600.0, 599.32], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [600.0, 600.0, 596.76], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
 new Chart(document.getElementById('chart').getContext('2d'), {
   type: 'line',
   data: { labels: cd.labels, datasets: cd.datasets },
