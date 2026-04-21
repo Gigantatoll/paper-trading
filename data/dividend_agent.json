@@ -1,6 +1,6 @@
 {
   "name": "Dividend Agent",
-  "cash": 308.1150016784668,
+  "cash": 86.8650016784668,
   "starting_capital": 600.0,
   "positions": {
     "VZ": {
@@ -14,6 +14,14 @@
     "T": {
       "shares": 5,
       "avg_price": 26.59000015258789
+    },
+    "MO": {
+      "shares": 2,
+      "avg_price": 64.875
+    },
+    "NEE": {
+      "shares": 1,
+      "avg_price": 91.5
     }
   },
   "trades": [
@@ -43,6 +51,24 @@
       "price": 26.59000015258789,
       "total": 132.95000076293945,
       "reason": "T pays a 4.19% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($26.59) is above its 30-hour average ($26.04), confirming a healthy trend. Buying to collect steady income while holding."
+    },
+    {
+      "time": "2026-04-21T16:38:52.801455",
+      "action": "BUY",
+      "symbol": "MO",
+      "shares": 2,
+      "price": 64.875,
+      "total": 129.75,
+      "reason": "MO pays a 6.56% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($64.88) is above its 30-hour average ($64.59), confirming a healthy trend. Buying to collect steady income while holding."
+    },
+    {
+      "time": "2026-04-21T16:38:52.802345",
+      "action": "BUY",
+      "symbol": "NEE",
+      "shares": 1,
+      "price": 91.5,
+      "total": 91.5,
+      "reason": "NEE pays a 2.71% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($91.50) is above its 30-hour average ($91.47), confirming a healthy trend. Buying to collect steady income while holding."
     }
   ]
 }

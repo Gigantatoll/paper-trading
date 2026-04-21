@@ -1,11 +1,19 @@
 {
   "name": "RSI Agent",
-  "cash": 506.0250015258789,
+  "cash": 318.50499725341797,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
       "shares": 1,
       "avg_price": 93.9749984741211
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 112.66000366210938
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 74.86000061035156
     }
   },
   "trades": [
@@ -17,6 +25,24 @@
       "price": 93.9749984741211,
       "total": 93.9749984741211,
       "reason": "NFLX's RSI is 10.6, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-04-21T16:38:52.783122",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 112.66000366210938,
+      "total": 112.66000366210938,
+      "reason": "MRK's RSI is 18.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-04-21T16:38:52.788997",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 74.86000061035156,
+      "total": 74.86000061035156,
+      "reason": "KO's RSI is 27.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
