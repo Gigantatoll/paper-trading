@@ -51,12 +51,13 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .win-bar { height: 5px; border-radius: 4px; transition: width .5s; }
 .positions { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
 .tag { background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; font-size: .74rem; }
-.pos-table { width: 100%; border-collapse: collapse; font-size: .74rem; margin-top: 2px; }
-.pos-table th { color: var(--muted); font-size: .66rem; text-transform: uppercase; letter-spacing: .04em; padding: 3px 6px; text-align: left; border-bottom: 1px solid var(--border); }
-.pos-table td { padding: 5px 6px; border-bottom: 1px solid var(--surface2); line-height: 1.3; }
-.pos-table tr:last-child td { border-bottom: none; }
-.pt-sym { font-size: .8rem; }
-.pt-num { text-align: right; }
+.pos-list { display: flex; flex-direction: column; gap: 5px; margin-top: 4px; }
+.pos-row { display: flex; align-items: center; gap: 6px; font-size: .76rem; background: var(--surface2); border-radius: 6px; padding: 5px 8px; flex-wrap: wrap; }
+.pos-sym { font-weight: 700; font-size: .82rem; min-width: 38px; }
+.pos-shares { font-size: .72rem; }
+.pos-prices { font-size: .72rem; flex: 1; }
+.pos-pnl { font-weight: 700; font-size: .78rem; margin-left: auto; white-space: nowrap; }
+.pos-pct { font-weight: 400; opacity: .85; }
 
 /* ── Chart ── */
 .chart-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 28px; }
@@ -91,7 +92,7 @@ tr:hover td { background: #ffffff06; }
   <div class="topbar-right">
     <div>
       <div class="ov-label">Data fetched</div>
-      <div style="color:var(--text);font-size:.82rem">2026-04-21 16:38 UTC</div>
+      <div style="color:var(--text);font-size:.82rem">2026-04-21 17:36 UTC</div>
     </div>
     <div>
       <div class="ov-label">Data delay</div>
@@ -170,30 +171,22 @@ tr:hover td { background: #ffffff06; }
         <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
         <div class="positions-section" style="margin-top:10px">
             <div class="ov-label" style="margin-bottom:6px">Open Positions</div>
-            <table class="pos-table">
-            <thead><tr>
-                <th>Stock</th><th>Shares</th><th>Paid</th><th>Now</th><th>Unrealized</th>
-            </tr></thead>
-            <tbody><tr>
-                <td class="pt-sym" style="color:#58a6ff;font-weight:700">NFLX</td>
-                <td class="pt-num">1</td>
-                <td class="pt-num muted">$93.97</td>
-                <td class="pt-num">$93.18</td>
-                <td class="pt-num neg bold">$-0.79<br><span style="font-size:.68rem;opacity:.8">-0.8%</span></td>
-            </tr><tr>
-                <td class="pt-sym" style="color:#58a6ff;font-weight:700">MRK</td>
-                <td class="pt-num">1</td>
-                <td class="pt-num muted">$112.66</td>
-                <td class="pt-num">$112.66</td>
-                <td class="pt-num pos bold">+$0.00<br><span style="font-size:.68rem;opacity:.8">+0.0%</span></td>
-            </tr><tr>
-                <td class="pt-sym" style="color:#58a6ff;font-weight:700">KO</td>
-                <td class="pt-num">1</td>
-                <td class="pt-num muted">$74.86</td>
-                <td class="pt-num">$74.86</td>
-                <td class="pt-num pos bold">+$0.00<br><span style="font-size:.68rem;opacity:.8">+0.0%</span></td>
-            </tr></tbody>
-        </table>
+            <div class="pos-list"><div class="pos-row">
+                <span class="pos-sym" style="color:#58a6ff">NFLX</span>
+                <span class="pos-shares muted">1×</span>
+                <span class="pos-prices muted">$93.97 → $93.18</span>
+                <span class="pos-pnl neg">$-0.79 <span class="pos-pct">(-0.8%)</span></span>
+            </div><div class="pos-row">
+                <span class="pos-sym" style="color:#58a6ff">MRK</span>
+                <span class="pos-shares muted">1×</span>
+                <span class="pos-prices muted">$112.66 → $112.66</span>
+                <span class="pos-pnl pos">+$0.00 <span class="pos-pct">(+0.0%)</span></span>
+            </div><div class="pos-row">
+                <span class="pos-sym" style="color:#58a6ff">KO</span>
+                <span class="pos-shares muted">1×</span>
+                <span class="pos-prices muted">$74.86 → $74.86</span>
+                <span class="pos-pnl pos">+$0.00 <span class="pos-pct">(+0.0%)</span></span>
+            </div></div>
         </div>
     </div><div class="agent-card" style="border-top:3px solid #3fb950">
         <div class="agent-name" style="color:#3fb950">MA Crossover</div>
@@ -212,18 +205,12 @@ tr:hover td { background: #ffffff06; }
         <div class="win-bar-bg"><div class="win-bar" style="width:25%;background:#3fb950"></div></div>
         <div class="positions-section" style="margin-top:10px">
             <div class="ov-label" style="margin-bottom:6px">Open Positions</div>
-            <table class="pos-table">
-            <thead><tr>
-                <th>Stock</th><th>Shares</th><th>Paid</th><th>Now</th><th>Unrealized</th>
-            </tr></thead>
-            <tbody><tr>
-                <td class="pt-sym" style="color:#3fb950;font-weight:700">WMT</td>
-                <td class="pt-num">1</td>
-                <td class="pt-num muted">$128.17</td>
-                <td class="pt-num">$129.20</td>
-                <td class="pt-num pos bold">+$1.03<br><span style="font-size:.68rem;opacity:.8">+0.8%</span></td>
-            </tr></tbody>
-        </table>
+            <div class="pos-list"><div class="pos-row">
+                <span class="pos-sym" style="color:#3fb950">WMT</span>
+                <span class="pos-shares muted">1×</span>
+                <span class="pos-prices muted">$128.17 → $129.20</span>
+                <span class="pos-pnl pos">+$1.03 <span class="pos-pct">(+0.8%)</span></span>
+            </div></div>
         </div>
     </div><div class="agent-card" style="border-top:3px solid #d2a8ff">
         <div class="agent-name" style="color:#d2a8ff">Dividend Agent</div>
@@ -238,42 +225,32 @@ tr:hover td { background: #ffffff06; }
         <div class="ov-label" style="margin-top:8px">Win rate: no closed trades yet</div>
         <div class="positions-section" style="margin-top:10px">
             <div class="ov-label" style="margin-bottom:6px">Open Positions</div>
-            <table class="pos-table">
-            <thead><tr>
-                <th>Stock</th><th>Shares</th><th>Paid</th><th>Now</th><th>Unrealized</th>
-            </tr></thead>
-            <tbody><tr>
-                <td class="pt-sym" style="color:#d2a8ff;font-weight:700">VZ</td>
-                <td class="pt-num">2</td>
-                <td class="pt-num muted">$46.90</td>
-                <td class="pt-num">$46.61</td>
-                <td class="pt-num neg bold">$-0.56<br><span style="font-size:.68rem;opacity:.8">-0.6%</span></td>
-            </tr><tr>
-                <td class="pt-sym" style="color:#d2a8ff;font-weight:700">O</td>
-                <td class="pt-num">1</td>
-                <td class="pt-num muted">$65.14</td>
-                <td class="pt-num">$64.38</td>
-                <td class="pt-num neg bold">$-0.76<br><span style="font-size:.68rem;opacity:.8">-1.2%</span></td>
-            </tr><tr>
-                <td class="pt-sym" style="color:#d2a8ff;font-weight:700">T</td>
-                <td class="pt-num">5</td>
-                <td class="pt-num muted">$26.59</td>
-                <td class="pt-num">$26.15</td>
-                <td class="pt-num neg bold">$-2.22<br><span style="font-size:.68rem;opacity:.8">-1.7%</span></td>
-            </tr><tr>
-                <td class="pt-sym" style="color:#d2a8ff;font-weight:700">MO</td>
-                <td class="pt-num">2</td>
-                <td class="pt-num muted">$64.88</td>
-                <td class="pt-num">$64.88</td>
-                <td class="pt-num pos bold">+$0.00<br><span style="font-size:.68rem;opacity:.8">+0.0%</span></td>
-            </tr><tr>
-                <td class="pt-sym" style="color:#d2a8ff;font-weight:700">NEE</td>
-                <td class="pt-num">1</td>
-                <td class="pt-num muted">$91.50</td>
-                <td class="pt-num">$91.50</td>
-                <td class="pt-num pos bold">+$0.00<br><span style="font-size:.68rem;opacity:.8">+0.0%</span></td>
-            </tr></tbody>
-        </table>
+            <div class="pos-list"><div class="pos-row">
+                <span class="pos-sym" style="color:#d2a8ff">VZ</span>
+                <span class="pos-shares muted">2×</span>
+                <span class="pos-prices muted">$46.90 → $46.61</span>
+                <span class="pos-pnl neg">$-0.56 <span class="pos-pct">(-0.6%)</span></span>
+            </div><div class="pos-row">
+                <span class="pos-sym" style="color:#d2a8ff">O</span>
+                <span class="pos-shares muted">1×</span>
+                <span class="pos-prices muted">$65.14 → $64.38</span>
+                <span class="pos-pnl neg">$-0.76 <span class="pos-pct">(-1.2%)</span></span>
+            </div><div class="pos-row">
+                <span class="pos-sym" style="color:#d2a8ff">T</span>
+                <span class="pos-shares muted">5×</span>
+                <span class="pos-prices muted">$26.59 → $26.15</span>
+                <span class="pos-pnl neg">$-2.22 <span class="pos-pct">(-1.7%)</span></span>
+            </div><div class="pos-row">
+                <span class="pos-sym" style="color:#d2a8ff">MO</span>
+                <span class="pos-shares muted">2×</span>
+                <span class="pos-prices muted">$64.88 → $64.88</span>
+                <span class="pos-pnl pos">+$0.00 <span class="pos-pct">(+0.0%)</span></span>
+            </div><div class="pos-row">
+                <span class="pos-sym" style="color:#d2a8ff">NEE</span>
+                <span class="pos-shares muted">1×</span>
+                <span class="pos-prices muted">$91.50 → $91.50</span>
+                <span class="pos-pnl pos">+$0.00 <span class="pos-pct">(+0.0%)</span></span>
+            </div></div>
         </div>
     </div><div class="agent-card" style="border-top:3px solid #ffa657">
             <div class="agent-name">Sentiment Agent</div>
@@ -496,7 +473,7 @@ tr:hover td { background: #ffffff06; }
 
 <script>
 // ── Chart ──────────────────────────────────────────────────────────────
-const cd = {"labels": ["04-20 15:22", "04-20 15:39", "04-20 16:45", "04-20 20:06", "04-20 22:29", "04-21 16:08", "04-21 16:10", "04-21 16:38"], "datasets": [{"label": "Momentum Agent", "data": [600.0, 600.0, 599.75, 599.75, 599.75, 594.13, 599.75, 599.75], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [600.0, 600.0, 600.0, 600.0, 600.0, 599.41, 599.41, 599.21], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [600.0, 600.0, 600.0, 600.0, 600.0, 599.32, 593.7, 592.43], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [600.0, 600.0, 600.0, 600.0, 600.0, 596.76, 596.76, 596.45], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null, null, null, null, null, null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
+const cd = {"labels": ["04-20 15:22", "04-20 15:39", "04-20 16:45", "04-20 20:06", "04-20 22:29", "04-21 16:08", "04-21 16:10", "04-21 17:35", "04-21 17:36"], "datasets": [{"label": "Momentum Agent", "data": [600.0, 600.0, 599.75, 599.75, 599.75, 594.13, 599.75, 599.75, 599.75], "borderColor": "#f0883e", "backgroundColor": "#f0883e18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "RSI Agent", "data": [600.0, 600.0, 600.0, 600.0, 600.0, 599.41, 599.41, 599.41, 599.21], "borderColor": "#58a6ff", "backgroundColor": "#58a6ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "MA Crossover", "data": [600.0, 600.0, 600.0, 600.0, 600.0, 599.32, 593.7, 593.7, 592.43], "borderColor": "#3fb950", "backgroundColor": "#3fb95018", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Dividend Agent", "data": [600.0, 600.0, 600.0, 600.0, 600.0, 596.76, 596.76, 596.76, 596.45], "borderColor": "#d2a8ff", "backgroundColor": "#d2a8ff18", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}, {"label": "Sentiment Agent", "data": [null, null, null, null, null, null, null, null, null], "borderColor": "#ffa657", "backgroundColor": "#ffa65718", "fill": false, "tension": 0.4, "pointRadius": 0, "pointHoverRadius": 4, "borderWidth": 2}]};
 new Chart(document.getElementById('chart').getContext('2d'), {
   type: 'line',
   data: { labels: cd.labels, datasets: cd.datasets },
