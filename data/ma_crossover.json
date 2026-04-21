@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 416.77000427246094,
+  "cash": 13.530014038085938,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -10,6 +10,18 @@
     "KO": {
       "shares": 1,
       "avg_price": 76.05999755859375
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 128.1699981689453
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 118.30999755859375
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 156.75999450683594
     }
   },
   "trades": [
@@ -30,6 +42,33 @@
       "price": 76.05999755859375,
       "total": 76.05999755859375,
       "reason": "KO's 10-hour average price ($75.80) is above its 30-hour average ($75.66). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-04-20T16:45:03.639999",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 128.1699981689453,
+      "total": 128.1699981689453,
+      "reason": "WMT's 10-hour average price ($127.17) is above its 30-hour average ($125.47). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-04-20T16:45:03.641220",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 118.30999755859375,
+      "total": 118.30999755859375,
+      "reason": "MRK's 10-hour average price ($118.25) is above its 30-hour average ($117.84). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-04-20T16:45:03.642086",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 156.75999450683594,
+      "total": 156.75999450683594,
+      "reason": "PEP's 10-hour average price ($157.38) is above its 30-hour average ($156.64). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }

@@ -1,13 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 481.44000244140625,
+  "cash": 599.75,
   "starting_capital": 600.0,
-  "positions": {
-    "MRK": {
-      "shares": 1,
-      "avg_price": 118.55999755859375
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -17,6 +12,16 @@
       "price": 118.55999755859375,
       "total": 118.55999755859375,
       "reason": "MRK is ranked #3 out of 25 stocks by momentum. It gained 2.53% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-04-20T16:45:03.614414",
+      "action": "SELL",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 118.30999755859375,
+      "total": 118.30999755859375,
+      "reason": "MRK dropped out of the top 5 momentum stocks (current momentum: 0.70%). Rotating into stronger performers.",
+      "trade_pnl": -0.25
     }
   ]
 }
