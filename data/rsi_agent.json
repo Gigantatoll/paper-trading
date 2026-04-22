@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 318.50499725341797,
+  "cash": 176.0719985961914,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
@@ -14,6 +14,10 @@
     "KO": {
       "shares": 1,
       "avg_price": 74.86000061035156
+    },
+    "PG": {
+      "shares": 1,
+      "avg_price": 142.43299865722656
     }
   },
   "trades": [
@@ -43,6 +47,15 @@
       "price": 74.86000061035156,
       "total": 74.86000061035156,
       "reason": "KO's RSI is 27.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-04-22T16:40:15.440360",
+      "action": "BUY",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 142.43299865722656,
+      "total": 142.43299865722656,
+      "reason": "PG's RSI is 28.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
