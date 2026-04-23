@@ -1,8 +1,21 @@
 {
   "name": "Momentum Agent",
-  "cash": 599.75,
+  "cash": 276.4699935913086,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "KO": {
+      "shares": 1,
+      "avg_price": 76.52999877929688
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 114.62000274658203
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 132.1300048828125
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -22,6 +35,33 @@
       "total": 118.30999755859375,
       "reason": "MRK dropped out of the top 5 momentum stocks (current momentum: 0.70%). Rotating into stronger performers.",
       "trade_pnl": -0.25
+    },
+    {
+      "time": "2026-04-23T17:55:40.457624",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 76.52999877929688,
+      "total": 76.52999877929688,
+      "reason": "KO is ranked #2 out of 25 stocks by momentum. It gained 2.02% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-04-23T17:55:40.457944",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 114.62000274658203,
+      "total": 114.62000274658203,
+      "reason": "MRK is ranked #3 out of 25 stocks by momentum. It gained 2.01% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-04-23T17:55:40.458386",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 132.1300048828125,
+      "total": 132.1300048828125,
+      "reason": "WMT is ranked #5 out of 25 stocks by momentum. It gained 1.60% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }

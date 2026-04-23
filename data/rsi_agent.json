@@ -1,23 +1,15 @@
 {
   "name": "RSI Agent",
-  "cash": 176.0719985961914,
+  "cash": 355.31199645996094,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
       "shares": 1,
       "avg_price": 93.9749984741211
     },
-    "MRK": {
-      "shares": 1,
-      "avg_price": 112.66000366210938
-    },
-    "KO": {
-      "shares": 1,
-      "avg_price": 74.86000061035156
-    },
-    "PG": {
-      "shares": 1,
-      "avg_price": 142.43299865722656
+    "BAC": {
+      "shares": 3,
+      "avg_price": 52.470001220703125
     }
   },
   "trades": [
@@ -56,6 +48,45 @@
       "price": 142.43299865722656,
       "total": 142.43299865722656,
       "reason": "PG's RSI is 28.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-04-23T17:55:40.474996",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 145.5,
+      "total": 145.5,
+      "reason": "PG's RSI climbed to 74.1, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 3.07
+    },
+    {
+      "time": "2026-04-23T17:55:40.477599",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 3,
+      "price": 52.470001220703125,
+      "total": 157.41000366210938,
+      "reason": "BAC's RSI is 32.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-04-23T17:55:40.481102",
+      "action": "SELL",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 114.62000274658203,
+      "total": 114.62000274658203,
+      "reason": "MRK's RSI climbed to 77.1, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.96
+    },
+    {
+      "time": "2026-04-23T17:55:40.486728",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 76.52999877929688,
+      "total": 76.52999877929688,
+      "reason": "KO's RSI climbed to 67.4, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.67
     }
   ]
 }
