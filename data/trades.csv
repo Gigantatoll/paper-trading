@@ -27,3 +27,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-04-23 17:55,RSI Agent,SELL,MRK,1,114.62,114.62,1.96,"MRK's RSI climbed to 77.1, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-04-23 17:55,RSI Agent,SELL,KO,1,76.53,76.53,1.67,"KO's RSI climbed to 67.4, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-04-23 17:55,MA Crossover,BUY,KO,1,76.53,76.53,,KO's 10-hour average price ($75.54) is above its 30-hour average ($75.45). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-04-24 16:14,Momentum Agent,SELL,MRK,1,112.255,112.25,-2.37,MRK lost momentum: down 0.55% over the last 10 hours. Selling to avoid further losses.
+2026-04-24 16:14,Momentum Agent,SELL,WMT,1,130.5,130.5,-1.63,WMT dropped out of the top 5 momentum stocks (current momentum: 0.42%). Rotating into stronger performers.
