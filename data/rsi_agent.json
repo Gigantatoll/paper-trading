@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 355.31199645996094,
+  "cash": 244.18699645996094,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
@@ -10,6 +10,10 @@
     "BAC": {
       "shares": 3,
       "avg_price": 52.470001220703125
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 111.125
     }
   },
   "trades": [
@@ -87,6 +91,15 @@
       "total": 76.52999877929688,
       "reason": "KO's RSI climbed to 67.4, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 1.67
+    },
+    {
+      "time": "2026-04-27T17:49:49.529747",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 111.125,
+      "total": 111.125,
+      "reason": "MRK's RSI is 17.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
