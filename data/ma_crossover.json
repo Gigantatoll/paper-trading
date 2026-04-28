@@ -1,11 +1,15 @@
 {
   "name": "MA Crossover",
-  "cash": 514.630012512207,
+  "cash": 409.0600128173828,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
       "shares": 1,
       "avg_price": 76.52999877929688
+    },
+    "BAC": {
+      "shares": 2,
+      "avg_price": 52.78499984741211
     }
   },
   "trades": [
@@ -112,6 +116,15 @@
       "total": 127.93000030517578,
       "reason": "WMT's 10-hour average ($129.14) dropped below its 30-hour average ($130.06). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -0.24
+    },
+    {
+      "time": "2026-04-28T18:10:20.057222",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 52.78499984741211,
+      "total": 105.56999969482422,
+      "reason": "BAC's 10-hour average price ($52.71) is above its 30-hour average ($52.64). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
