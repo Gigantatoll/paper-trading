@@ -35,3 +35,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-04-28 18:10,Momentum Agent,BUY,KO,1,79.035,79.04,,"KO is ranked #2 out of 25 stocks by momentum. It gained 4.03% over the last 10 hours, showing strong upward price pressure."
 2026-04-28 18:10,RSI Agent,SELL,BAC,3,52.785,158.35,0.94,"BAC's RSI climbed to 69.8, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-04-28 18:10,MA Crossover,BUY,BAC,2,52.785,105.57,,BAC's 10-hour average price ($52.71) is above its 30-hour average ($52.64). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-04-29 18:03,Momentum Agent,SELL,KO,1,78.97,78.97,-0.07,KO lost momentum: down 1.50% over the last 10 hours. Selling to avoid further losses.
+2026-04-29 18:03,Momentum Agent,BUY,NFLX,1,92.24,92.24,,"NFLX is ranked #4 out of 25 stocks by momentum. It gained 1.88% over the last 10 hours, showing strong upward price pressure."
