@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 409.0600128173828,
+  "cash": 183.7200164794922,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
@@ -10,6 +10,14 @@
     "BAC": {
       "shares": 2,
       "avg_price": 52.78499984741211
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 131.80999755859375
+    },
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 93.52999877929688
     }
   },
   "trades": [
@@ -125,6 +133,24 @@
       "price": 52.78499984741211,
       "total": 105.56999969482422,
       "reason": "BAC's 10-hour average price ($52.71) is above its 30-hour average ($52.64). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-04-30T17:52:34.816225",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 131.80999755859375,
+      "total": 131.80999755859375,
+      "reason": "WMT's 10-hour average price ($129.58) is above its 30-hour average ($128.62). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-04-30T17:52:34.818482",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 93.52999877929688,
+      "total": 93.52999877929688,
+      "reason": "NFLX's 10-hour average price ($92.69) is above its 30-hour average ($92.17). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }

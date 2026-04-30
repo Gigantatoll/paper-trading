@@ -1,12 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 402.54199600219727,
+  "cash": 496.07199478149414,
   "starting_capital": 600.0,
   "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 93.9749984741211
-    },
     "MRK": {
       "shares": 1,
       "avg_price": 111.125
@@ -106,6 +102,16 @@
       "total": 158.35499954223633,
       "reason": "BAC's RSI climbed to 69.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 0.94
+    },
+    {
+      "time": "2026-04-30T17:52:34.813463",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 93.52999877929688,
+      "total": 93.52999877929688,
+      "reason": "NFLX's RSI climbed to 76.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -0.44
     }
   ]
 }
