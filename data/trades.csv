@@ -41,3 +41,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-04-30 17:52,RSI Agent,SELL,NFLX,1,93.53,93.53,-0.44,"NFLX's RSI climbed to 76.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-04-30 17:52,MA Crossover,BUY,WMT,1,131.81,131.81,,WMT's 10-hour average price ($129.58) is above its 30-hour average ($128.62). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-04-30 17:52,MA Crossover,BUY,NFLX,1,93.53,93.53,,NFLX's 10-hour average price ($92.69) is above its 30-hour average ($92.17). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-01 16:13,MA Crossover,BUY,XOM,1,152.385,152.38,,XOM's 10-hour average price ($154.10) is above its 30-hour average ($152.22). This means short-term momentum is stronger than the longer trend — a bullish signal.

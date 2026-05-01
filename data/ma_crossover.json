@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 183.7200164794922,
+  "cash": 31.33502197265625,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
@@ -18,6 +18,10 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 93.52999877929688
+    },
+    "XOM": {
+      "shares": 1,
+      "avg_price": 152.38499450683594
     }
   },
   "trades": [
@@ -151,6 +155,15 @@
       "price": 93.52999877929688,
       "total": 93.52999877929688,
       "reason": "NFLX's 10-hour average price ($92.69) is above its 30-hour average ($92.17). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-01T16:13:57.422235",
+      "action": "BUY",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 152.38499450683594,
+      "total": 152.38499450683594,
+      "reason": "XOM's 10-hour average price ($154.10) is above its 30-hour average ($152.22). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
