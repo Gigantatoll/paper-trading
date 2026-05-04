@@ -1,27 +1,15 @@
 {
   "name": "MA Crossover",
-  "cash": 31.33502197265625,
+  "cash": 345.89501953125,
   "starting_capital": 600.0,
   "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 76.52999877929688
-    },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 52.78499984741211
-    },
     "WMT": {
       "shares": 1,
       "avg_price": 131.80999755859375
     },
-    "NFLX": {
+    "MRK": {
       "shares": 1,
-      "avg_price": 93.52999877929688
-    },
-    "XOM": {
-      "shares": 1,
-      "avg_price": 152.38499450683594
+      "avg_price": 113.61000061035156
     }
   },
   "trades": [
@@ -164,6 +152,55 @@
       "price": 152.38499450683594,
       "total": 152.38499450683594,
       "reason": "XOM's 10-hour average price ($154.10) is above its 30-hour average ($152.22). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-04T18:05:10.676137",
+      "action": "SELL",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 153.625,
+      "total": 153.625,
+      "reason": "XOM's 10-hour average ($153.10) dropped below its 30-hour average ($153.33). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 1.24
+    },
+    {
+      "time": "2026-05-04T18:05:10.676709",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 52.474998474121094,
+      "total": 104.94999694824219,
+      "reason": "BAC's 10-hour average ($52.84) dropped below its 30-hour average ($52.99). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.62
+    },
+    {
+      "time": "2026-05-04T18:05:10.677695",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 113.61000061035156,
+      "total": 113.61000061035156,
+      "reason": "MRK's 10-hour average price ($112.97) is above its 30-hour average ($111.41). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-04T18:05:10.679054",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 78.36499786376953,
+      "total": 78.36499786376953,
+      "reason": "KO's 10-hour average ($78.45) dropped below its 30-hour average ($78.68). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 1.83
+    },
+    {
+      "time": "2026-05-04T18:05:10.679652",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 91.2300033569336,
+      "total": 91.2300033569336,
+      "reason": "NFLX's 10-hour average ($92.07) dropped below its 30-hour average ($92.51). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -2.3
     }
   ]
 }
