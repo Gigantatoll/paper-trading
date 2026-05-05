@@ -51,3 +51,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-04 18:05,MA Crossover,BUY,MRK,1,113.61,113.61,,MRK's 10-hour average price ($112.97) is above its 30-hour average ($111.41). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-05-04 18:05,MA Crossover,SELL,KO,1,78.365,78.36,1.83,KO's 10-hour average ($78.45) dropped below its 30-hour average ($78.68). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-05-04 18:05,MA Crossover,SELL,NFLX,1,91.23,91.23,-2.3,NFLX's 10-hour average ($92.07) dropped below its 30-hour average ($92.51). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-05-05 18:02,Momentum Agent,SELL,MRK,1,113.55,113.55,-0.06,MRK dropped out of the top 5 momentum stocks (current momentum: 0.18%). Rotating into stronger performers.
+2026-05-05 18:02,Momentum Agent,BUY,BAC,2,53.185,106.37,,"BAC is ranked #3 out of 25 stocks by momentum. It gained 2.07% over the last 10 hours, showing strong upward price pressure."
+2026-05-05 18:02,MA Crossover,SELL,WMT,1,131.31,131.31,-0.5,WMT's 10-hour average ($130.53) dropped below its 30-hour average ($130.78). This crossover is a classic bearish signal — the short-term trend has turned down.

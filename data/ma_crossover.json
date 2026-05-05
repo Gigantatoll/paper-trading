@@ -1,12 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 345.89501953125,
+  "cash": 477.20501708984375,
   "starting_capital": 600.0,
   "positions": {
-    "WMT": {
-      "shares": 1,
-      "avg_price": 131.80999755859375
-    },
     "MRK": {
       "shares": 1,
       "avg_price": 113.61000061035156
@@ -201,6 +197,16 @@
       "total": 91.2300033569336,
       "reason": "NFLX's 10-hour average ($92.07) dropped below its 30-hour average ($92.51). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -2.3
+    },
+    {
+      "time": "2026-05-05T18:02:45.424539",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 131.30999755859375,
+      "total": 131.30999755859375,
+      "reason": "WMT's 10-hour average ($130.53) dropped below its 30-hour average ($130.78). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.5
     }
   ]
 }
