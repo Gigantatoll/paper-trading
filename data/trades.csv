@@ -54,3 +54,7 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-05 18:02,Momentum Agent,SELL,MRK,1,113.55,113.55,-0.06,MRK dropped out of the top 5 momentum stocks (current momentum: 0.18%). Rotating into stronger performers.
 2026-05-05 18:02,Momentum Agent,BUY,BAC,2,53.185,106.37,,"BAC is ranked #3 out of 25 stocks by momentum. It gained 2.07% over the last 10 hours, showing strong upward price pressure."
 2026-05-05 18:02,MA Crossover,SELL,WMT,1,131.31,131.31,-0.5,WMT's 10-hour average ($130.53) dropped below its 30-hour average ($130.78). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-05-06 18:06,Momentum Agent,SELL,BAC,2,53.59,107.18,0.81,BAC dropped out of the top 5 momentum stocks (current momentum: 0.72%). Rotating into stronger performers.
+2026-05-06 18:06,RSI Agent,SELL,BAC,2,53.59,107.18,2.23,"BAC's RSI climbed to 81.2, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-05-06 18:06,MA Crossover,BUY,BAC,2,53.59,107.18,,BAC's 10-hour average price ($53.45) is above its 30-hour average ($53.17). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-06 18:06,MA Crossover,BUY,KO,1,79.015,79.01,,KO's 10-hour average price ($78.70) is above its 30-hour average ($78.55). This means short-term momentum is stronger than the longer trend — a bullish signal.

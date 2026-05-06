@@ -1,13 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 490.52498626708984,
+  "cash": 597.7049865722656,
   "starting_capital": 600.0,
-  "positions": {
-    "BAC": {
-      "shares": 2,
-      "avg_price": 53.185001373291016
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -150,6 +145,16 @@
       "price": 53.185001373291016,
       "total": 106.37000274658203,
       "reason": "BAC is ranked #3 out of 25 stocks by momentum. It gained 2.07% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-05-06T18:06:08.311899",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 53.59000015258789,
+      "total": 107.18000030517578,
+      "reason": "BAC dropped out of the top 5 momentum stocks (current momentum: 0.72%). Rotating into stronger performers.",
+      "trade_pnl": 0.81
     }
   ]
 }
