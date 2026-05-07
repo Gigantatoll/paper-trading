@@ -58,3 +58,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-06 18:06,RSI Agent,SELL,BAC,2,53.59,107.18,2.23,"BAC's RSI climbed to 81.2, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-05-06 18:06,MA Crossover,BUY,BAC,2,53.59,107.18,,BAC's 10-hour average price ($53.45) is above its 30-hour average ($53.17). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-05-06 18:06,MA Crossover,BUY,KO,1,79.015,79.01,,KO's 10-hour average price ($78.70) is above its 30-hour average ($78.55). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-07 18:16,RSI Agent,BUY,MRK,1,111.8,111.8,,"MRK's RSI is 31.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-05-07 18:16,MA Crossover,SELL,MRK,1,111.8,111.8,-1.81,MRK's 10-hour average ($112.50) dropped below its 30-hour average ($112.98). This crossover is a classic bearish signal — the short-term trend has turned down.

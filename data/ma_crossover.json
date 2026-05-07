@@ -1,12 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 291.01001739501953,
+  "cash": 402.81002044677734,
   "starting_capital": 600.0,
   "positions": {
-    "MRK": {
-      "shares": 1,
-      "avg_price": 113.61000061035156
-    },
     "BAC": {
       "shares": 2,
       "avg_price": 53.59000015258789
@@ -233,6 +229,16 @@
       "price": 79.01499938964844,
       "total": 79.01499938964844,
       "reason": "KO's 10-hour average price ($78.70) is above its 30-hour average ($78.55). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-07T18:16:30.240908",
+      "action": "SELL",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 111.80000305175781,
+      "total": 111.80000305175781,
+      "reason": "MRK's 10-hour average ($112.50) dropped below its 30-hour average ($112.98). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -1.81
     }
   ]
 }
