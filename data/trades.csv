@@ -60,3 +60,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-06 18:06,MA Crossover,BUY,KO,1,79.015,79.01,,KO's 10-hour average price ($78.70) is above its 30-hour average ($78.55). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-05-07 18:16,RSI Agent,BUY,MRK,1,111.8,111.8,,"MRK's RSI is 31.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-05-07 18:16,MA Crossover,SELL,MRK,1,111.8,111.8,-1.81,MRK's 10-hour average ($112.50) dropped below its 30-hour average ($112.98). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-05-08 16:58,RSI Agent,BUY,BAC,2,51.485,102.97,,"BAC's RSI is 14.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-05-08 16:58,MA Crossover,BUY,WMT,1,130.97,130.97,,WMT's 10-hour average price ($130.37) is above its 30-hour average ($130.35). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-08 16:58,MA Crossover,SELL,BAC,2,51.485,102.97,-4.21,BAC's 10-hour average ($52.50) dropped below its 30-hour average ($52.91). This crossover is a classic bearish signal — the short-term trend has turned down.
