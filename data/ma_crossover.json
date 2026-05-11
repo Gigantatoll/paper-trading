@@ -1,17 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 374.81002044677734,
+  "cash": 579.8601150512695,
   "starting_capital": 600.0,
-  "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 79.01499938964844
-    },
-    "WMT": {
-      "shares": 1,
-      "avg_price": 130.97000122070312
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.518918",
@@ -258,6 +249,26 @@
       "total": 102.97000122070312,
       "reason": "BAC's 10-hour average ($52.50) dropped below its 30-hour average ($52.91). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -4.21
+    },
+    {
+      "time": "2026-05-11T19:17:31.353160",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 126.73999786376953,
+      "total": 126.73999786376953,
+      "reason": "WMT's 10-hour average ($128.69) dropped below its 30-hour average ($129.75). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -4.23
+    },
+    {
+      "time": "2026-05-11T19:17:31.356031",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 78.31009674072266,
+      "total": 78.31009674072266,
+      "reason": "KO's 10-hour average ($78.29) dropped below its 30-hour average ($78.62). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.7
     }
   ]
 }
