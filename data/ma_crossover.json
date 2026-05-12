@@ -1,8 +1,17 @@
 {
   "name": "MA Crossover",
-  "cash": 579.8601150512695,
+  "cash": 386.6451110839844,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "MRK": {
+      "shares": 1,
+      "avg_price": 113.05000305175781
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 80.16500091552734
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.518918",
@@ -269,6 +278,24 @@
       "total": 78.31009674072266,
       "reason": "KO's 10-hour average ($78.29) dropped below its 30-hour average ($78.62). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -0.7
+    },
+    {
+      "time": "2026-05-12T19:20:59.284037",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 113.05000305175781,
+      "total": 113.05000305175781,
+      "reason": "MRK's 10-hour average price ($112.54) is above its 30-hour average ($112.35). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-12T19:20:59.285737",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 80.16500091552734,
+      "total": 80.16500091552734,
+      "reason": "KO's 10-hour average price ($79.29) is above its 30-hour average ($78.85). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
