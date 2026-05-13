@@ -70,3 +70,8 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-12 19:20,Momentum Agent,BUY,KO,1,80.165,80.17,,"KO is ranked #3 out of 25 stocks by momentum. It gained 2.89% over the last 10 hours, showing strong upward price pressure."
 2026-05-12 19:20,MA Crossover,BUY,MRK,1,113.05,113.05,,MRK's 10-hour average price ($112.54) is above its 30-hour average ($112.35). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-05-12 19:20,MA Crossover,BUY,KO,1,80.165,80.17,,KO's 10-hour average price ($79.29) is above its 30-hour average ($78.85). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-13 19:24,Momentum Agent,SELL,KO,1,80.375,80.38,0.21,KO dropped out of the top 5 momentum stocks (current momentum: 0.61%). Rotating into stronger performers.
+2026-05-13 19:24,RSI Agent,SELL,WMT,1,131.32,131.32,4.58,"WMT's RSI climbed to 80.4, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-05-13 19:24,RSI Agent,SELL,MRK,1,113.78,113.78,1.98,"MRK's RSI climbed to 73.3, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-05-13 19:24,RSI Agent,SELL,NFLX,1,88.09,88.09,-3.14,"NFLX's RSI climbed to 69.2, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-05-13 19:24,MA Crossover,BUY,NFLX,1,88.09,88.09,,NFLX's 10-hour average price ($87.66) is above its 30-hour average ($87.41). This means short-term momentum is stronger than the longer trend — a bullish signal.

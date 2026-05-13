@@ -1,23 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 36.55698776245117,
+  "cash": 369.7469902038574,
   "starting_capital": 600.0,
   "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 91.2300033569336
-    },
-    "MRK": {
-      "shares": 1,
-      "avg_price": 111.80000305175781
-    },
     "BAC": {
       "shares": 2,
       "avg_price": 51.48500061035156
-    },
-    "WMT": {
-      "shares": 1,
-      "avg_price": 126.73999786376953
     },
     "PG": {
       "shares": 1,
@@ -202,6 +190,36 @@
       "price": 142.61500549316406,
       "total": 142.61500549316406,
       "reason": "PG's RSI is 22.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-05-13T19:24:29.107686",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 131.32000732421875,
+      "total": 131.32000732421875,
+      "reason": "WMT's RSI climbed to 80.4, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 4.58
+    },
+    {
+      "time": "2026-05-13T19:24:29.114759",
+      "action": "SELL",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 113.77999877929688,
+      "total": 113.77999877929688,
+      "reason": "MRK's RSI climbed to 73.3, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.98
+    },
+    {
+      "time": "2026-05-13T19:24:29.121680",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 88.08999633789062,
+      "total": 88.08999633789062,
+      "reason": "NFLX's RSI climbed to 69.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -3.14
     }
   ]
 }

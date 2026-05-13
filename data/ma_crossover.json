@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 386.6451110839844,
+  "cash": 298.55511474609375,
   "starting_capital": 600.0,
   "positions": {
     "MRK": {
@@ -10,6 +10,10 @@
     "KO": {
       "shares": 1,
       "avg_price": 80.16500091552734
+    },
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 88.08999633789062
     }
   },
   "trades": [
@@ -296,6 +300,15 @@
       "price": 80.16500091552734,
       "total": 80.16500091552734,
       "reason": "KO's 10-hour average price ($79.29) is above its 30-hour average ($78.85). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-13T19:24:29.127481",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 88.08999633789062,
+      "total": 88.08999633789062,
+      "reason": "NFLX's 10-hour average price ($87.66) is above its 30-hour average ($87.41). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
