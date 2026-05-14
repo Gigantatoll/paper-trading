@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 298.55511474609375,
+  "cash": 13.980117797851562,
   "starting_capital": 600.0,
   "positions": {
     "MRK": {
@@ -14,6 +14,14 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 88.08999633789062
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 132.01499938964844
+    },
+    "XOM": {
+      "shares": 1,
+      "avg_price": 152.55999755859375
     }
   },
   "trades": [
@@ -309,6 +317,24 @@
       "price": 88.08999633789062,
       "total": 88.08999633789062,
       "reason": "NFLX's 10-hour average price ($87.66) is above its 30-hour average ($87.41). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-14T19:22:54.590444",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 132.01499938964844,
+      "total": 132.01499938964844,
+      "reason": "WMT's 10-hour average price ($131.76) is above its 30-hour average ($130.18). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-14T19:22:54.591557",
+      "action": "BUY",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 152.55999755859375,
+      "total": 152.55999755859375,
+      "reason": "XOM's 10-hour average price ($151.98) is above its 30-hour average ($150.09). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }

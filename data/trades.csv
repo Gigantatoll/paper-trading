@@ -75,3 +75,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-13 19:24,RSI Agent,SELL,MRK,1,113.78,113.78,1.98,"MRK's RSI climbed to 73.3, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-05-13 19:24,RSI Agent,SELL,NFLX,1,88.09,88.09,-3.14,"NFLX's RSI climbed to 69.2, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-05-13 19:24,MA Crossover,BUY,NFLX,1,88.09,88.09,,NFLX's 10-hour average price ($87.66) is above its 30-hour average ($87.41). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-14 19:22,MA Crossover,BUY,WMT,1,132.015,132.01,,WMT's 10-hour average price ($131.76) is above its 30-hour average ($130.18). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-14 19:22,MA Crossover,BUY,XOM,1,152.56,152.56,,XOM's 10-hour average price ($151.98) is above its 30-hour average ($150.09). This means short-term momentum is stronger than the longer trend — a bullish signal.
