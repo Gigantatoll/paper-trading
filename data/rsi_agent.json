@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 369.7469902038574,
+  "cash": 258.54699325561523,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -10,6 +10,10 @@
     "PG": {
       "shares": 1,
       "avg_price": 142.61500549316406
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 111.19999694824219
     }
   },
   "trades": [
@@ -220,6 +224,15 @@
       "total": 88.08999633789062,
       "reason": "NFLX's RSI climbed to 69.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -3.14
+    },
+    {
+      "time": "2026-05-15T18:13:30.642152",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 111.19999694824219,
+      "total": 111.19999694824219,
+      "reason": "MRK's RSI is 29.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }

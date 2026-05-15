@@ -1,19 +1,11 @@
 {
   "name": "MA Crossover",
-  "cash": 13.980117797851562,
+  "cash": 212.39511108398438,
   "starting_capital": 600.0,
   "positions": {
-    "MRK": {
-      "shares": 1,
-      "avg_price": 113.05000305175781
-    },
     "KO": {
       "shares": 1,
       "avg_price": 80.16500091552734
-    },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 88.08999633789062
     },
     "WMT": {
       "shares": 1,
@@ -335,6 +327,26 @@
       "price": 152.55999755859375,
       "total": 152.55999755859375,
       "reason": "XOM's 10-hour average price ($151.98) is above its 30-hour average ($150.09). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-15T18:13:30.653571",
+      "action": "SELL",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 111.19999694824219,
+      "total": 111.19999694824219,
+      "reason": "MRK's 10-hour average ($112.34) dropped below its 30-hour average ($112.69). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -1.85
+    },
+    {
+      "time": "2026-05-15T18:13:30.655455",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 87.21499633789062,
+      "total": 87.21499633789062,
+      "reason": "NFLX's 10-hour average ($87.31) dropped below its 30-hour average ($87.34). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.88
     }
   ]
 }
