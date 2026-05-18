@@ -82,3 +82,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-15 18:13,MA Crossover,SELL,NFLX,1,87.215,87.21,-0.88,NFLX's 10-hour average ($87.31) dropped below its 30-hour average ($87.34). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-05-15 18:13,Dividend Agent,SELL,T,5,24.415,122.08,-10.87,"STOP-LOSS: T dropped 8.2% from the entry price (bought at $26.59, now $24.42). Selling automatically to protect capital before losses grow further."
 2026-05-15 18:13,Dividend Agent,BUY,CVX,1,189.62,189.62,,"CVX pays a 3.81% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($189.62) is above its 30-hour average ($186.27), confirming a healthy trend. Buying to collect steady income while holding."
+2026-05-18 19:13,Momentum Agent,BUY,NFLX,1,89.5299,89.53,,"NFLX is ranked #3 out of 25 stocks by momentum. It gained 2.83% over the last 10 hours, showing strong upward price pressure."
+2026-05-18 19:13,Momentum Agent,BUY,BAC,2,50.755,101.51,,"BAC is ranked #5 out of 25 stocks by momentum. It gained 2.47% over the last 10 hours, showing strong upward price pressure."
+2026-05-18 19:13,MA Crossover,BUY,NFLX,1,89.5299,89.53,,NFLX's 10-hour average price ($88.46) is above its 30-hour average ($87.82). This means short-term momentum is stronger than the longer trend — a bullish signal.

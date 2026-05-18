@@ -1,8 +1,17 @@
 {
   "name": "Momentum Agent",
-  "cash": 597.9149856567383,
+  "cash": 406.87508392333984,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 89.52989959716797
+    },
+    "BAC": {
+      "shares": 2,
+      "avg_price": 50.755001068115234
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -174,6 +183,24 @@
       "total": 80.375,
       "reason": "KO dropped out of the top 5 momentum stocks (current momentum: 0.61%). Rotating into stronger performers.",
       "trade_pnl": 0.21
+    },
+    {
+      "time": "2026-05-18T19:13:32.324533",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 89.52989959716797,
+      "total": 89.52989959716797,
+      "reason": "NFLX is ranked #3 out of 25 stocks by momentum. It gained 2.83% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-05-18T19:13:32.325048",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 50.755001068115234,
+      "total": 101.51000213623047,
+      "reason": "BAC is ranked #5 out of 25 stocks by momentum. It gained 2.47% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }
