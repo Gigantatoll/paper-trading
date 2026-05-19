@@ -1,19 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 258.54699325561523,
+  "cash": 475.13698959350586,
   "starting_capital": 600.0,
   "positions": {
-    "BAC": {
-      "shares": 2,
-      "avg_price": 51.48500061035156
-    },
     "PG": {
       "shares": 1,
       "avg_price": 142.61500549316406
-    },
-    "MRK": {
-      "shares": 1,
-      "avg_price": 111.19999694824219
     }
   },
   "trades": [
@@ -233,6 +225,26 @@
       "price": 111.19999694824219,
       "total": 111.19999694824219,
       "reason": "MRK's RSI is 29.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-05-19T16:14:57.055404",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 50.94499969482422,
+      "total": 101.88999938964844,
+      "reason": "BAC's RSI climbed to 72.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -1.08
+    },
+    {
+      "time": "2026-05-19T16:14:57.058730",
+      "action": "SELL",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 114.69999694824219,
+      "total": 114.69999694824219,
+      "reason": "MRK's RSI climbed to 80.3, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 3.5
     }
   ]
 }
