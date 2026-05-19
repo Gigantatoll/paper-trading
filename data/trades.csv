@@ -90,3 +90,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-19 16:14,RSI Agent,SELL,BAC,2,50.945,101.89,-1.08,"BAC's RSI climbed to 72.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-05-19 16:14,RSI Agent,SELL,MRK,1,114.7,114.7,3.5,"MRK's RSI climbed to 80.3, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-05-19 16:14,MA Crossover,BUY,BAC,2,50.945,101.89,,BAC's 10-hour average price ($50.74) is above its 30-hour average ($50.22). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-19 18:16,Momentum Agent,SELL,NFLX,1,88.735,88.74,-0.79,NFLX lost momentum: down 0.83% over the last 10 hours. Selling to avoid further losses.
