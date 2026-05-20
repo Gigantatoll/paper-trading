@@ -94,3 +94,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-20 16:22,Momentum Agent,SELL,MRK,1,113.12,113.12,-1.58,MRK dropped out of the top 5 momentum stocks (current momentum: 0.50%). Rotating into stronger performers.
 2026-05-20 16:22,Momentum Agent,BUY,KO,1,82.2,82.2,,"KO is ranked #2 out of 25 stocks by momentum. It gained 1.22% over the last 10 hours, showing strong upward price pressure."
 2026-05-20 16:22,Momentum Agent,BUY,BAC,2,51.31,102.62,,"BAC is ranked #3 out of 25 stocks by momentum. It gained 1.18% over the last 10 hours, showing strong upward price pressure."
+2026-05-20 18:36,Momentum Agent,SELL,KO,1,81.91,81.91,-0.29,KO lost momentum: down 0.17% over the last 10 hours. Selling to avoid further losses.
+2026-05-20 18:36,Momentum Agent,SELL,BAC,2,51.215,102.43,-0.19,BAC dropped out of the top 5 momentum stocks (current momentum: 0.27%). Rotating into stronger performers.
