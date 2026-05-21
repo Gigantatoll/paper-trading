@@ -96,3 +96,8 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-20 16:22,Momentum Agent,BUY,BAC,2,51.31,102.62,,"BAC is ranked #3 out of 25 stocks by momentum. It gained 1.18% over the last 10 hours, showing strong upward price pressure."
 2026-05-20 18:36,Momentum Agent,SELL,KO,1,81.91,81.91,-0.29,KO lost momentum: down 0.17% over the last 10 hours. Selling to avoid further losses.
 2026-05-20 18:36,Momentum Agent,SELL,BAC,2,51.215,102.43,-0.19,BAC dropped out of the top 5 momentum stocks (current momentum: 0.27%). Rotating into stronger performers.
+2026-05-21 16:12,RSI Agent,BUY,KO,1,81.35,81.35,,"KO's RSI is 31.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-05-21 16:12,MA Crossover,SELL,WMT,1,121.21,121.21,-10.81,"STOP-LOSS: WMT dropped 8.2% from the entry price (bought at $132.01, now $121.21). Selling automatically to protect capital before losses grow further."
+2026-05-21 16:12,MA Crossover,SELL,XOM,1,156.285,156.29,3.73,XOM's 10-hour average ($157.96) dropped below its 30-hour average ($159.13). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-05-21 16:12,MA Crossover,BUY,MRK,1,114.61,114.61,,MRK's 10-hour average price ($113.70) is above its 30-hour average ($113.05). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-21 16:12,MA Crossover,SELL,NFLX,1,89.335,89.33,-0.19,NFLX's 10-hour average ($88.49) dropped below its 30-hour average ($88.66). This crossover is a classic bearish signal — the short-term trend has turned down.

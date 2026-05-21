@@ -1,11 +1,15 @@
 {
   "name": "RSI Agent",
-  "cash": 475.13698959350586,
+  "cash": 393.78699111938477,
   "starting_capital": 600.0,
   "positions": {
     "PG": {
       "shares": 1,
       "avg_price": 142.61500549316406
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 81.3499984741211
     }
   },
   "trades": [
@@ -245,6 +249,15 @@
       "total": 114.69999694824219,
       "reason": "MRK's RSI climbed to 80.3, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 3.5
+    },
+    {
+      "time": "2026-05-21T16:12:03.661671",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 81.3499984741211,
+      "total": 81.3499984741211,
+      "reason": "KO's RSI is 31.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
