@@ -101,3 +101,8 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-21 16:12,MA Crossover,SELL,XOM,1,156.285,156.29,3.73,XOM's 10-hour average ($157.96) dropped below its 30-hour average ($159.13). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-05-21 16:12,MA Crossover,BUY,MRK,1,114.61,114.61,,MRK's 10-hour average price ($113.70) is above its 30-hour average ($113.05). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-05-21 16:12,MA Crossover,SELL,NFLX,1,89.335,89.33,-0.19,NFLX's 10-hour average ($88.49) dropped below its 30-hour average ($88.66). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-05-21 18:12,Momentum Agent,BUY,NFLX,1,90.055,90.06,,"NFLX is ranked #2 out of 25 stocks by momentum. It gained 2.08% over the last 10 hours, showing strong upward price pressure."
+2026-05-21 18:12,Momentum Agent,BUY,MRK,1,115.53,115.53,,"MRK is ranked #4 out of 25 stocks by momentum. It gained 1.87% over the last 10 hours, showing strong upward price pressure."
+2026-05-21 18:12,RSI Agent,BUY,WMT,1,122.2995,122.3,,"WMT's RSI is 16.0, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-05-21 18:12,RSI Agent,SELL,PG,1,143.44,143.44,0.82,"PG's RSI climbed to 72.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-05-21 18:12,MA Crossover,BUY,NFLX,1,90.055,90.06,,NFLX's 10-hour average price ($88.87) is above its 30-hour average ($88.87). This means short-term momentum is stronger than the longer trend — a bullish signal.
