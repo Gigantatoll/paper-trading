@@ -1,12 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 183.1402130126953,
+  "cash": 120.18021392822266,
   "starting_capital": 600.0,
   "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 80.16500091552734
-    },
     "BAC": {
       "shares": 2,
       "avg_price": 50.94499969482422
@@ -18,6 +14,10 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 90.05500030517578
+    },
+    "PG": {
+      "shares": 1,
+      "avg_price": 144.1999969482422
     }
   },
   "trades": [
@@ -417,6 +417,25 @@
       "price": 90.05500030517578,
       "total": 90.05500030517578,
       "reason": "NFLX's 10-hour average price ($88.87) is above its 30-hour average ($88.87). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-22T15:45:34.193577",
+      "action": "BUY",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 144.1999969482422,
+      "total": 144.1999969482422,
+      "reason": "PG's 10-hour average price ($143.22) is above its 30-hour average ($142.58). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-05-22T15:45:34.195830",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 81.23999786376953,
+      "total": 81.23999786376953,
+      "reason": "KO's 10-hour average ($81.20) dropped below its 30-hour average ($81.55). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 1.07
     }
   ]
 }

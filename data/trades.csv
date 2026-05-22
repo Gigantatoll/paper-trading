@@ -106,3 +106,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-21 18:12,RSI Agent,BUY,WMT,1,122.2995,122.3,,"WMT's RSI is 16.0, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-05-21 18:12,RSI Agent,SELL,PG,1,143.44,143.44,0.82,"PG's RSI climbed to 72.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-05-21 18:12,MA Crossover,BUY,NFLX,1,90.055,90.06,,NFLX's 10-hour average price ($88.87) is above its 30-hour average ($88.87). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-22 15:45,Momentum Agent,SELL,NFLX,1,88.83,88.83,-1.22,NFLX dropped out of the top 5 momentum stocks (current momentum: 0.83%). Rotating into stronger performers.
+2026-05-22 15:45,MA Crossover,BUY,PG,1,144.2,144.2,,PG's 10-hour average price ($143.22) is above its 30-hour average ($142.58). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-05-22 15:45,MA Crossover,SELL,KO,1,81.24,81.24,1.07,KO's 10-hour average ($81.20) dropped below its 30-hour average ($81.55). This crossover is a classic bearish signal — the short-term trend has turned down.
