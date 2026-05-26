@@ -1,12 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 374.9450988769531,
+  "cash": 496.2751007080078,
   "starting_capital": 600.0,
   "positions": {
-    "MRK": {
-      "shares": 1,
-      "avg_price": 115.52999877929688
-    },
     "BAC": {
       "shares": 2,
       "avg_price": 51.869998931884766
@@ -315,6 +311,16 @@
       "price": 51.869998931884766,
       "total": 103.73999786376953,
       "reason": "BAC is ranked #4 out of 25 stocks by momentum. It gained 2.09% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-05-26T16:37:10.876567",
+      "action": "SELL",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 121.33000183105469,
+      "total": 121.33000183105469,
+      "reason": "MRK lost momentum: down 0.44% over the last 10 hours. Selling to avoid further losses.",
+      "trade_pnl": 5.8
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 414.92749404907227,
+  "cash": 326.87739181518555,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
@@ -10,6 +10,10 @@
     "WMT": {
       "shares": 1,
       "avg_price": 122.29949951171875
+    },
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 88.05010223388672
     }
   },
   "trades": [
@@ -277,6 +281,15 @@
       "total": 143.44000244140625,
       "reason": "PG's RSI climbed to 72.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 0.82
+    },
+    {
+      "time": "2026-05-26T16:37:10.907295",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 88.05010223388672,
+      "total": 88.05010223388672,
+      "reason": "NFLX's RSI is 23.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
