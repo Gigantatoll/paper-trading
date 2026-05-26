@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 326.87739181518555,
+  "cash": 31.182384490966797,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
@@ -14,6 +14,14 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 88.05010223388672
+    },
+    "XOM": {
+      "shares": 1,
+      "avg_price": 149.52000427246094
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 146.1750030517578
     }
   },
   "trades": [
@@ -290,6 +298,24 @@
       "price": 88.05010223388672,
       "total": 88.05010223388672,
       "reason": "NFLX's RSI is 23.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-05-26T19:05:12.892114",
+      "action": "BUY",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 149.52000427246094,
+      "total": 149.52000427246094,
+      "reason": "XOM's RSI is 21.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-05-26T19:05:12.900797",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 146.1750030517578,
+      "total": 146.1750030517578,
+      "reason": "PEP's RSI is 34.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }

@@ -1,13 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 496.2751007080078,
+  "cash": 600.4050979614258,
   "starting_capital": 600.0,
-  "positions": {
-    "BAC": {
-      "shares": 2,
-      "avg_price": 51.869998931884766
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -321,6 +316,16 @@
       "total": 121.33000183105469,
       "reason": "MRK lost momentum: down 0.44% over the last 10 hours. Selling to avoid further losses.",
       "trade_pnl": 5.8
+    },
+    {
+      "time": "2026-05-26T19:05:12.877147",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 52.064998626708984,
+      "total": 104.12999725341797,
+      "reason": "BAC dropped out of the top 5 momentum stocks (current momentum: 0.26%). Rotating into stronger performers.",
+      "trade_pnl": 0.39
     }
   ]
 }

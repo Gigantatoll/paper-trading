@@ -113,3 +113,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-25 15:46,MA Crossover,SELL,NFLX,1,88.6,88.6,-1.46,NFLX's 10-hour average ($88.87) dropped below its 30-hour average ($88.98). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-05-26 16:37,Momentum Agent,SELL,MRK,1,121.33,121.33,5.8,MRK lost momentum: down 0.44% over the last 10 hours. Selling to avoid further losses.
 2026-05-26 16:37,RSI Agent,BUY,NFLX,1,88.0501,88.05,,"NFLX's RSI is 23.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-05-26 19:05,Momentum Agent,SELL,BAC,2,52.065,104.13,0.39,BAC dropped out of the top 5 momentum stocks (current momentum: 0.26%). Rotating into stronger performers.
+2026-05-26 19:05,RSI Agent,BUY,XOM,1,149.52,149.52,,"XOM's RSI is 21.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-05-26 19:05,RSI Agent,BUY,PEP,1,146.175,146.18,,"PEP's RSI is 34.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
