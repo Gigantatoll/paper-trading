@@ -123,3 +123,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-05-28 19:29,MA Crossover,SELL,MRK,1,119.84,119.84,5.23,MRK's 10-hour average ($120.30) dropped below its 30-hour average ($120.44). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-05-28 19:29,MA Crossover,SELL,KO,1,80.55,80.55,-1.45,KO's 10-hour average ($81.14) dropped below its 30-hour average ($81.14). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-05-29 19:14,MA Crossover,SELL,PG,1,144.055,144.05,-0.15,PG's 10-hour average ($145.08) dropped below its 30-hour average ($145.26). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-06-01 18:33,MA Crossover,BUY,BAC,2,51.615,103.23,,BAC's 10-hour average price ($51.52) is above its 30-hour average ($51.34). This means short-term momentum is stronger than the longer trend — a bullish signal.
