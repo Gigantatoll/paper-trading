@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 31.182384490966797,
+  "cash": 65.73737716674805,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
@@ -15,13 +15,13 @@
       "shares": 1,
       "avg_price": 88.05010223388672
     },
-    "XOM": {
-      "shares": 1,
-      "avg_price": 149.52000427246094
-    },
     "PEP": {
       "shares": 1,
       "avg_price": 146.1750030517578
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 115.53500366210938
     }
   },
   "trades": [
@@ -316,6 +316,25 @@
       "price": 146.1750030517578,
       "total": 146.1750030517578,
       "reason": "PEP's RSI is 34.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-06-02T17:14:52.760577",
+      "action": "SELL",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 150.08999633789062,
+      "total": 150.08999633789062,
+      "reason": "XOM's RSI climbed to 72.4, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.57
+    },
+    {
+      "time": "2026-06-02T17:14:52.764844",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 115.53500366210938,
+      "total": 115.53500366210938,
+      "reason": "MRK's RSI is 29.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
