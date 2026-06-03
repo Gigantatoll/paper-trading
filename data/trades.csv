@@ -128,3 +128,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-02 17:14,RSI Agent,SELL,XOM,1,150.09,150.09,0.57,"XOM's RSI climbed to 72.4, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-06-02 17:14,RSI Agent,BUY,MRK,1,115.535,115.54,,"MRK's RSI is 29.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-06-02 17:14,Dividend Agent,SELL,O,1,59.805,59.81,-5.34,"STOP-LOSS: O dropped 8.2% from the entry price (bought at $65.14, now $59.81). Selling automatically to protect capital before losses grow further."
+2026-06-03 17:56,Momentum Agent,SELL,BAC,2,52.425,104.85,0.07,BAC lost momentum: down 0.10% over the last 10 hours. Selling to avoid further losses.
+2026-06-03 17:56,Momentum Agent,BUY,WMT,1,116.3362,116.34,,"WMT is ranked #3 out of 25 stocks by momentum. It gained 2.89% over the last 10 hours, showing strong upward price pressure."
+2026-06-03 17:56,Dividend Agent,BUY,DOW,2,35.105,70.21,,"DOW pays a 4.03% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($35.10) is above its 30-hour average ($34.60), confirming a healthy trend. Buying to collect steady income while holding."
