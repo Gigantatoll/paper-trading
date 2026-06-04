@@ -1,11 +1,15 @@
 {
   "name": "Momentum Agent",
-  "cash": 484.0488967895508,
+  "cash": 374.3388977050781,
   "starting_capital": 600.0,
   "positions": {
-    "WMT": {
+    "BAC": {
+      "shares": 2,
+      "avg_price": 53.834999084472656
+    },
+    "MRK": {
       "shares": 1,
-      "avg_price": 116.33619689941406
+      "avg_price": 119.52999877929688
     }
   },
   "trades": [
@@ -378,6 +382,34 @@
       "price": 116.33619689941406,
       "total": 116.33619689941406,
       "reason": "WMT is ranked #3 out of 25 stocks by momentum. It gained 2.89% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-06-04T18:31:08.206113",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 117.48999786376953,
+      "total": 117.48999786376953,
+      "reason": "WMT dropped out of the top 5 momentum stocks (current momentum: 0.83%). Rotating into stronger performers.",
+      "trade_pnl": 1.15
+    },
+    {
+      "time": "2026-06-04T18:31:08.375098",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 53.834999084472656,
+      "total": 107.66999816894531,
+      "reason": "BAC is ranked #3 out of 25 stocks by momentum. It gained 3.26% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-06-04T18:31:08.375589",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 119.52999877929688,
+      "total": 119.52999877929688,
+      "reason": "MRK is ranked #4 out of 25 stocks by momentum. It gained 3.25% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }
