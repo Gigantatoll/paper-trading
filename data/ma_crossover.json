@@ -1,11 +1,15 @@
 {
   "name": "MA Crossover",
-  "cash": 469.5802001953125,
+  "cash": 389.6052017211914,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
       "shares": 2,
       "avg_price": 51.6150016784668
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 79.9749984741211
     }
   },
   "trades": [
@@ -492,6 +496,15 @@
       "price": 51.6150016784668,
       "total": 103.2300033569336,
       "reason": "BAC's 10-hour average price ($51.52) is above its 30-hour average ($51.34). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-06-05T17:33:42.107910",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 79.9749984741211,
+      "total": 79.9749984741211,
+      "reason": "KO's 10-hour average price ($78.62) is above its 30-hour average ($78.62). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
