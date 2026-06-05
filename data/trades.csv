@@ -139,3 +139,7 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-05 15:49,Momentum Agent,SELL,BAC,2,53.745,107.49,-0.18,BAC dropped out of the top 5 momentum stocks (current momentum: 2.53%). Rotating into stronger performers.
 2026-06-05 17:33,Momentum Agent,BUY,KO,1,79.975,79.97,,"KO is ranked #5 out of 25 stocks by momentum. It gained 2.07% over the last 10 hours, showing strong upward price pressure."
 2026-06-05 17:33,MA Crossover,BUY,KO,1,79.975,79.97,,KO's 10-hour average price ($78.62) is above its 30-hour average ($78.62). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-06-05 19:21,Momentum Agent,SELL,KO,1,79.965,79.96,-0.01,KO dropped out of the top 5 momentum stocks (current momentum: 1.57%). Rotating into stronger performers.
+2026-06-05 19:21,MA Crossover,BUY,WMT,1,119.81,119.81,,WMT's 10-hour average price ($119.22) is above its 30-hour average ($116.65). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-06-05 19:21,MA Crossover,BUY,MRK,1,121.575,121.57,,MRK's 10-hour average price ($121.37) is above its 30-hour average ($117.86). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-06-05 19:21,MA Crossover,BUY,PEP,1,142.97,142.97,,PEP's 10-hour average price ($142.71) is above its 30-hour average ($142.47). This means short-term momentum is stronger than the longer trend — a bullish signal.
