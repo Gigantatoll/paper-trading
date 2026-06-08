@@ -1,16 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 302.5823783874512,
+  "cash": 464.76237869262695,
   "starting_capital": 600.0,
   "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 81.3499984741211
-    },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 88.05010223388672
-    },
     "PEP": {
       "shares": 1,
       "avg_price": 146.1750030517578
@@ -347,6 +339,26 @@
       "total": 118.5,
       "reason": "MRK's RSI climbed to 68.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 2.96
+    },
+    {
+      "time": "2026-06-08T19:09:42.476941",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 79.54499816894531,
+      "total": 79.54499816894531,
+      "reason": "KO's RSI climbed to 74.4, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -1.81
+    },
+    {
+      "time": "2026-06-08T19:09:42.478934",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 82.63500213623047,
+      "total": 82.63500213623047,
+      "reason": "NFLX's RSI climbed to 65.5, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -5.42
     }
   ]
 }

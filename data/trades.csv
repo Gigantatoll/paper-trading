@@ -146,3 +146,8 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-08 16:44,Momentum Agent,SELL,MRK,1,119.62,119.62,0.09,MRK lost momentum: down 1.93% over the last 10 hours. Selling to avoid further losses.
 2026-06-08 16:44,Momentum Agent,BUY,KO,1,79.4101,79.41,,"KO is ranked #4 out of 25 stocks by momentum. It gained 0.52% over the last 10 hours, showing strong upward price pressure."
 2026-06-08 16:44,MA Crossover,SELL,PEP,1,140.36,140.36,-2.61,PEP's 10-hour average ($141.94) dropped below its 30-hour average ($142.30). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-06-08 19:09,Momentum Agent,SELL,KO,1,79.545,79.54,0.13,KO lost momentum: down 0.21% over the last 10 hours. Selling to avoid further losses.
+2026-06-08 19:09,Momentum Agent,BUY,NFLX,1,82.635,82.64,,"NFLX is ranked #2 out of 25 stocks by momentum. It gained 1.50% over the last 10 hours, showing strong upward price pressure."
+2026-06-08 19:09,RSI Agent,SELL,KO,1,79.545,79.54,-1.81,"KO's RSI climbed to 74.4, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-06-08 19:09,RSI Agent,SELL,NFLX,1,82.635,82.64,-5.42,"NFLX's RSI climbed to 65.5, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-06-08 19:09,MA Crossover,BUY,NFLX,1,82.635,82.64,,NFLX's 10-hour average price ($82.16) is above its 30-hour average ($82.04). This means short-term momentum is stronger than the longer trend — a bullish signal.

@@ -1,11 +1,11 @@
 {
   "name": "Momentum Agent",
-  "cash": 522.0287933349609,
+  "cash": 518.9387893676758,
   "starting_capital": 600.0,
   "positions": {
-    "KO": {
+    "NFLX": {
       "shares": 1,
-      "avg_price": 79.41010284423828
+      "avg_price": 82.63500213623047
     }
   },
   "trades": [
@@ -454,6 +454,25 @@
       "price": 79.41010284423828,
       "total": 79.41010284423828,
       "reason": "KO is ranked #4 out of 25 stocks by momentum. It gained 0.52% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-06-08T19:09:42.446393",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 79.54499816894531,
+      "total": 79.54499816894531,
+      "reason": "KO lost momentum: down 0.21% over the last 10 hours. Selling to avoid further losses.",
+      "trade_pnl": 0.13
+    },
+    {
+      "time": "2026-06-08T19:09:42.447237",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 82.63500213623047,
+      "total": 82.63500213623047,
+      "reason": "NFLX is ranked #2 out of 25 stocks by momentum. It gained 1.50% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }
