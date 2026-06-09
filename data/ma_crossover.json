@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 182.9352035522461,
+  "cash": 34.735206604003906,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -18,6 +18,10 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 82.63500213623047
+    },
+    "PG": {
+      "shares": 1,
+      "avg_price": 148.1999969482422
     }
   },
   "trades": [
@@ -569,6 +573,15 @@
       "total": 119.95999908447266,
       "reason": "MRK's 10-hour average ($119.46) dropped below its 30-hour average ($119.64). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -1.61
+    },
+    {
+      "time": "2026-06-09T19:49:07.694901",
+      "action": "BUY",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 148.1999969482422,
+      "total": 148.1999969482422,
+      "reason": "PG's 10-hour average price ($147.37) is above its 30-hour average ($144.83). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
