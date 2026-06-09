@@ -151,3 +151,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-08 19:09,RSI Agent,SELL,KO,1,79.545,79.54,-1.81,"KO's RSI climbed to 74.4, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-06-08 19:09,RSI Agent,SELL,NFLX,1,82.635,82.64,-5.42,"NFLX's RSI climbed to 65.5, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-06-08 19:09,MA Crossover,BUY,NFLX,1,82.635,82.64,,NFLX's 10-hour average price ($82.16) is above its 30-hour average ($82.04). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-06-09 15:50,Momentum Agent,SELL,NFLX,1,81.915,81.92,-0.72,NFLX lost momentum: down 0.35% over the last 10 hours. Selling to avoid further losses.
+2026-06-09 15:50,Momentum Agent,BUY,KO,1,80.9001,80.9,,"KO is ranked #3 out of 25 stocks by momentum. It gained 1.77% over the last 10 hours, showing strong upward price pressure."
