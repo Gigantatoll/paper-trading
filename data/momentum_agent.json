@@ -1,11 +1,15 @@
 {
   "name": "Momentum Agent",
-  "cash": 519.9536895751953,
+  "cash": 409.9636917114258,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
       "shares": 1,
       "avg_price": 80.90010070800781
+    },
+    "BAC": {
+      "shares": 2,
+      "avg_price": 54.994998931884766
     }
   },
   "trades": [
@@ -492,6 +496,15 @@
       "price": 80.90010070800781,
       "total": 80.90010070800781,
       "reason": "KO is ranked #3 out of 25 stocks by momentum. It gained 1.77% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-06-10T16:29:49.725604",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 54.994998931884766,
+      "total": 109.98999786376953,
+      "reason": "BAC is ranked #5 out of 25 stocks by momentum. It gained 2.58% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }

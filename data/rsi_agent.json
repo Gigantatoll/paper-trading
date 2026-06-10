@@ -1,13 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 464.76237869262695,
+  "cash": 608.9423713684082,
   "starting_capital": 600.0,
-  "positions": {
-    "PEP": {
-      "shares": 1,
-      "avg_price": 146.1750030517578
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.515089",
@@ -359,6 +354,16 @@
       "total": 82.63500213623047,
       "reason": "NFLX's RSI climbed to 65.5, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -5.42
+    },
+    {
+      "time": "2026-06-10T16:29:49.752814",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 144.17999267578125,
+      "total": 144.17999267578125,
+      "reason": "PEP's RSI climbed to 68.7, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -2.0
     }
   ]
 }
