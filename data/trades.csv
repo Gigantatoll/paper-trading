@@ -160,3 +160,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-10 16:29,MA Crossover,SELL,WMT,1,119.51,119.51,-0.3,WMT's 10-hour average ($119.22) dropped below its 30-hour average ($119.25). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-06-10 16:29,MA Crossover,BUY,PEP,1,144.18,144.18,,PEP's 10-hour average price ($143.40) is above its 30-hour average ($142.39). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-06-10 16:29,MA Crossover,SELL,NFLX,1,82.5201,82.52,-0.11,NFLX's 10-hour average ($81.86) dropped below its 30-hour average ($81.95). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-06-11 16:45,Momentum Agent,SELL,KO,1,83.4099,83.41,2.51,KO dropped out of the top 5 momentum stocks (current momentum: 0.25%). Rotating into stronger performers.
+2026-06-11 16:45,Momentum Agent,SELL,BAC,2,54.585,109.17,-0.82,BAC lost momentum: down 0.34% over the last 10 hours. Selling to avoid further losses.
