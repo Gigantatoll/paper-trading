@@ -1,8 +1,17 @@
 {
   "name": "RSI Agent",
-  "cash": 608.9423713684082,
+  "cash": 446.17737197875977,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "KO": {
+      "shares": 1,
+      "avg_price": 82.21499633789062
+    },
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 80.55000305175781
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.515089",
@@ -364,6 +373,24 @@
       "total": 144.17999267578125,
       "reason": "PEP's RSI climbed to 68.7, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -2.0
+    },
+    {
+      "time": "2026-06-12T16:12:22.040882",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 82.21499633789062,
+      "total": 82.21499633789062,
+      "reason": "KO's RSI is 27.0, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-06-12T16:12:22.042507",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 80.55000305175781,
+      "total": 80.55000305175781,
+      "reason": "NFLX's RSI is 34.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
