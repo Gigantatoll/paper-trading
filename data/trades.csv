@@ -166,3 +166,7 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-12 16:12,RSI Agent,BUY,KO,1,82.215,82.21,,"KO's RSI is 27.0, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-06-12 16:12,RSI Agent,BUY,NFLX,1,80.55,80.55,,"NFLX's RSI is 34.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-06-12 18:19,Momentum Agent,SELL,BAC,2,55.755,111.51,0.01,BAC dropped out of the top 5 momentum stocks (current momentum: 1.84%). Rotating into stronger performers.
+2026-06-15 17:48,RSI Agent,BUY,XOM,1,141.37,141.37,,"XOM's RSI is 23.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-06-15 17:48,RSI Agent,BUY,MRK,1,115.3197,115.32,,"MRK's RSI is 12.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-06-15 17:48,RSI Agent,BUY,CVX,1,180.78,180.78,,"CVX's RSI is 25.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-06-15 17:48,MA Crossover,SELL,KO,1,80.71,80.71,0.74,KO's 10-hour average ($81.56) dropped below its 30-hour average ($82.42). This crossover is a classic bearish signal — the short-term trend has turned down.

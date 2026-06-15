@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 446.17737197875977,
+  "cash": 8.70767593383789,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
@@ -10,6 +10,18 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 80.55000305175781
+    },
+    "XOM": {
+      "shares": 1,
+      "avg_price": 141.3699951171875
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 115.3197021484375
+    },
+    "CVX": {
+      "shares": 1,
+      "avg_price": 180.77999877929688
     }
   },
   "trades": [
@@ -391,6 +403,33 @@
       "price": 80.55000305175781,
       "total": 80.55000305175781,
       "reason": "NFLX's RSI is 34.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-06-15T17:48:52.720189",
+      "action": "BUY",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 141.3699951171875,
+      "total": 141.3699951171875,
+      "reason": "XOM's RSI is 23.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-06-15T17:48:52.725610",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 115.3197021484375,
+      "total": 115.3197021484375,
+      "reason": "MRK's RSI is 12.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-06-15T17:48:52.727465",
+      "action": "BUY",
+      "symbol": "CVX",
+      "shares": 1,
+      "price": 180.77999877929688,
+      "total": 180.77999877929688,
+      "reason": "CVX's RSI is 25.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
