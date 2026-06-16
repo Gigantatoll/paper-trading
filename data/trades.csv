@@ -170,3 +170,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-15 17:48,RSI Agent,BUY,MRK,1,115.3197,115.32,,"MRK's RSI is 12.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-06-15 17:48,RSI Agent,BUY,CVX,1,180.78,180.78,,"CVX's RSI is 25.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-06-15 17:48,MA Crossover,SELL,KO,1,80.71,80.71,0.74,KO's 10-hour average ($81.56) dropped below its 30-hour average ($82.42). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-06-16 17:56,Momentum Agent,BUY,BAC,2,56.8502,113.7,,"BAC is ranked #4 out of 25 stocks by momentum. It gained 1.31% over the last 10 hours, showing strong upward price pressure."
