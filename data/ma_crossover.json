@@ -1,15 +1,11 @@
 {
   "name": "MA Crossover",
-  "cash": 314.7253112792969,
+  "cash": 465.87530517578125,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
       "shares": 2,
       "avg_price": 51.6150016784668
-    },
-    "PG": {
-      "shares": 1,
-      "avg_price": 148.1999969482422
     }
   },
   "trades": [
@@ -619,6 +615,16 @@
       "total": 141.42999267578125,
       "reason": "PEP's 10-hour average ($144.10) dropped below its 30-hour average ($144.61). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -2.75
+    },
+    {
+      "time": "2026-06-18T18:38:35.499344",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 151.14999389648438,
+      "total": 151.14999389648438,
+      "reason": "PG's 10-hour average ($151.12) dropped below its 30-hour average ($151.13). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 2.95
     }
   ]
 }

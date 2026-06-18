@@ -175,3 +175,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-17 19:08,MA Crossover,SELL,PEP,1,141.43,141.43,-2.75,PEP's 10-hour average ($144.10) dropped below its 30-hour average ($144.61). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-06-18 16:22,Dividend Agent,SELL,CVX,1,173.27,173.27,-16.35,"STOP-LOSS: CVX dropped 8.6% from the entry price (bought at $189.62, now $173.27). Selling automatically to protect capital before losses grow further."
 2026-06-18 16:22,Dividend Agent,SELL,DOW,2,31.585,63.17,-7.04,"STOP-LOSS: DOW dropped 10.0% from the entry price (bought at $35.10, now $31.58). Selling automatically to protect capital before losses grow further."
+2026-06-18 18:38,MA Crossover,SELL,PG,1,151.15,151.15,2.95,PG's 10-hour average ($151.12) dropped below its 30-hour average ($151.13). This crossover is a classic bearish signal — the short-term trend has turned down.
