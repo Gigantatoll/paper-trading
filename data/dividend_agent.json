@@ -1,6 +1,6 @@
 {
   "name": "Dividend Agent",
-  "cash": 8.91501235961914,
+  "cash": 245.3550148010254,
   "starting_capital": 600.0,
   "positions": {
     "VZ": {
@@ -14,14 +14,6 @@
     "NEE": {
       "shares": 1,
       "avg_price": 91.5
-    },
-    "CVX": {
-      "shares": 1,
-      "avg_price": 189.6199951171875
-    },
-    "DOW": {
-      "shares": 2,
-      "avg_price": 35.10499954223633
     }
   },
   "trades": [
@@ -107,6 +99,26 @@
       "price": 35.10499954223633,
       "total": 70.20999908447266,
       "reason": "DOW pays a 4.03% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($35.10) is above its 30-hour average ($34.60), confirming a healthy trend. Buying to collect steady income while holding."
+    },
+    {
+      "time": "2026-06-18T16:22:14.167846",
+      "action": "SELL",
+      "symbol": "CVX",
+      "shares": 1,
+      "price": 173.27000427246094,
+      "total": 173.27000427246094,
+      "reason": "STOP-LOSS: CVX dropped 8.6% from the entry price (bought at $189.62, now $173.27). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -16.35
+    },
+    {
+      "time": "2026-06-18T16:22:14.168323",
+      "action": "SELL",
+      "symbol": "DOW",
+      "shares": 2,
+      "price": 31.584999084472656,
+      "total": 63.16999816894531,
+      "reason": "STOP-LOSS: DOW dropped 10.0% from the entry price (bought at $35.10, now $31.58). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -7.04
     }
   ]
 }
