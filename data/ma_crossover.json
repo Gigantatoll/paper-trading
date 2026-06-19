@@ -1,13 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 465.87530517578125,
+  "cash": 578.1953048706055,
   "starting_capital": 600.0,
-  "positions": {
-    "BAC": {
-      "shares": 2,
-      "avg_price": 51.6150016784668
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.518918",
@@ -625,6 +620,16 @@
       "total": 151.14999389648438,
       "reason": "PG's 10-hour average ($151.12) dropped below its 30-hour average ($151.13). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": 2.95
+    },
+    {
+      "time": "2026-06-19T15:56:49.430490",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 56.15999984741211,
+      "total": 112.31999969482422,
+      "reason": "BAC's 10-hour average ($56.50) dropped below its 30-hour average ($56.58). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 9.09
     }
   ]
 }
