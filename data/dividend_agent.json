@@ -1,6 +1,6 @@
 {
   "name": "Dividend Agent",
-  "cash": 245.3550148010254,
+  "cash": 36.2800178527832,
   "starting_capital": 600.0,
   "positions": {
     "VZ": {
@@ -14,6 +14,14 @@
     "NEE": {
       "shares": 1,
       "avg_price": 91.5
+    },
+    "SO": {
+      "shares": 1,
+      "avg_price": 93.98999786376953
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 115.08499908447266
     }
   },
   "trades": [
@@ -119,6 +127,24 @@
       "total": 63.16999816894531,
       "reason": "STOP-LOSS: DOW dropped 10.0% from the entry price (bought at $35.10, now $31.58). Selling automatically to protect capital before losses grow further.",
       "trade_pnl": -7.04
+    },
+    {
+      "time": "2026-06-22T17:26:31.178614",
+      "action": "BUY",
+      "symbol": "SO",
+      "shares": 1,
+      "price": 93.98999786376953,
+      "total": 93.98999786376953,
+      "reason": "SO pays a 3.27% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($93.99) is above its 30-hour average ($93.81), confirming a healthy trend. Buying to collect steady income while holding."
+    },
+    {
+      "time": "2026-06-22T17:26:31.179327",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 115.08499908447266,
+      "total": 115.08499908447266,
+      "reason": "MRK pays a 2.99% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($115.08) is above its 30-hour average ($114.65), confirming a healthy trend. Buying to collect steady income while holding."
     }
   ]
 }

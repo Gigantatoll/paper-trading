@@ -7,10 +7,6 @@
       "shares": 1,
       "avg_price": 82.21499633789062
     },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 80.55000305175781
-    },
     "XOM": {
       "shares": 1,
       "avg_price": 141.3699951171875
@@ -22,6 +18,10 @@
     "CVX": {
       "shares": 1,
       "avg_price": 180.77999877929688
+    },
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 72.19000244140625
     }
   },
   "trades": [
@@ -430,6 +430,25 @@
       "price": 180.77999877929688,
       "total": 180.77999877929688,
       "reason": "CVX's RSI is 25.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-06-22T17:26:31.143360",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 72.19000244140625,
+      "total": 72.19000244140625,
+      "reason": "STOP-LOSS: NFLX dropped 10.4% from the entry price (bought at $80.55, now $72.19). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -8.36
+    },
+    {
+      "time": "2026-06-22T17:26:31.169074",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 72.19000244140625,
+      "total": 72.19000244140625,
+      "reason": "NFLX's RSI is 14.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
