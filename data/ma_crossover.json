@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 322.6777038574219,
+  "cash": 63.20271301269531,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -14,6 +14,14 @@
     "KO": {
       "shares": 1,
       "avg_price": 80.14759826660156
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 119.44999694824219
+    },
+    "XOM": {
+      "shares": 1,
+      "avg_price": 140.02499389648438
     }
   },
   "trades": [
@@ -670,6 +678,24 @@
       "price": 80.14759826660156,
       "total": 80.14759826660156,
       "reason": "KO's 10-hour average price ($79.83) is above its 30-hour average ($79.76). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-06-23T19:27:46.134557",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 119.44999694824219,
+      "total": 119.44999694824219,
+      "reason": "WMT's 10-hour average price ($118.58) is above its 30-hour average ($118.39). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-06-23T19:27:46.135989",
+      "action": "BUY",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 140.02499389648438,
+      "total": 140.02499389648438,
+      "reason": "XOM's 10-hour average price ($139.29) is above its 30-hour average ($139.27). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
