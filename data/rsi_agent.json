@@ -1,24 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 8.70767593383789,
+  "cash": 522.6502647399902,
   "starting_capital": 600.0,
   "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 82.21499633789062
-    },
-    "XOM": {
-      "shares": 1,
-      "avg_price": 141.3699951171875
-    },
-    "MRK": {
-      "shares": 1,
-      "avg_price": 115.3197021484375
-    },
-    "CVX": {
-      "shares": 1,
-      "avg_price": 180.77999877929688
-    },
     "NFLX": {
       "shares": 1,
       "avg_price": 72.19000244140625
@@ -449,6 +433,46 @@
       "price": 72.19000244140625,
       "total": 72.19000244140625,
       "reason": "NFLX's RSI is 14.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-06-23T15:44:07.460240",
+      "action": "SELL",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 139.92999267578125,
+      "total": 139.92999267578125,
+      "reason": "XOM's RSI climbed to 78.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -1.44
+    },
+    {
+      "time": "2026-06-23T15:44:07.465868",
+      "action": "SELL",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 117.91500091552734,
+      "total": 117.91500091552734,
+      "reason": "MRK's RSI climbed to 83.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 2.6
+    },
+    {
+      "time": "2026-06-23T15:44:07.467860",
+      "action": "SELL",
+      "symbol": "CVX",
+      "shares": 1,
+      "price": 175.9499969482422,
+      "total": 175.9499969482422,
+      "reason": "CVX's RSI climbed to 75.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -4.83
+    },
+    {
+      "time": "2026-06-23T15:44:07.473175",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 80.14759826660156,
+      "total": 80.14759826660156,
+      "reason": "KO's RSI climbed to 75.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -2.07
     }
   ]
 }

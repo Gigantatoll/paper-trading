@@ -1,11 +1,19 @@
 {
   "name": "MA Crossover",
-  "cash": 520.7403030395508,
+  "cash": 322.6777038574219,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
       "shares": 1,
       "avg_price": 57.45500183105469
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 117.91500091552734
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 80.14759826660156
     }
   },
   "trades": [
@@ -644,6 +652,24 @@
       "price": 57.45500183105469,
       "total": 57.45500183105469,
       "reason": "BAC's 10-hour average price ($56.79) is above its 30-hour average ($56.77). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-06-23T15:44:07.479228",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 117.91500091552734,
+      "total": 117.91500091552734,
+      "reason": "MRK's 10-hour average price ($115.75) is above its 30-hour average ($114.91). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-06-23T15:44:07.481141",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 80.14759826660156,
+      "total": 80.14759826660156,
+      "reason": "KO's 10-hour average price ($79.83) is above its 30-hour average ($79.76). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
