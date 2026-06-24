@@ -195,3 +195,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-23 19:27,MA Crossover,BUY,WMT,1,119.45,119.45,,WMT's 10-hour average price ($118.58) is above its 30-hour average ($118.39). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-06-23 19:27,MA Crossover,BUY,XOM,1,140.025,140.02,,XOM's 10-hour average price ($139.29) is above its 30-hour average ($139.27). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-06-24 15:29,Momentum Agent,SELL,WMT,1,119.76,119.76,0.33,WMT dropped out of the top 5 momentum stocks (current momentum: 2.19%). Rotating into stronger performers.
+2026-06-24 17:27,MA Crossover,SELL,XOM,1,136.13,136.13,-3.89,XOM's 10-hour average ($138.46) dropped below its 30-hour average ($138.53). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-06-24 17:27,MA Crossover,BUY,PEP,1,142.33,142.33,,PEP's 10-hour average price ($142.15) is above its 30-hour average ($141.84). This means short-term momentum is stronger than the longer trend — a bullish signal.

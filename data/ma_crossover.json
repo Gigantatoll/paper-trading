@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 63.20271301269531,
+  "cash": 57.002716064453125,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -19,9 +19,9 @@
       "shares": 1,
       "avg_price": 119.44999694824219
     },
-    "XOM": {
+    "PEP": {
       "shares": 1,
-      "avg_price": 140.02499389648438
+      "avg_price": 142.3300018310547
     }
   },
   "trades": [
@@ -696,6 +696,25 @@
       "price": 140.02499389648438,
       "total": 140.02499389648438,
       "reason": "XOM's 10-hour average price ($139.29) is above its 30-hour average ($139.27). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-06-24T17:27:49.694170",
+      "action": "SELL",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 136.1300048828125,
+      "total": 136.1300048828125,
+      "reason": "XOM's 10-hour average ($138.46) dropped below its 30-hour average ($138.53). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -3.89
+    },
+    {
+      "time": "2026-06-24T17:27:49.696933",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 142.3300018310547,
+      "total": 142.3300018310547,
+      "reason": "PEP's 10-hour average price ($142.15) is above its 30-hour average ($141.84). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
