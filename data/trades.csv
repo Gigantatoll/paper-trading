@@ -194,3 +194,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-23 17:30,Momentum Agent,BUY,WMT,1,119.43,119.43,,"WMT is ranked #5 out of 25 stocks by momentum. It gained 1.48% over the last 10 hours, showing strong upward price pressure."
 2026-06-23 19:27,MA Crossover,BUY,WMT,1,119.45,119.45,,WMT's 10-hour average price ($118.58) is above its 30-hour average ($118.39). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-06-23 19:27,MA Crossover,BUY,XOM,1,140.025,140.02,,XOM's 10-hour average price ($139.29) is above its 30-hour average ($139.27). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-06-24 15:29,Momentum Agent,SELL,WMT,1,119.76,119.76,0.33,WMT dropped out of the top 5 momentum stocks (current momentum: 2.19%). Rotating into stronger performers.
