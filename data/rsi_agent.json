@@ -1,11 +1,15 @@
 {
   "name": "RSI Agent",
-  "cash": 522.6502647399902,
+  "cash": 405.5002632141113,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
       "shares": 1,
       "avg_price": 72.19000244140625
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 117.1500015258789
     }
   },
   "trades": [
@@ -473,6 +477,15 @@
       "total": 80.14759826660156,
       "reason": "KO's RSI climbed to 75.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -2.07
+    },
+    {
+      "time": "2026-06-25T15:37:15.219550",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 117.1500015258789,
+      "total": 117.1500015258789,
+      "reason": "WMT's RSI is 19.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
