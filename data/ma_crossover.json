@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 57.002716064453125,
+  "cash": 163.57272338867188,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -15,13 +15,9 @@
       "shares": 1,
       "avg_price": 80.14759826660156
     },
-    "WMT": {
+    "PG": {
       "shares": 1,
-      "avg_price": 119.44999694824219
-    },
-    "PEP": {
-      "shares": 1,
-      "avg_price": 142.3300018310547
+      "avg_price": 148.72000122070312
     }
   },
   "trades": [
@@ -715,6 +711,35 @@
       "price": 142.3300018310547,
       "total": 142.3300018310547,
       "reason": "PEP's 10-hour average price ($142.15) is above its 30-hour average ($141.84). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-06-25T17:33:33.431291",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 115.58000183105469,
+      "total": 115.58000183105469,
+      "reason": "WMT's 10-hour average ($117.89) dropped below its 30-hour average ($118.16). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -3.87
+    },
+    {
+      "time": "2026-06-25T17:33:33.432547",
+      "action": "BUY",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 148.72000122070312,
+      "total": 148.72000122070312,
+      "reason": "PG's 10-hour average price ($150.86) is above its 30-hour average ($150.55). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-06-25T17:33:33.434912",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 139.7100067138672,
+      "total": 139.7100067138672,
+      "reason": "PEP's 10-hour average ($141.44) dropped below its 30-hour average ($141.61). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -2.62
     }
   ]
 }

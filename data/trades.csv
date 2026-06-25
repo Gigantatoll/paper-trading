@@ -198,3 +198,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-24 17:27,MA Crossover,SELL,XOM,1,136.13,136.13,-3.89,XOM's 10-hour average ($138.46) dropped below its 30-hour average ($138.53). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-06-24 17:27,MA Crossover,BUY,PEP,1,142.33,142.33,,PEP's 10-hour average price ($142.15) is above its 30-hour average ($141.84). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-06-25 15:37,RSI Agent,BUY,WMT,1,117.15,117.15,,"WMT's RSI is 19.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-06-25 17:33,MA Crossover,SELL,WMT,1,115.58,115.58,-3.87,WMT's 10-hour average ($117.89) dropped below its 30-hour average ($118.16). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-06-25 17:33,MA Crossover,BUY,PG,1,148.72,148.72,,PG's 10-hour average price ($150.86) is above its 30-hour average ($150.55). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-06-25 17:33,MA Crossover,SELL,PEP,1,139.71,139.71,-2.62,PEP's 10-hour average ($141.44) dropped below its 30-hour average ($141.61). This crossover is a classic bearish signal — the short-term trend has turned down.
