@@ -201,3 +201,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-25 17:33,MA Crossover,SELL,WMT,1,115.58,115.58,-3.87,WMT's 10-hour average ($117.89) dropped below its 30-hour average ($118.16). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-06-25 17:33,MA Crossover,BUY,PG,1,148.72,148.72,,PG's 10-hour average price ($150.86) is above its 30-hour average ($150.55). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-06-25 17:33,MA Crossover,SELL,PEP,1,139.71,139.71,-2.62,PEP's 10-hour average ($141.44) dropped below its 30-hour average ($141.61). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-06-25 19:27,Momentum Agent,BUY,BAC,2,58.165,116.33,,"BAC is ranked #5 out of 25 stocks by momentum. It gained 1.10% over the last 10 hours, showing strong upward price pressure."
+2026-06-25 19:27,MA Crossover,SELL,PG,1,148.57,148.57,-0.15,PG's 10-hour average ($150.40) dropped below its 30-hour average ($150.45). This crossover is a classic bearish signal — the short-term trend has turned down.
