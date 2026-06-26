@@ -205,3 +205,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-25 19:27,MA Crossover,SELL,PG,1,148.57,148.57,-0.15,PG's 10-hour average ($150.40) dropped below its 30-hour average ($150.45). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-06-26 15:20,Momentum Agent,SELL,BAC,2,57.825,115.65,-0.68,BAC dropped out of the top 5 momentum stocks (current momentum: 0.07%). Rotating into stronger performers.
 2026-06-26 15:20,Momentum Agent,BUY,NFLX,1,74.74,74.74,,"NFLX is ranked #5 out of 25 stocks by momentum. It gained 3.31% over the last 10 hours, showing strong upward price pressure."
+2026-06-26 17:12,Momentum Agent,SELL,NFLX,1,74.1201,74.12,-0.62,NFLX dropped out of the top 5 momentum stocks (current momentum: 2.33%). Rotating into stronger performers.
+2026-06-26 17:12,MA Crossover,BUY,NFLX,2,74.1201,148.24,,NFLX's 10-hour average price ($72.92) is above its 30-hour average ($72.74). This means short-term momentum is stronger than the longer trend — a bullish signal.
