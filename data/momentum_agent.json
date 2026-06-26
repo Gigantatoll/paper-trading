@@ -1,15 +1,15 @@
 {
   "name": "Momentum Agent",
-  "cash": 371.5181884765625,
+  "cash": 412.4281921386719,
   "starting_capital": 600.0,
   "positions": {
     "MRK": {
       "shares": 1,
       "avg_price": 115.08499908447266
     },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 58.165000915527344
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 74.73999786376953
     }
   },
   "trades": [
@@ -619,6 +619,25 @@
       "price": 58.165000915527344,
       "total": 116.33000183105469,
       "reason": "BAC is ranked #5 out of 25 stocks by momentum. It gained 1.10% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-06-26T15:20:43.925509",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 57.82500076293945,
+      "total": 115.6500015258789,
+      "reason": "BAC dropped out of the top 5 momentum stocks (current momentum: 0.07%). Rotating into stronger performers.",
+      "trade_pnl": -0.68
+    },
+    {
+      "time": "2026-06-26T15:20:43.926411",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 74.73999786376953,
+      "total": 74.73999786376953,
+      "reason": "NFLX is ranked #5 out of 25 stocks by momentum. It gained 3.31% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }
