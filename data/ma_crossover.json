@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 221.15362548828125,
+  "cash": 365.40362548828125,
   "starting_capital": 600.0,
   "positions": {
     "MRK": {
@@ -10,10 +10,6 @@
     "KO": {
       "shares": 1,
       "avg_price": 80.14759826660156
-    },
-    "NFLX": {
-      "shares": 2,
-      "avg_price": 74.12010192871094
     }
   },
   "trades": [
@@ -765,6 +761,16 @@
       "total": 57.2510986328125,
       "reason": "BAC's 10-hour average ($57.89) dropped below its 30-hour average ($57.97). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -0.2
+    },
+    {
+      "time": "2026-06-30T19:11:09.244385",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 2,
+      "price": 72.125,
+      "total": 144.25,
+      "reason": "NFLX's 10-hour average ($73.19) dropped below its 30-hour average ($73.26). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -3.99
     }
   ]
 }
