@@ -213,3 +213,8 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-29 16:33,Momentum Agent,SELL,KO,1,82.795,82.79,0.47,KO dropped out of the top 5 momentum stocks (current momentum: 1.73%). Rotating into stronger performers.
 2026-06-29 16:33,Momentum Agent,SELL,NFLX,1,74.905,74.9,0.92,NFLX dropped out of the top 5 momentum stocks (current momentum: 0.73%). Rotating into stronger performers.
 2026-06-29 16:33,RSI Agent,SELL,NFLX,1,74.905,74.9,2.71,"NFLX's RSI climbed to 67.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-06-30 15:23,RSI Agent,BUY,BAC,2,57.2511,114.5,,"BAC's RSI is 34.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-06-30 15:23,RSI Agent,BUY,NFLX,1,72.505,72.5,,"NFLX's RSI is 32.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-06-30 15:23,MA Crossover,SELL,BAC,1,57.2511,57.25,-0.2,BAC's 10-hour average ($57.89) dropped below its 30-hour average ($57.97). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-06-30 15:23,Dividend Agent,SELL,VZ,2,42.245,84.49,-9.3,"STOP-LOSS: VZ dropped 9.9% from the entry price (bought at $46.90, now $42.24). Selling automatically to protect capital before losses grow further."
+2026-06-30 15:23,Dividend Agent,BUY,O,1,62.515,62.51,,"O pays a 5.16% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($62.51) is above its 30-hour average ($62.34), confirming a healthy trend. Buying to collect steady income while holding."

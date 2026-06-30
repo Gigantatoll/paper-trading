@@ -1,12 +1,8 @@
 {
   "name": "Dividend Agent",
-  "cash": 36.2800178527832,
+  "cash": 58.2550163269043,
   "starting_capital": 600.0,
   "positions": {
-    "VZ": {
-      "shares": 2,
-      "avg_price": 46.89500045776367
-    },
     "MO": {
       "shares": 2,
       "avg_price": 64.875
@@ -22,6 +18,10 @@
     "MRK": {
       "shares": 1,
       "avg_price": 115.08499908447266
+    },
+    "O": {
+      "shares": 1,
+      "avg_price": 62.51499938964844
     }
   },
   "trades": [
@@ -145,6 +145,25 @@
       "price": 115.08499908447266,
       "total": 115.08499908447266,
       "reason": "MRK pays a 2.99% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($115.08) is above its 30-hour average ($114.65), confirming a healthy trend. Buying to collect steady income while holding."
+    },
+    {
+      "time": "2026-06-30T15:23:25.546170",
+      "action": "SELL",
+      "symbol": "VZ",
+      "shares": 2,
+      "price": 42.244998931884766,
+      "total": 84.48999786376953,
+      "reason": "STOP-LOSS: VZ dropped 9.9% from the entry price (bought at $46.90, now $42.24). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -9.3
+    },
+    {
+      "time": "2026-06-30T15:23:25.550820",
+      "action": "BUY",
+      "symbol": "O",
+      "shares": 1,
+      "price": 62.51499938964844,
+      "total": 62.51499938964844,
+      "reason": "O pays a 5.16% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($62.51) is above its 30-hour average ($62.34), confirming a healthy trend. Buying to collect steady income while holding."
     }
   ]
 }
