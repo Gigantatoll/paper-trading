@@ -1,15 +1,11 @@
 {
   "name": "MA Crossover",
-  "cash": 365.40362548828125,
+  "cash": 447.0686264038086,
   "starting_capital": 600.0,
   "positions": {
     "MRK": {
       "shares": 1,
       "avg_price": 117.91500091552734
-    },
-    "KO": {
-      "shares": 1,
-      "avg_price": 80.14759826660156
     }
   },
   "trades": [
@@ -771,6 +767,16 @@
       "total": 144.25,
       "reason": "NFLX's 10-hour average ($73.19) dropped below its 30-hour average ($73.26). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -3.99
+    },
+    {
+      "time": "2026-07-01T15:35:00.437718",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 81.66500091552734,
+      "total": 81.66500091552734,
+      "reason": "KO's 10-hour average ($81.59) dropped below its 30-hour average ($81.70). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 1.52
     }
   ]
 }
