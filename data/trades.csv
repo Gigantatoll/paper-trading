@@ -221,3 +221,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-06-30 17:19,RSI Agent,BUY,PEP,1,136.4,136.4,,"PEP's RSI is 19.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-06-30 19:11,MA Crossover,SELL,NFLX,2,72.125,144.25,-3.99,NFLX's 10-hour average ($73.19) dropped below its 30-hour average ($73.26). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-07-01 15:35,MA Crossover,SELL,KO,1,81.665,81.67,1.52,KO's 10-hour average ($81.59) dropped below its 30-hour average ($81.70). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-07-01 17:31,RSI Agent,BUY,MRK,1,126.29,126.29,,"MRK's RSI is 34.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-07-01 17:31,MA Crossover,SELL,MRK,1,126.29,126.29,8.38,MRK's 10-hour average ($127.49) dropped below its 30-hour average ($127.58). This crossover is a classic bearish signal — the short-term trend has turned down.
