@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 437.9186325073242,
+  "cash": 156.7586441040039,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -10,6 +10,14 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 77.0199966430664
+    },
+    "XOM": {
+      "shares": 1,
+      "avg_price": 137.1199951171875
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 144.0399932861328
     }
   },
   "trades": [
@@ -809,6 +817,24 @@
       "price": 77.0199966430664,
       "total": 77.0199966430664,
       "reason": "NFLX's 10-hour average price ($74.04) is above its 30-hour average ($73.93). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-07-02T16:59:25.513214",
+      "action": "BUY",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 137.1199951171875,
+      "total": 137.1199951171875,
+      "reason": "XOM's 10-hour average price ($136.87) is above its 30-hour average ($136.49). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-07-02T16:59:25.515487",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 144.0399932861328,
+      "total": 144.0399932861328,
+      "reason": "PEP's 10-hour average price ($141.74) is above its 30-hour average ($139.60). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
