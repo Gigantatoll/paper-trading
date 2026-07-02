@@ -1,23 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 30.708072662353516,
+  "cash": 368.7030601501465,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
       "shares": 1,
       "avg_price": 117.1500015258789
-    },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 57.2510986328125
-    },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 72.50499725341797
-    },
-    "PEP": {
-      "shares": 1,
-      "avg_price": 136.39999389648438
     },
     "MRK": {
       "shares": 1,
@@ -544,6 +532,36 @@
       "price": 126.29000091552734,
       "total": 126.29000091552734,
       "reason": "MRK's RSI is 34.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-02T15:06:55.610371",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 58.41999816894531,
+      "total": 116.83999633789062,
+      "reason": "BAC's RSI climbed to 75.3, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 2.34
+    },
+    {
+      "time": "2026-07-02T15:06:55.617568",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 144.13499450683594,
+      "total": 144.13499450683594,
+      "reason": "PEP's RSI climbed to 85.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 7.74
+    },
+    {
+      "time": "2026-07-02T15:06:55.620298",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 77.0199966430664,
+      "total": 77.0199966430664,
+      "reason": "NFLX's RSI climbed to 78.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 4.51
     }
   ]
 }

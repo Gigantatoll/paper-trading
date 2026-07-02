@@ -223,3 +223,9 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-01 15:35,MA Crossover,SELL,KO,1,81.665,81.67,1.52,KO's 10-hour average ($81.59) dropped below its 30-hour average ($81.70). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-07-01 17:31,RSI Agent,BUY,MRK,1,126.29,126.29,,"MRK's RSI is 34.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-07-01 17:31,MA Crossover,SELL,MRK,1,126.29,126.29,8.38,MRK's 10-hour average ($127.49) dropped below its 30-hour average ($127.58). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-07-02 15:06,Momentum Agent,BUY,NFLX,1,77.02,77.02,,"NFLX is ranked #1 out of 25 stocks by momentum. It gained 6.61% over the last 10 hours, showing strong upward price pressure."
+2026-07-02 15:06,RSI Agent,SELL,BAC,2,58.42,116.84,2.34,"BAC's RSI climbed to 75.3, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-07-02 15:06,RSI Agent,SELL,PEP,1,144.135,144.13,7.74,"PEP's RSI climbed to 85.2, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-07-02 15:06,RSI Agent,SELL,NFLX,1,77.02,77.02,4.51,"NFLX's RSI climbed to 78.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-07-02 15:06,MA Crossover,BUY,BAC,1,58.42,58.42,,BAC's 10-hour average price ($58.14) is above its 30-hour average ($57.88). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-07-02 15:06,MA Crossover,BUY,NFLX,1,77.02,77.02,,NFLX's 10-hour average price ($74.04) is above its 30-hour average ($73.93). This means short-term momentum is stronger than the longer trend — a bullish signal.
