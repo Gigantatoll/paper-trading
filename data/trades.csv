@@ -234,3 +234,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-02 16:59,MA Crossover,BUY,PEP,1,144.04,144.04,,PEP's 10-hour average price ($141.74) is above its 30-hour average ($139.60). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-07-02 18:26,MA Crossover,BUY,PG,1,151.22,151.22,,PG's 10-hour average price ($148.59) is above its 30-hour average ($147.71). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-07-03 15:02,Momentum Agent,SELL,WMT,1,111.71,111.71,-0.53,WMT dropped out of the top 5 momentum stocks (current momentum: 3.38%). Rotating into stronger performers.
+2026-07-06 16:13,Momentum Agent,BUY,BAC,2,59.455,118.91,,"BAC is ranked #4 out of 25 stocks by momentum. It gained 1.85% over the last 10 hours, showing strong upward price pressure."
