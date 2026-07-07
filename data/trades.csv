@@ -238,3 +238,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-06 18:23,Momentum Agent,SELL,NFLX,1,76.0,76.0,-1.02,NFLX lost momentum: down 0.92% over the last 10 hours. Selling to avoid further losses.
 2026-07-06 18:23,RSI Agent,SELL,WMT,1,110.46,110.46,-6.69,"WMT's RSI climbed to 65.7, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-07-07 17:35,Momentum Agent,SELL,BAC,2,60.1897,120.38,1.47,BAC dropped out of the top 5 momentum stocks (current momentum: 1.24%). Rotating into stronger performers.
+2026-07-07 19:23,RSI Agent,BUY,NFLX,1,76.43,76.43,,"NFLX's RSI is 34.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
