@@ -237,3 +237,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-06 16:13,Momentum Agent,BUY,BAC,2,59.455,118.91,,"BAC is ranked #4 out of 25 stocks by momentum. It gained 1.85% over the last 10 hours, showing strong upward price pressure."
 2026-07-06 18:23,Momentum Agent,SELL,NFLX,1,76.0,76.0,-1.02,NFLX lost momentum: down 0.92% over the last 10 hours. Selling to avoid further losses.
 2026-07-06 18:23,RSI Agent,SELL,WMT,1,110.46,110.46,-6.69,"WMT's RSI climbed to 65.7, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-07-07 17:35,Momentum Agent,SELL,BAC,2,60.1897,120.38,1.47,BAC dropped out of the top 5 momentum stocks (current momentum: 1.24%). Rotating into stronger performers.
