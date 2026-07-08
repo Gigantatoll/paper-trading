@@ -1,15 +1,11 @@
 {
   "name": "MA Crossover",
-  "cash": 5.538642883300781,
+  "cash": 81.82364654541016,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
       "shares": 1,
       "avg_price": 58.41999816894531
-    },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 77.0199966430664
     },
     "XOM": {
       "shares": 1,
@@ -848,6 +844,16 @@
       "price": 151.22000122070312,
       "total": 151.22000122070312,
       "reason": "PG's 10-hour average price ($148.59) is above its 30-hour average ($147.71). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-07-08T18:08:54.175733",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 76.28500366210938,
+      "total": 76.28500366210938,
+      "reason": "NFLX's 10-hour average ($76.18) dropped below its 30-hour average ($76.25). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.73
     }
   ]
 }

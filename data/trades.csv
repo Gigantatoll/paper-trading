@@ -241,3 +241,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-07 19:23,RSI Agent,BUY,NFLX,1,76.43,76.43,,"NFLX's RSI is 34.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-07-08 16:48,Momentum Agent,BUY,WMT,1,113.255,113.25,,"WMT is ranked #4 out of 25 stocks by momentum. It gained 0.77% over the last 10 hours, showing strong upward price pressure."
 2026-07-08 16:48,RSI Agent,BUY,BAC,2,58.6275,117.25,,"BAC's RSI is 32.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-07-08 18:08,MA Crossover,SELL,NFLX,1,76.285,76.29,-0.73,NFLX's 10-hour average ($76.18) dropped below its 30-hour average ($76.25). This crossover is a classic bearish signal — the short-term trend has turned down.
