@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 285.4780616760254,
+  "cash": 65.29306411743164,
   "starting_capital": 600.0,
   "positions": {
     "MRK": {
@@ -14,6 +14,14 @@
     "BAC": {
       "shares": 2,
       "avg_price": 58.627498626708984
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 137.6999969482422
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 82.48500061035156
     }
   },
   "trades": [
@@ -594,6 +602,24 @@
       "price": 58.627498626708984,
       "total": 117.25499725341797,
       "reason": "BAC's RSI is 32.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-09T15:53:05.107959",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 137.6999969482422,
+      "total": 137.6999969482422,
+      "reason": "PEP's RSI is 19.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-09T15:53:05.110004",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 82.48500061035156,
+      "total": 82.48500061035156,
+      "reason": "KO's RSI is 28.0, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
