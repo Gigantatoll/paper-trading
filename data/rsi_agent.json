@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 65.29306411743164,
+  "cash": 10.523059844970703,
   "starting_capital": 600.0,
   "positions": {
     "MRK": {
@@ -11,10 +11,6 @@
       "shares": 1,
       "avg_price": 76.43000030517578
     },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 58.627498626708984
-    },
     "PEP": {
       "shares": 1,
       "avg_price": 137.6999969482422
@@ -22,6 +18,10 @@
     "KO": {
       "shares": 1,
       "avg_price": 82.48500061035156
+    },
+    "CVX": {
+      "shares": 1,
+      "avg_price": 174.27000427246094
     }
   },
   "trades": [
@@ -620,6 +620,25 @@
       "price": 82.48500061035156,
       "total": 82.48500061035156,
       "reason": "KO's RSI is 28.0, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-10T15:27:02.040619",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 59.75,
+      "total": 119.5,
+      "reason": "BAC's RSI climbed to 75.9, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 2.25
+    },
+    {
+      "time": "2026-07-10T15:27:02.046476",
+      "action": "BUY",
+      "symbol": "CVX",
+      "shares": 1,
+      "price": 174.27000427246094,
+      "total": 174.27000427246094,
+      "reason": "CVX's RSI is 24.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
