@@ -1,11 +1,15 @@
 {
   "name": "MA Crossover",
-  "cash": 502.68364334106445,
+  "cash": 388.8986396789551,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
       "shares": 1,
       "avg_price": 59.755001068115234
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 113.78500366210938
     }
   },
   "trades": [
@@ -891,6 +895,15 @@
       "price": 59.755001068115234,
       "total": 59.755001068115234,
       "reason": "BAC's 10-hour average price ($59.45) is above its 30-hour average ($59.44). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-07-10T18:47:09.046813",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 113.78500366210938,
+      "total": 113.78500366210938,
+      "reason": "WMT's 10-hour average price ($113.00) is above its 30-hour average ($112.39). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
