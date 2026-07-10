@@ -1,8 +1,13 @@
 {
   "name": "MA Crossover",
-  "cash": 562.4386444091797,
+  "cash": 502.68364334106445,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "BAC": {
+      "shares": 1,
+      "avg_price": 59.755001068115234
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.518918",
@@ -877,6 +882,15 @@
       "total": 137.6999969482422,
       "reason": "XOM's 10-hour average ($138.12) dropped below its 30-hour average ($138.98). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": 0.58
+    },
+    {
+      "time": "2026-07-10T17:16:33.091767",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 59.755001068115234,
+      "total": 59.755001068115234,
+      "reason": "BAC's 10-hour average price ($59.45) is above its 30-hour average ($59.44). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }

@@ -252,3 +252,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-10 15:27,RSI Agent,SELL,BAC,2,59.75,119.5,2.25,"BAC's RSI climbed to 75.9, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-07-10 15:27,RSI Agent,BUY,CVX,1,174.27,174.27,,"CVX's RSI is 24.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-07-10 15:27,MA Crossover,SELL,XOM,1,137.7,137.7,0.58,XOM's 10-hour average ($138.12) dropped below its 30-hour average ($138.98). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-07-10 17:16,Momentum Agent,SELL,BAC,2,59.755,119.51,0.01,BAC dropped out of the top 5 momentum stocks (current momentum: 1.18%). Rotating into stronger performers.
+2026-07-10 17:16,MA Crossover,BUY,BAC,1,59.755,59.76,,BAC's 10-hour average price ($59.45) is above its 30-hour average ($59.44). This means short-term momentum is stronger than the longer trend — a bullish signal.
