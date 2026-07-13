@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 10.523059844970703,
+  "cash": 274.2830619812012,
   "starting_capital": 600.0,
   "positions": {
     "MRK": {
@@ -14,14 +14,6 @@
     "PEP": {
       "shares": 1,
       "avg_price": 137.6999969482422
-    },
-    "KO": {
-      "shares": 1,
-      "avg_price": 82.48500061035156
-    },
-    "CVX": {
-      "shares": 1,
-      "avg_price": 174.27000427246094
     }
   },
   "trades": [
@@ -639,6 +631,26 @@
       "price": 174.27000427246094,
       "total": 174.27000427246094,
       "reason": "CVX's RSI is 24.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-13T15:38:57.093654",
+      "action": "SELL",
+      "symbol": "CVX",
+      "shares": 1,
+      "price": 180.0,
+      "total": 180.0,
+      "reason": "CVX's RSI climbed to 83.7, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 5.73
+    },
+    {
+      "time": "2026-07-13T15:38:57.099289",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 83.76000213623047,
+      "total": 83.76000213623047,
+      "reason": "KO's RSI climbed to 68.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.28
     }
   ]
 }
