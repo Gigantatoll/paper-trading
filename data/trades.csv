@@ -260,3 +260,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-13 15:38,RSI Agent,SELL,CVX,1,180.0,180.0,5.73,"CVX's RSI climbed to 83.7, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-07-13 15:38,RSI Agent,SELL,KO,1,83.76,83.76,1.28,"KO's RSI climbed to 68.2, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-07-13 15:38,MA Crossover,BUY,KO,1,83.76,83.76,,KO's 10-hour average price ($83.57) is above its 30-hour average ($83.53). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-07-13 17:34,MA Crossover,BUY,XOM,1,144.315,144.32,,XOM's 10-hour average price ($140.88) is above its 30-hour average ($140.04). This means short-term momentum is stronger than the longer trend — a bullish signal.
