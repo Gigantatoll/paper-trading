@@ -265,3 +265,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-15 16:07,MA Crossover,SELL,KO,1,83.0033,83.0,-0.76,KO's 10-hour average ($83.36) dropped below its 30-hour average ($83.40). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-07-15 17:35,Momentum Agent,SELL,BAC,2,61.505,123.01,1.62,BAC dropped out of the top 5 momentum stocks (current momentum: 0.75%). Rotating into stronger performers.
 2026-07-15 17:35,RSI Agent,BUY,KO,1,82.99,82.99,,"KO's RSI is 21.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-07-15 18:41,MA Crossover,BUY,NFLX,1,73.965,73.96,,NFLX's 10-hour average price ($74.01) is above its 30-hour average ($73.97). This means short-term momentum is stronger than the longer trend — a bullish signal.
