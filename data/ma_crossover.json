@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 160.82363510131836,
+  "cash": 243.8269386291504,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -10,10 +10,6 @@
     "WMT": {
       "shares": 1,
       "avg_price": 113.78500366210938
-    },
-    "KO": {
-      "shares": 1,
-      "avg_price": 83.76000213623047
     },
     "XOM": {
       "shares": 1,
@@ -930,6 +926,16 @@
       "price": 144.31500244140625,
       "total": 144.31500244140625,
       "reason": "XOM's 10-hour average price ($140.88) is above its 30-hour average ($140.04). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-07-15T16:07:52.507845",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 83.00330352783203,
+      "total": 83.00330352783203,
+      "reason": "KO's 10-hour average ($83.36) dropped below its 30-hour average ($83.40). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.76
     }
   ]
 }
