@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 274.2830619812012,
+  "cash": 191.29306411743164,
   "starting_capital": 600.0,
   "positions": {
     "MRK": {
@@ -14,6 +14,10 @@
     "PEP": {
       "shares": 1,
       "avg_price": 137.6999969482422
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 82.98999786376953
     }
   },
   "trades": [
@@ -651,6 +655,15 @@
       "total": 83.76000213623047,
       "reason": "KO's RSI climbed to 68.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 1.28
+    },
+    {
+      "time": "2026-07-15T17:35:13.864595",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 82.98999786376953,
+      "total": 82.98999786376953,
+      "reason": "KO's RSI is 21.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }

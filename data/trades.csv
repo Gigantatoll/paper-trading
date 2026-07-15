@@ -263,3 +263,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-13 17:34,MA Crossover,BUY,XOM,1,144.315,144.32,,XOM's 10-hour average price ($140.88) is above its 30-hour average ($140.04). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-07-14 16:02,Momentum Agent,BUY,BAC,2,60.695,121.39,,"BAC is ranked #5 out of 25 stocks by momentum. It gained 1.75% over the last 10 hours, showing strong upward price pressure."
 2026-07-15 16:07,MA Crossover,SELL,KO,1,83.0033,83.0,-0.76,KO's 10-hour average ($83.36) dropped below its 30-hour average ($83.40). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-07-15 17:35,Momentum Agent,SELL,BAC,2,61.505,123.01,1.62,BAC dropped out of the top 5 momentum stocks (current momentum: 0.75%). Rotating into stronger performers.
+2026-07-15 17:35,RSI Agent,BUY,KO,1,82.99,82.99,,"KO's RSI is 21.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
