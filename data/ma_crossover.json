@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 154.04693984985352,
+  "cash": 77.70693588256836,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -11,13 +11,13 @@
       "shares": 1,
       "avg_price": 144.31500244140625
     },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 73.375
-    },
     "MRK": {
       "shares": 1,
       "avg_price": 128.02999877929688
+    },
+    "PG": {
+      "shares": 1,
+      "avg_price": 150.3300018310547
     }
   },
   "trades": [
@@ -987,6 +987,25 @@
       "price": 128.02999877929688,
       "total": 128.02999877929688,
       "reason": "MRK's 10-hour average price ($124.74) is above its 30-hour average ($123.31). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-07-16T17:36:26.967127",
+      "action": "BUY",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 150.3300018310547,
+      "total": 150.3300018310547,
+      "reason": "PG's 10-hour average price ($148.97) is above its 30-hour average ($147.75). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-07-16T17:36:26.970692",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 73.98999786376953,
+      "total": 73.98999786376953,
+      "reason": "NFLX's 10-hour average ($73.76) dropped below its 30-hour average ($73.88). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 0.61
     }
   ]
 }

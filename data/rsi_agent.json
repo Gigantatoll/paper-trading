@@ -1,15 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 345.203067779541,
+  "cash": 429.76306533813477,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
       "shares": 1,
       "avg_price": 76.43000030517578
-    },
-    "KO": {
-      "shares": 1,
-      "avg_price": 82.98999786376953
     },
     "WMT": {
       "shares": 1,
@@ -689,6 +685,16 @@
       "total": 138.375,
       "reason": "PEP's RSI climbed to 69.5, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 0.68
+    },
+    {
+      "time": "2026-07-16T17:36:26.961390",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 84.55999755859375,
+      "total": 84.55999755859375,
+      "reason": "KO's RSI climbed to 65.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.57
     }
   ]
 }

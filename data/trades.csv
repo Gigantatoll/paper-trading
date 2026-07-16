@@ -273,3 +273,7 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-16 14:52,MA Crossover,BUY,NFLX,1,73.375,73.38,,NFLX's 10-hour average price ($73.79) is above its 30-hour average ($73.78). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-07-16 16:06,RSI Agent,SELL,PEP,1,138.375,138.38,0.68,"PEP's RSI climbed to 69.5, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-07-16 16:06,MA Crossover,BUY,MRK,1,128.03,128.03,,MRK's 10-hour average price ($124.74) is above its 30-hour average ($123.31). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-07-16 17:36,Momentum Agent,BUY,KO,1,84.56,84.56,,"KO is ranked #5 out of 25 stocks by momentum. It gained 1.95% over the last 10 hours, showing strong upward price pressure."
+2026-07-16 17:36,RSI Agent,SELL,KO,1,84.56,84.56,1.57,"KO's RSI climbed to 65.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-07-16 17:36,MA Crossover,BUY,PG,1,150.33,150.33,,PG's 10-hour average price ($148.97) is above its 30-hour average ($147.75). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-07-16 17:36,MA Crossover,SELL,NFLX,1,73.99,73.99,0.61,NFLX's 10-hour average ($73.76) dropped below its 30-hour average ($73.88). This crossover is a classic bearish signal — the short-term trend has turned down.
