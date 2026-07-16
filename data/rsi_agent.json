@@ -1,15 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 206.82806777954102,
+  "cash": 345.203067779541,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
       "shares": 1,
       "avg_price": 76.43000030517578
-    },
-    "PEP": {
-      "shares": 1,
-      "avg_price": 137.6999969482422
     },
     "KO": {
       "shares": 1,
@@ -683,6 +679,16 @@
       "total": 127.8550033569336,
       "reason": "MRK's RSI climbed to 89.5, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 1.57
+    },
+    {
+      "time": "2026-07-16T16:06:43.560543",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 138.375,
+      "total": 138.375,
+      "reason": "PEP's RSI climbed to 69.5, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.68
     }
   ]
 }

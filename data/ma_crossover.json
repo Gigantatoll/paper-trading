@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 282.0769386291504,
+  "cash": 154.04693984985352,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -14,6 +14,10 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 73.375
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 128.02999877929688
     }
   },
   "trades": [
@@ -974,6 +978,15 @@
       "price": 73.375,
       "total": 73.375,
       "reason": "NFLX's 10-hour average price ($73.79) is above its 30-hour average ($73.78). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-07-16T16:06:43.566511",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 128.02999877929688,
+      "total": 128.02999877929688,
+      "reason": "MRK's 10-hour average price ($124.74) is above its 30-hour average ($123.31). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }

@@ -271,3 +271,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-15 19:50,MA Crossover,SELL,NFLX,1,73.27,73.27,-0.69,NFLX's 10-hour average ($73.87) dropped below its 30-hour average ($73.89). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-07-16 14:52,RSI Agent,SELL,MRK,1,127.855,127.86,1.57,"MRK's RSI climbed to 89.5, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-07-16 14:52,MA Crossover,BUY,NFLX,1,73.375,73.38,,NFLX's 10-hour average price ($73.79) is above its 30-hour average ($73.78). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-07-16 16:06,RSI Agent,SELL,PEP,1,138.375,138.38,0.68,"PEP's RSI climbed to 69.5, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-07-16 16:06,MA Crossover,BUY,MRK,1,128.03,128.03,,MRK's 10-hour average price ($124.74) is above its 30-hour average ($123.31). This means short-term momentum is stronger than the longer trend — a bullish signal.
