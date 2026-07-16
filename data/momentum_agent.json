@@ -1,13 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 532.8487014770508,
+  "cash": 617.6487045288086,
   "starting_capital": 600.0,
-  "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 84.55999755859375
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -834,6 +829,16 @@
       "price": 84.55999755859375,
       "total": 84.55999755859375,
       "reason": "KO is ranked #5 out of 25 stocks by momentum. It gained 1.95% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-07-16T18:43:44.908768",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 84.80000305175781,
+      "total": 84.80000305175781,
+      "reason": "KO dropped out of the top 5 momentum stocks (current momentum: 2.19%). Rotating into stronger performers.",
+      "trade_pnl": 0.24
     }
   ]
 }

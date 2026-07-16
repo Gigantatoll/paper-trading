@@ -277,3 +277,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-16 17:36,RSI Agent,SELL,KO,1,84.56,84.56,1.57,"KO's RSI climbed to 65.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-07-16 17:36,MA Crossover,BUY,PG,1,150.33,150.33,,PG's 10-hour average price ($148.97) is above its 30-hour average ($147.75). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-07-16 17:36,MA Crossover,SELL,NFLX,1,73.99,73.99,0.61,NFLX's 10-hour average ($73.76) dropped below its 30-hour average ($73.88). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-07-16 18:43,Momentum Agent,SELL,KO,1,84.8,84.8,0.24,KO dropped out of the top 5 momentum stocks (current momentum: 2.19%). Rotating into stronger performers.
