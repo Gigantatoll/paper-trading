@@ -1,8 +1,13 @@
 {
   "name": "Momentum Agent",
-  "cash": 617.6487045288086,
+  "cash": 502.1987075805664,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "WMT": {
+      "shares": 1,
+      "avg_price": 115.44999694824219
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -839,6 +844,15 @@
       "total": 84.80000305175781,
       "reason": "KO dropped out of the top 5 momentum stocks (current momentum: 2.19%). Rotating into stronger performers.",
       "trade_pnl": 0.24
+    },
+    {
+      "time": "2026-07-17T15:53:36.817682",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 115.44999694824219,
+      "total": 115.44999694824219,
+      "reason": "WMT is ranked #5 out of 25 stocks by momentum. It gained 2.61% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }
