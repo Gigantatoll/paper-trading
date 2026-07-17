@@ -3,13 +3,13 @@
   "cash": 429.76306533813477,
   "starting_capital": 600.0,
   "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 76.43000030517578
-    },
     "WMT": {
       "shares": 1,
       "avg_price": 112.31999969482422
+    },
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 67.84860229492188
     }
   },
   "trades": [
@@ -695,6 +695,25 @@
       "total": 84.55999755859375,
       "reason": "KO's RSI climbed to 65.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 1.57
+    },
+    {
+      "time": "2026-07-17T14:25:50.209366",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 67.84860229492188,
+      "total": 67.84860229492188,
+      "reason": "STOP-LOSS: NFLX dropped 11.2% from the entry price (bought at $76.43, now $67.85). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -8.58
+    },
+    {
+      "time": "2026-07-17T14:25:50.232673",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 67.84860229492188,
+      "total": 67.84860229492188,
+      "reason": "NFLX's RSI is 20.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
