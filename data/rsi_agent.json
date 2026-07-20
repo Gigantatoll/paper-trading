@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 429.76306533813477,
+  "cash": 211.58806228637695,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
@@ -10,6 +10,14 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 67.84860229492188
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 136.13999938964844
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 82.03500366210938
     }
   },
   "trades": [
@@ -714,6 +722,24 @@
       "price": 67.84860229492188,
       "total": 67.84860229492188,
       "reason": "NFLX's RSI is 20.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-20T15:03:17.599435",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 136.13999938964844,
+      "total": 136.13999938964844,
+      "reason": "PEP's RSI is 31.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-20T15:03:17.601729",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 82.03500366210938,
+      "total": 82.03500366210938,
+      "reason": "KO's RSI is 33.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
