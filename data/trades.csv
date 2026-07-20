@@ -284,3 +284,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-17 16:54,Momentum Agent,SELL,WMT,1,114.27,114.27,-1.18,WMT dropped out of the top 5 momentum stocks (current momentum: 0.27%). Rotating into stronger performers.
 2026-07-20 15:03,RSI Agent,BUY,PEP,1,136.14,136.14,,"PEP's RSI is 31.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-07-20 15:03,RSI Agent,BUY,KO,1,82.035,82.04,,"KO's RSI is 33.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-07-20 16:40,MA Crossover,SELL,BAC,1,60.78,60.78,1.02,BAC's 10-hour average ($61.13) dropped below its 30-hour average ($61.23). This crossover is a classic bearish signal — the short-term trend has turned down.
