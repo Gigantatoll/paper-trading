@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 211.58806228637695,
+  "cash": 64.21806716918945,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
@@ -18,6 +18,10 @@
     "KO": {
       "shares": 1,
       "avg_price": 82.03500366210938
+    },
+    "PG": {
+      "shares": 1,
+      "avg_price": 147.3699951171875
     }
   },
   "trades": [
@@ -740,6 +744,15 @@
       "price": 82.03500366210938,
       "total": 82.03500366210938,
       "reason": "KO's RSI is 33.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-21T14:57:25.489427",
+      "action": "BUY",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 147.3699951171875,
+      "total": 147.3699951171875,
+      "reason": "PG's RSI is 13.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
