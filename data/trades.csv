@@ -291,3 +291,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-22 14:57,Momentum Agent,BUY,NFLX,1,70.175,70.18,,"NFLX is ranked #2 out of 25 stocks by momentum. It gained 3.90% over the last 10 hours, showing strong upward price pressure."
 2026-07-22 14:57,Momentum Agent,BUY,MRK,1,128.45,128.45,,"MRK is ranked #4 out of 25 stocks by momentum. It gained 3.03% over the last 10 hours, showing strong upward price pressure."
 2026-07-22 14:57,RSI Agent,SELL,NFLX,1,70.175,70.18,2.33,"NFLX's RSI climbed to 72.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-07-22 16:18,MA Crossover,BUY,BAC,1,61.775,61.78,,BAC's 10-hour average price ($61.35) is above its 30-hour average ($61.26). This means short-term momentum is stronger than the longer trend — a bullish signal.

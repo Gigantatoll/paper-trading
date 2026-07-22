@@ -1,11 +1,15 @@
 {
   "name": "MA Crossover",
-  "cash": 410.69692611694336,
+  "cash": 348.92192459106445,
   "starting_capital": 600.0,
   "positions": {
     "XOM": {
       "shares": 1,
       "avg_price": 144.31500244140625
+    },
+    "BAC": {
+      "shares": 1,
+      "avg_price": 61.775001525878906
     }
   },
   "trades": [
@@ -1024,6 +1028,15 @@
       "total": 124.83999633789062,
       "reason": "MRK's 10-hour average ($125.56) dropped below its 30-hour average ($126.21). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -3.19
+    },
+    {
+      "time": "2026-07-22T16:18:30.933989",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 61.775001525878906,
+      "total": 61.775001525878906,
+      "reason": "BAC's 10-hour average price ($61.35) is above its 30-hour average ($61.26). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
