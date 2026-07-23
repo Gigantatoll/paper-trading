@@ -295,3 +295,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-23 15:02,Momentum Agent,SELL,NFLX,1,68.685,68.68,-1.49,NFLX dropped out of the top 5 momentum stocks (current momentum: 0.89%). Rotating into stronger performers.
 2026-07-23 15:02,MA Crossover,BUY,KO,1,81.605,81.61,,KO's 10-hour average price ($82.13) is above its 30-hour average ($82.01). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-07-23 15:02,MA Crossover,BUY,NFLX,1,68.685,68.68,,NFLX's 10-hour average price ($69.20) is above its 30-hour average ($68.36). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-07-23 16:40,Momentum Agent,SELL,MRK,1,130.32,130.32,1.87,MRK dropped out of the top 5 momentum stocks (current momentum: 1.39%). Rotating into stronger performers.
+2026-07-23 16:40,MA Crossover,BUY,MRK,1,130.32,130.32,,MRK's 10-hour average price ($128.83) is above its 30-hour average ($127.09). This means short-term momentum is stronger than the longer trend — a bullish signal.
