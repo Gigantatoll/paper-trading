@@ -1,12 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 417.8437042236328,
+  "cash": 486.52870178222656,
   "starting_capital": 600.0,
   "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 70.17500305175781
-    },
     "MRK": {
       "shares": 1,
       "avg_price": 128.4499969482422
@@ -885,6 +881,16 @@
       "price": 128.4499969482422,
       "total": 128.4499969482422,
       "reason": "MRK is ranked #4 out of 25 stocks by momentum. It gained 3.03% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-07-23T15:02:52.589449",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 68.68499755859375,
+      "total": 68.68499755859375,
+      "reason": "NFLX dropped out of the top 5 momentum stocks (current momentum: 0.89%). Rotating into stronger performers.",
+      "trade_pnl": -1.49
     }
   ]
 }
