@@ -1,15 +1,11 @@
 {
   "name": "Momentum Agent",
-  "cash": 422.65870666503906,
+  "cash": 546.3487091064453,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
       "shares": 1,
       "avg_price": 70.18000030517578
-    },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 62.005001068115234
     }
   },
   "trades": [
@@ -923,6 +919,16 @@
       "price": 62.005001068115234,
       "total": 124.01000213623047,
       "reason": "BAC is ranked #4 out of 25 stocks by momentum. It gained 1.94% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-07-24T19:05:03.233208",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 61.845001220703125,
+      "total": 123.69000244140625,
+      "reason": "BAC dropped out of the top 5 momentum stocks (current momentum: 1.24%). Rotating into stronger performers.",
+      "trade_pnl": -0.32
     }
   ]
 }
