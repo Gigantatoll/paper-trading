@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 149.3519172668457,
+  "cash": 12.931812286376953,
   "starting_capital": 600.0,
   "positions": {
     "XOM": {
@@ -18,6 +18,10 @@
     "MRK": {
       "shares": 1,
       "avg_price": 130.32000732421875
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 136.42010498046875
     }
   },
   "trades": [
@@ -1082,6 +1086,15 @@
       "total": 81.04000091552734,
       "reason": "KO's 10-hour average ($81.77) dropped below its 30-hour average ($81.83). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -0.57
+    },
+    {
+      "time": "2026-07-24T17:47:39.045888",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 136.42010498046875,
+      "total": 136.42010498046875,
+      "reason": "PEP's 10-hour average price ($135.35) is above its 30-hour average ($135.19). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
