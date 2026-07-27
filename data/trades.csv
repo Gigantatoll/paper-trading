@@ -308,3 +308,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-27 15:37,RSI Agent,SELL,PG,1,149.13,149.13,1.76,"PG's RSI climbed to 73.5, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-07-27 15:37,RSI Agent,SELL,PEP,1,139.86,139.86,3.72,"PEP's RSI climbed to 96.8, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-07-27 15:37,RSI Agent,SELL,KO,1,83.82,83.82,1.78,"KO's RSI climbed to 86.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-07-27 17:20,Momentum Agent,SELL,KO,1,83.71,83.71,-0.11,KO dropped out of the top 5 momentum stocks (current momentum: 2.40%). Rotating into stronger performers.
