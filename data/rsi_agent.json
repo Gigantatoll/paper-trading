@@ -1,25 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 134.39307022094727,
+  "cash": 619.1730766296387,
   "starting_capital": 600.0,
-  "positions": {
-    "WMT": {
-      "shares": 1,
-      "avg_price": 112.31999969482422
-    },
-    "PEP": {
-      "shares": 1,
-      "avg_price": 136.13999938964844
-    },
-    "KO": {
-      "shares": 1,
-      "avg_price": 82.03500366210938
-    },
-    "PG": {
-      "shares": 1,
-      "avg_price": 147.3699951171875
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.515089",
@@ -759,6 +742,46 @@
       "total": 70.17500305175781,
       "reason": "NFLX's RSI climbed to 72.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 2.33
+    },
+    {
+      "time": "2026-07-27T15:37:34.486478",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 111.97000122070312,
+      "total": 111.97000122070312,
+      "reason": "WMT's RSI climbed to 91.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -0.35
+    },
+    {
+      "time": "2026-07-27T15:37:34.488480",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 149.1300048828125,
+      "total": 149.1300048828125,
+      "reason": "PG's RSI climbed to 73.5, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.76
+    },
+    {
+      "time": "2026-07-27T15:37:34.497470",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 139.86000061035156,
+      "total": 139.86000061035156,
+      "reason": "PEP's RSI climbed to 96.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 3.72
+    },
+    {
+      "time": "2026-07-27T15:37:34.499457",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 83.81999969482422,
+      "total": 83.81999969482422,
+      "reason": "KO's RSI climbed to 86.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.78
     }
   ]
 }
