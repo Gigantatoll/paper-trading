@@ -1,15 +1,11 @@
 {
   "name": "Momentum Agent",
-  "cash": 461.86370849609375,
+  "cash": 534.2287063598633,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
       "shares": 1,
       "avg_price": 84.01499938964844
-    },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 73.2249984741211
     }
   },
   "trades": [
@@ -999,6 +995,16 @@
       "price": 73.2249984741211,
       "total": 73.2249984741211,
       "reason": "NFLX is ranked #2 out of 25 stocks by momentum. It gained 4.01% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-07-28T19:46:34.272314",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 72.36499786376953,
+      "total": 72.36499786376953,
+      "reason": "NFLX dropped out of the top 5 momentum stocks (current momentum: 1.94%). Rotating into stronger performers.",
+      "trade_pnl": -0.86
     }
   ]
 }
