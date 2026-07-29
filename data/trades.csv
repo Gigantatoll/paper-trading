@@ -321,3 +321,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-28 16:49,Momentum Agent,BUY,NFLX,1,73.225,73.22,,"NFLX is ranked #2 out of 25 stocks by momentum. It gained 4.01% over the last 10 hours, showing strong upward price pressure."
 2026-07-28 19:46,Momentum Agent,SELL,NFLX,1,72.365,72.36,-0.86,NFLX dropped out of the top 5 momentum stocks (current momentum: 1.94%). Rotating into stronger performers.
 2026-07-29 15:05,Momentum Agent,BUY,NFLX,1,72.18,72.18,,"NFLX is ranked #4 out of 25 stocks by momentum. It gained 2.60% over the last 10 hours, showing strong upward price pressure."
+2026-07-29 16:37,Momentum Agent,SELL,KO,1,89.7701,89.77,5.76,KO lost momentum: down 0.27% over the last 10 hours. Selling to avoid further losses.
+2026-07-29 16:37,Momentum Agent,SELL,NFLX,1,72.965,72.96,0.78,NFLX lost momentum: down 0.82% over the last 10 hours. Selling to avoid further losses.
