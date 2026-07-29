@@ -323,3 +323,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-29 15:05,Momentum Agent,BUY,NFLX,1,72.18,72.18,,"NFLX is ranked #4 out of 25 stocks by momentum. It gained 2.60% over the last 10 hours, showing strong upward price pressure."
 2026-07-29 16:37,Momentum Agent,SELL,KO,1,89.7701,89.77,5.76,KO lost momentum: down 0.27% over the last 10 hours. Selling to avoid further losses.
 2026-07-29 16:37,Momentum Agent,SELL,NFLX,1,72.965,72.96,0.78,NFLX lost momentum: down 0.82% over the last 10 hours. Selling to avoid further losses.
+2026-07-29 18:43,MA Crossover,SELL,MRK,1,131.235,131.24,0.91,MRK's 10-hour average ($131.36) dropped below its 30-hour average ($131.42). This crossover is a classic bearish signal — the short-term trend has turned down.
