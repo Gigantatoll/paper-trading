@@ -333,3 +333,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-30 16:42,Momentum Agent,BUY,NFLX,1,72.705,72.71,,"NFLX is ranked #5 out of 25 stocks by momentum. It gained 0.90% over the last 10 hours, showing strong upward price pressure."
 2026-07-30 16:42,MA Crossover,BUY,XOM,1,156.1,156.1,,XOM's 10-hour average price ($156.35) is above its 30-hour average ($155.43). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-07-30 18:02,Momentum Agent,SELL,NFLX,1,72.995,73.0,0.29,NFLX dropped out of the top 5 momentum stocks (current momentum: 1.00%). Rotating into stronger performers.
+2026-07-30 19:44,MA Crossover,SELL,WMT,1,110.81,110.81,-0.5,WMT's 10-hour average ($111.96) dropped below its 30-hour average ($112.38). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-07-30 19:44,MA Crossover,SELL,PEP,1,139.935,139.93,3.51,PEP's 10-hour average ($141.08) dropped below its 30-hour average ($141.31). This crossover is a classic bearish signal — the short-term trend has turned down.
