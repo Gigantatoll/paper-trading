@@ -1,12 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 209.84682083129883,
+  "cash": 159.72182083129883,
   "starting_capital": 600.0,
   "positions": {
-    "BAC": {
-      "shares": 1,
-      "avg_price": 61.775001525878906
-    },
     "NFLX": {
       "shares": 1,
       "avg_price": 68.68499755859375
@@ -18,6 +14,10 @@
     "KO": {
       "shares": 1,
       "avg_price": 89.33999633789062
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 111.30500030517578
     }
   },
   "trades": [
@@ -1120,6 +1120,25 @@
       "total": 131.23500061035156,
       "reason": "MRK's 10-hour average ($131.36) dropped below its 30-hour average ($131.42). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": 0.91
+    },
+    {
+      "time": "2026-07-30T15:03:49.380204",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 111.30500030517578,
+      "total": 111.30500030517578,
+      "reason": "WMT's 10-hour average price ($113.32) is above its 30-hour average ($112.10). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-07-30T15:03:49.382177",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 61.18000030517578,
+      "total": 61.18000030517578,
+      "reason": "BAC's 10-hour average ($61.67) dropped below its 30-hour average ($62.01). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.6
     }
   ]
 }

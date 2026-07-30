@@ -1,6 +1,6 @@
 {
   "name": "Dividend Agent",
-  "cash": 46.16531753540039,
+  "cash": 5.835319519042969,
   "starting_capital": 600.0,
   "positions": {
     "NEE": {
@@ -19,9 +19,9 @@
       "shares": 3,
       "avg_price": 48.419898986816406
     },
-    "MO": {
-      "shares": 2,
-      "avg_price": 76.25
+    "DOW": {
+      "shares": 6,
+      "avg_price": 29.725000381469727
     }
   },
   "trades": [
@@ -202,6 +202,25 @@
       "price": 76.25,
       "total": 152.5,
       "reason": "MO pays a 5.82% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($76.25) is above its 30-hour average ($72.87), confirming a healthy trend. Buying to collect steady income while holding."
+    },
+    {
+      "time": "2026-07-30T15:03:49.385519",
+      "action": "SELL",
+      "symbol": "MO",
+      "shares": 2,
+      "price": 69.01000213623047,
+      "total": 138.02000427246094,
+      "reason": "STOP-LOSS: MO dropped 9.5% from the entry price (bought at $76.25, now $69.01). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -14.48
+    },
+    {
+      "time": "2026-07-30T15:03:49.389947",
+      "action": "BUY",
+      "symbol": "DOW",
+      "shares": 6,
+      "price": 29.725000381469727,
+      "total": 178.35000228881836,
+      "reason": "DOW pays a 4.60% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($29.73) is above its 30-hour average ($29.45), confirming a healthy trend. Buying to collect steady income while holding."
     }
   ]
 }

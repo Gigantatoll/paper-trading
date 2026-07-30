@@ -324,3 +324,9 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-29 16:37,Momentum Agent,SELL,KO,1,89.7701,89.77,5.76,KO lost momentum: down 0.27% over the last 10 hours. Selling to avoid further losses.
 2026-07-29 16:37,Momentum Agent,SELL,NFLX,1,72.965,72.96,0.78,NFLX lost momentum: down 0.82% over the last 10 hours. Selling to avoid further losses.
 2026-07-29 18:43,MA Crossover,SELL,MRK,1,131.235,131.24,0.91,MRK's 10-hour average ($131.36) dropped below its 30-hour average ($131.42). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-07-30 15:03,RSI Agent,BUY,WMT,1,111.305,111.31,,"WMT's RSI is 25.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-07-30 15:03,RSI Agent,BUY,BAC,2,61.18,122.36,,"BAC's RSI is 31.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-07-30 15:03,MA Crossover,BUY,WMT,1,111.305,111.31,,WMT's 10-hour average price ($113.32) is above its 30-hour average ($112.10). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-07-30 15:03,MA Crossover,SELL,BAC,1,61.18,61.18,-0.6,BAC's 10-hour average ($61.67) dropped below its 30-hour average ($62.01). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-07-30 15:03,Dividend Agent,SELL,MO,2,69.01,138.02,-14.48,"STOP-LOSS: MO dropped 9.5% from the entry price (bought at $76.25, now $69.01). Selling automatically to protect capital before losses grow further."
+2026-07-30 15:03,Dividend Agent,BUY,DOW,6,29.725,178.35,,"DOW pays a 4.60% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($29.73) is above its 30-hour average ($29.45), confirming a healthy trend. Buying to collect steady income while holding."
