@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 385.5080757141113,
+  "cash": 297.8580741882324,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
@@ -10,6 +10,10 @@
     "BAC": {
       "shares": 2,
       "avg_price": 61.18000030517578
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 87.6500015258789
     }
   },
   "trades": [
@@ -809,6 +813,15 @@
       "price": 61.18000030517578,
       "total": 122.36000061035156,
       "reason": "BAC's RSI is 31.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-31T15:13:12.232057",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 87.6500015258789,
+      "total": 87.6500015258789,
+      "reason": "KO's RSI is 25.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
