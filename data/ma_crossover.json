@@ -1,12 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 254.3668098449707,
+  "cash": 325.72681045532227,
   "starting_capital": 600.0,
   "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 68.68499755859375
-    },
     "KO": {
       "shares": 1,
       "avg_price": 89.33999633789062
@@ -1164,6 +1160,16 @@
       "total": 139.93499755859375,
       "reason": "PEP's 10-hour average ($141.08) dropped below its 30-hour average ($141.31). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": 3.51
+    },
+    {
+      "time": "2026-07-31T16:56:39.051105",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 71.36000061035156,
+      "total": 71.36000061035156,
+      "reason": "NFLX's 10-hour average ($72.21) dropped below its 30-hour average ($72.30). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 2.68
     }
   ]
 }

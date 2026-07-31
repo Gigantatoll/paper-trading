@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 297.8580741882324,
+  "cash": 158.3180809020996,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
@@ -14,6 +14,10 @@
     "KO": {
       "shares": 1,
       "avg_price": 87.6500015258789
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 139.5399932861328
     }
   },
   "trades": [
@@ -822,6 +826,15 @@
       "price": 87.6500015258789,
       "total": 87.6500015258789,
       "reason": "KO's RSI is 25.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-07-31T16:56:39.045790",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 139.5399932861328,
+      "total": 139.5399932861328,
+      "reason": "PEP's RSI is 22.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
