@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 282.5780830383301,
+  "cash": 155.6980857849121,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
@@ -14,6 +14,10 @@
     "PEP": {
       "shares": 1,
       "avg_price": 139.5399932861328
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 126.87999725341797
     }
   },
   "trades": [
@@ -841,6 +845,15 @@
       "total": 124.26000213623047,
       "reason": "BAC's RSI climbed to 75.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 1.9
+    },
+    {
+      "time": "2026-08-03T17:27:23.439960",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 126.87999725341797,
+      "total": 126.87999725341797,
+      "reason": "MRK's RSI is 30.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }

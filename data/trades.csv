@@ -342,3 +342,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-07-31 19:54,MA Crossover,SELL,XOM,1,155.885,155.88,-0.22,XOM's 10-hour average ($155.21) dropped below its 30-hour average ($155.25). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-07-31 19:54,MA Crossover,BUY,BAC,1,62.13,62.13,,BAC's 10-hour average price ($61.99) is above its 30-hour average ($61.96). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-07-31 19:54,MA Crossover,SELL,KO,1,87.555,87.56,-1.78,KO's 10-hour average ($87.86) dropped below its 30-hour average ($88.16). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-08-03 17:27,RSI Agent,BUY,MRK,1,126.88,126.88,,"MRK's RSI is 30.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
