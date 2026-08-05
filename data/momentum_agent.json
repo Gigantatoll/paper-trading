@@ -1,8 +1,17 @@
 {
   "name": "Momentum Agent",
-  "cash": 624.9188117980957,
+  "cash": 438.64880752563477,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 74.09500122070312
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 112.17500305175781
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -1086,6 +1095,24 @@
       "total": 111.6500015258789,
       "reason": "WMT dropped out of the top 5 momentum stocks (current momentum: 1.60%). Rotating into stronger performers.",
       "trade_pnl": -0.34
+    },
+    {
+      "time": "2026-08-05T19:53:26.329571",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 74.09500122070312,
+      "total": 74.09500122070312,
+      "reason": "NFLX is ranked #2 out of 25 stocks by momentum. It gained 1.68% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-08-05T19:53:26.330983",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 112.17500305175781,
+      "total": 112.17500305175781,
+      "reason": "WMT is ranked #4 out of 25 stocks by momentum. It gained 1.58% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }
