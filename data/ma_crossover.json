@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 434.05680084228516,
+  "cash": 176.07679748535156,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -10,6 +10,14 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 72.9800033569336
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 111.98999786376953
+    },
+    "PG": {
+      "shares": 1,
+      "avg_price": 145.99000549316406
     }
   },
   "trades": [
@@ -1208,6 +1216,24 @@
       "price": 72.9800033569336,
       "total": 72.9800033569336,
       "reason": "NFLX's 10-hour average price ($72.89) is above its 30-hour average ($72.54). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-08-05T16:50:11.526475",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 111.98999786376953,
+      "total": 111.98999786376953,
+      "reason": "WMT's 10-hour average price ($111.27) is above its 30-hour average ($111.02). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-08-05T16:50:11.528243",
+      "action": "BUY",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 145.99000549316406,
+      "total": 145.99000549316406,
+      "reason": "PG's 10-hour average price ($146.70) is above its 30-hour average ($145.00). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
