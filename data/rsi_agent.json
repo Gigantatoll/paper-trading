@@ -1,12 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 155.6980857849121,
+  "cash": 398.5530815124512,
   "starting_capital": 600.0,
   "positions": {
-    "WMT": {
-      "shares": 1,
-      "avg_price": 111.30500030517578
-    },
     "KO": {
       "shares": 1,
       "avg_price": 87.6500015258789
@@ -14,10 +10,6 @@
     "PEP": {
       "shares": 1,
       "avg_price": 139.5399932861328
-    },
-    "MRK": {
-      "shares": 1,
-      "avg_price": 126.87999725341797
     }
   },
   "trades": [
@@ -854,6 +846,26 @@
       "price": 126.87999725341797,
       "total": 126.87999725341797,
       "reason": "MRK's RSI is 30.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-05T15:08:53.549033",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 112.19000244140625,
+      "total": 112.19000244140625,
+      "reason": "WMT's RSI climbed to 65.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.89
+    },
+    {
+      "time": "2026-08-05T15:08:53.556800",
+      "action": "SELL",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 130.6649932861328,
+      "total": 130.6649932861328,
+      "reason": "MRK's RSI climbed to 67.1, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 3.78
     }
   ]
 }
