@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 176.07679748535156,
+  "cash": 47.07179260253906,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -18,6 +18,10 @@
     "PG": {
       "shares": 1,
       "avg_price": 145.99000549316406
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 129.0050048828125
     }
   },
   "trades": [
@@ -1234,6 +1238,15 @@
       "price": 145.99000549316406,
       "total": 145.99000549316406,
       "reason": "PG's 10-hour average price ($146.70) is above its 30-hour average ($145.00). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-08-05T18:12:49.967195",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 129.0050048828125,
+      "total": 129.0050048828125,
+      "reason": "MRK's 10-hour average price ($129.06) is above its 30-hour average ($129.04). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
