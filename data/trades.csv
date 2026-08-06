@@ -356,3 +356,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-05 19:53,Momentum Agent,BUY,NFLX,1,74.095,74.1,,"NFLX is ranked #2 out of 25 stocks by momentum. It gained 1.68% over the last 10 hours, showing strong upward price pressure."
 2026-08-05 19:53,Momentum Agent,BUY,WMT,1,112.175,112.18,,"WMT is ranked #4 out of 25 stocks by momentum. It gained 1.58% over the last 10 hours, showing strong upward price pressure."
 2026-08-05 19:53,MA Crossover,SELL,MRK,1,128.42,128.42,-0.59,MRK's 10-hour average ($128.89) dropped below its 30-hour average ($128.95). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-08-06 15:07,Momentum Agent,SELL,NFLX,1,73.86,73.86,-0.24,NFLX dropped out of the top 5 momentum stocks (current momentum: 0.81%). Rotating into stronger performers.
+2026-08-06 15:07,RSI Agent,SELL,KO,1,87.03,87.03,-0.62,"KO's RSI climbed to 90.9, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."

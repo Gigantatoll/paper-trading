@@ -1,12 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 438.64880752563477,
+  "cash": 512.5088081359863,
   "starting_capital": 600.0,
   "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 74.09500122070312
-    },
     "WMT": {
       "shares": 1,
       "avg_price": 112.17500305175781
@@ -1113,6 +1109,16 @@
       "price": 112.17500305175781,
       "total": 112.17500305175781,
       "reason": "WMT is ranked #4 out of 25 stocks by momentum. It gained 1.58% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-08-06T15:07:15.755194",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 73.86000061035156,
+      "total": 73.86000061035156,
+      "reason": "NFLX dropped out of the top 5 momentum stocks (current momentum: 0.81%). Rotating into stronger performers.",
+      "trade_pnl": -0.24
     }
   ]
 }
