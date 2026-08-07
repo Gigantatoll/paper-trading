@@ -1,12 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 1.9817962646484375,
+  "cash": 210.38179779052734,
   "starting_capital": 600.0,
   "positions": {
-    "BAC": {
-      "shares": 1,
-      "avg_price": 62.130001068115234
-    },
     "NFLX": {
       "shares": 1,
       "avg_price": 72.9800033569336
@@ -14,10 +10,6 @@
     "WMT": {
       "shares": 1,
       "avg_price": 111.98999786376953
-    },
-    "PG": {
-      "shares": 1,
-      "avg_price": 145.99000549316406
     },
     "KO": {
       "shares": 2,
@@ -1266,6 +1258,26 @@
       "price": 86.75499725341797,
       "total": 173.50999450683594,
       "reason": "KO's 10-hour average price ($86.73) is above its 30-hour average ($86.66). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-08-07T17:02:20.170117",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 145.375,
+      "total": 145.375,
+      "reason": "PG's 10-hour average ($146.00) dropped below its 30-hour average ($146.14). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.62
+    },
+    {
+      "time": "2026-08-07T17:02:20.172157",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 63.025001525878906,
+      "total": 63.025001525878906,
+      "reason": "BAC's 10-hour average ($62.93) dropped below its 30-hour average ($62.97). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 0.9
     }
   ]
 }
