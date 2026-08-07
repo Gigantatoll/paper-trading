@@ -358,3 +358,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-05 19:53,MA Crossover,SELL,MRK,1,128.42,128.42,-0.59,MRK's 10-hour average ($128.89) dropped below its 30-hour average ($128.95). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-08-06 15:07,Momentum Agent,SELL,NFLX,1,73.86,73.86,-0.24,NFLX dropped out of the top 5 momentum stocks (current momentum: 0.81%). Rotating into stronger performers.
 2026-08-06 15:07,RSI Agent,SELL,KO,1,87.03,87.03,-0.62,"KO's RSI climbed to 90.9, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-08-07 14:06,Momentum Agent,SELL,WMT,1,111.67,111.67,-0.51,WMT dropped out of the top 5 momentum stocks (current momentum: 0.04%). Rotating into stronger performers.
+2026-08-07 14:06,RSI Agent,BUY,BAC,1,62.7,62.7,,"BAC's RSI is 34.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-07 14:06,RSI Agent,BUY,MRK,1,127.7976,127.8,,"MRK's RSI is 24.0, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."

@@ -1,11 +1,19 @@
 {
   "name": "RSI Agent",
-  "cash": 485.58308029174805,
+  "cash": 295.0854797363281,
   "starting_capital": 600.0,
   "positions": {
     "PEP": {
       "shares": 1,
       "avg_price": 139.5399932861328
+    },
+    "BAC": {
+      "shares": 1,
+      "avg_price": 62.70000076293945
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 127.79759979248047
     }
   },
   "trades": [
@@ -872,6 +880,24 @@
       "total": 87.02999877929688,
       "reason": "KO's RSI climbed to 90.9, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -0.62
+    },
+    {
+      "time": "2026-08-07T14:06:00.512631",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 62.70000076293945,
+      "total": 62.70000076293945,
+      "reason": "BAC's RSI is 34.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-07T14:06:00.516545",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 127.79759979248047,
+      "total": 127.79759979248047,
+      "reason": "MRK's RSI is 24.0, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
