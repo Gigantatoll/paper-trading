@@ -1,15 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 39.36548614501953,
+  "cash": 103.28538513183594,
   "starting_capital": 600.0,
   "positions": {
     "PEP": {
       "shares": 1,
       "avg_price": 139.5399932861328
-    },
-    "BAC": {
-      "shares": 1,
-      "avg_price": 62.70000076293945
     },
     "MRK": {
       "shares": 1,
@@ -924,6 +920,16 @@
       "price": 144.6999969482422,
       "total": 144.6999969482422,
       "reason": "PG's RSI is 33.6, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-10T15:16:34.442953",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 63.919898986816406,
+      "total": 63.919898986816406,
+      "reason": "BAC's RSI climbed to 73.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.22
     }
   ]
 }

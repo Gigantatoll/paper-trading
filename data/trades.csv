@@ -370,3 +370,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-10 14:14,RSI Agent,BUY,PG,1,144.7,144.7,,"PG's RSI is 33.6, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-08-10 14:14,Dividend Agent,SELL,NEE,1,84.0,84.0,-7.5,"STOP-LOSS: NEE dropped 8.2% from the entry price (bought at $91.50, now $84.00). Selling automatically to protect capital before losses grow further."
 2026-08-10 14:14,Dividend Agent,BUY,MO,1,66.58,66.58,,"MO pays a 6.20% annual dividend yield, ranking it among the top dividend payers on the watchlist. Buying to collect steady income while holding."
+2026-08-10 15:16,RSI Agent,SELL,BAC,1,63.9199,63.92,1.22,"BAC's RSI climbed to 73.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-08-10 15:16,MA Crossover,BUY,BAC,1,63.9199,63.92,,BAC's 10-hour average price ($63.19) is above its 30-hour average ($63.17). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-08-10 15:16,MA Crossover,BUY,PEP,1,138.04,138.04,,PEP's 10-hour average price ($138.56) is above its 30-hour average ($138.42). This means short-term momentum is stronger than the longer trend — a bullish signal.
