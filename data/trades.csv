@@ -366,3 +366,7 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-07 17:02,MA Crossover,SELL,PG,1,145.375,145.38,-0.62,PG's 10-hour average ($146.00) dropped below its 30-hour average ($146.14). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-08-07 17:02,MA Crossover,SELL,BAC,1,63.025,63.03,0.9,BAC's 10-hour average ($62.93) dropped below its 30-hour average ($62.97). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-08-07 17:54,Momentum Agent,SELL,NFLX,1,74.205,74.21,0.03,NFLX dropped out of the top 5 momentum stocks (current momentum: 0.82%). Rotating into stronger performers.
+2026-08-10 14:14,RSI Agent,BUY,WMT,1,111.02,111.02,,"WMT's RSI is 32.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-10 14:14,RSI Agent,BUY,PG,1,144.7,144.7,,"PG's RSI is 33.6, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-10 14:14,Dividend Agent,SELL,NEE,1,84.0,84.0,-7.5,"STOP-LOSS: NEE dropped 8.2% from the entry price (bought at $91.50, now $84.00). Selling automatically to protect capital before losses grow further."
+2026-08-10 14:14,Dividend Agent,BUY,MO,1,66.58,66.58,,"MO pays a 6.20% annual dividend yield, ranking it among the top dividend payers on the watchlist. Buying to collect steady income while holding."

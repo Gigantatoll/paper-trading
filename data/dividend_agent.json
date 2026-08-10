@@ -1,12 +1,8 @@
 {
   "name": "Dividend Agent",
-  "cash": 5.835319519042969,
+  "cash": 23.25531768798828,
   "starting_capital": 600.0,
   "positions": {
-    "NEE": {
-      "shares": 1,
-      "avg_price": 91.5
-    },
     "SO": {
       "shares": 1,
       "avg_price": 93.98999786376953
@@ -22,6 +18,10 @@
     "DOW": {
       "shares": 6,
       "avg_price": 29.725000381469727
+    },
+    "MO": {
+      "shares": 1,
+      "avg_price": 66.58000183105469
     }
   },
   "trades": [
@@ -221,6 +221,25 @@
       "price": 29.725000381469727,
       "total": 178.35000228881836,
       "reason": "DOW pays a 4.60% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($29.73) is above its 30-hour average ($29.45), confirming a healthy trend. Buying to collect steady income while holding."
+    },
+    {
+      "time": "2026-08-10T14:14:43.634619",
+      "action": "SELL",
+      "symbol": "NEE",
+      "shares": 1,
+      "price": 84.0,
+      "total": 84.0,
+      "reason": "STOP-LOSS: NEE dropped 8.2% from the entry price (bought at $91.50, now $84.00). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -7.5
+    },
+    {
+      "time": "2026-08-10T14:14:43.635528",
+      "action": "BUY",
+      "symbol": "MO",
+      "shares": 1,
+      "price": 66.58000183105469,
+      "total": 66.58000183105469,
+      "reason": "MO pays a 6.20% annual dividend yield, ranking it among the top dividend payers on the watchlist. Buying to collect steady income while holding."
     }
   ]
 }
