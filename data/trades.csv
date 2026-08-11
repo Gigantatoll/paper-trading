@@ -381,3 +381,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-10 18:56,MA Crossover,SELL,PEP,1,137.305,137.3,-0.74,PEP's 10-hour average ($138.29) dropped below its 30-hour average ($138.33). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-08-10 19:52,Momentum Agent,SELL,BAC,2,63.8008,127.6,0.02,BAC dropped out of the top 5 momentum stocks (current momentum: 1.13%). Rotating into stronger performers.
 2026-08-11 14:13,Momentum Agent,SELL,MRK,1,130.64,130.64,-0.15,MRK dropped out of the top 5 momentum stocks (current momentum: 1.77%). Rotating into stronger performers.
+2026-08-11 15:16,MA Crossover,BUY,WMT,1,112.43,112.43,,WMT's 10-hour average price ($111.91) is above its 30-hour average ($111.84). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-08-11 15:16,MA Crossover,BUY,MRK,1,130.38,130.38,,MRK's 10-hour average price ($130.20) is above its 30-hour average ($129.07). This means short-term momentum is stronger than the longer trend — a bullish signal.

@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 257.33190155029297,
+  "cash": 14.521896362304688,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
@@ -14,6 +14,14 @@
     "BAC": {
       "shares": 1,
       "avg_price": 63.919898986816406
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 112.43000030517578
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 130.3800048828125
     }
   },
   "trades": [
@@ -1316,6 +1324,24 @@
       "total": 137.30499267578125,
       "reason": "PEP's 10-hour average ($138.29) dropped below its 30-hour average ($138.33). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -0.74
+    },
+    {
+      "time": "2026-08-11T15:16:28.917699",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 112.43000030517578,
+      "total": 112.43000030517578,
+      "reason": "WMT's 10-hour average price ($111.91) is above its 30-hour average ($111.84). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-08-11T15:16:28.920707",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 130.3800048828125,
+      "total": 130.3800048828125,
+      "reason": "MRK's 10-hour average price ($130.20) is above its 30-hour average ($129.07). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
