@@ -1,15 +1,11 @@
 {
   "name": "MA Crossover",
-  "cash": 14.521896362304688,
+  "cash": 187.67189025878906,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
       "shares": 1,
       "avg_price": 72.9800033569336
-    },
-    "KO": {
-      "shares": 2,
-      "avg_price": 86.75499725341797
     },
     "BAC": {
       "shares": 1,
@@ -1342,6 +1338,16 @@
       "price": 130.3800048828125,
       "total": 130.3800048828125,
       "reason": "MRK's 10-hour average price ($130.20) is above its 30-hour average ($129.07). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-08-11T18:05:26.221036",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 2,
+      "price": 86.57499694824219,
+      "total": 173.14999389648438,
+      "reason": "KO's 10-hour average ($86.86) dropped below its 30-hour average ($86.86). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.36
     }
   ]
 }
