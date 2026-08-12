@@ -1,12 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 28.00189208984375,
+  "cash": 101.93359375,
   "starting_capital": 600.0,
   "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 72.9800033569336
-    },
     "BAC": {
       "shares": 1,
       "avg_price": 63.919898986816406
@@ -1361,6 +1357,16 @@
       "price": 159.6699981689453,
       "total": 159.6699981689453,
       "reason": "XOM's 10-hour average price ($159.98) is above its 30-hour average ($155.87). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-08-12T17:09:34.855882",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 73.93170166015625,
+      "total": 73.93170166015625,
+      "reason": "NFLX's 10-hour average ($74.49) dropped below its 30-hour average ($74.56). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 0.95
     }
   ]
 }
