@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 346.65538024902344,
+  "cash": 260.05538177490234,
   "starting_capital": 600.0,
   "positions": {
     "PEP": {
@@ -10,6 +10,10 @@
     "PG": {
       "shares": 1,
       "avg_price": 144.6999969482422
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 86.5999984741211
     }
   },
   "trades": [
@@ -942,6 +946,15 @@
       "total": 112.57499694824219,
       "reason": "WMT's RSI climbed to 67.3, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 1.56
+    },
+    {
+      "time": "2026-08-12T15:15:01.666514",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 86.5999984741211,
+      "total": 86.5999984741211,
+      "reason": "KO's RSI is 33.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
