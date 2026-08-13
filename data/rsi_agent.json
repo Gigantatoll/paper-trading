@@ -1,15 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 255.8853759765625,
+  "cash": 333.1653747558594,
   "starting_capital": 600.0,
   "positions": {
     "PG": {
       "shares": 1,
       "avg_price": 144.6999969482422
-    },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 73.75499725341797
     },
     "XOM": {
       "shares": 1,
@@ -993,6 +989,16 @@
       "total": 87.33000183105469,
       "reason": "KO's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 0.73
+    },
+    {
+      "time": "2026-08-13T17:10:38.631158",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 77.27999877929688,
+      "total": 77.27999877929688,
+      "reason": "NFLX's RSI climbed to 71.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 3.53
     }
   ]
 }
