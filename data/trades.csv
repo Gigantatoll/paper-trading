@@ -402,3 +402,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-13 17:10,Momentum Agent,SELL,WMT,1,115.08,115.08,2.61,WMT dropped out of the top 5 momentum stocks (current momentum: 0.33%). Rotating into stronger performers.
 2026-08-13 17:10,Momentum Agent,BUY,KO,1,87.46,87.46,,"KO is ranked #5 out of 25 stocks by momentum. It gained 1.34% over the last 10 hours, showing strong upward price pressure."
 2026-08-13 17:10,RSI Agent,SELL,NFLX,1,77.28,77.28,3.53,"NFLX's RSI climbed to 71.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-08-13 18:05,Momentum Agent,SELL,KO,1,87.62,87.62,0.16,KO dropped out of the top 5 momentum stocks (current momentum: 0.92%). Rotating into stronger performers.
