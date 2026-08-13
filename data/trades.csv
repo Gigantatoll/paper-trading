@@ -398,3 +398,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-13 14:17,RSI Agent,BUY,XOM,1,157.8,157.8,,"XOM's RSI is 29.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-08-13 14:17,RSI Agent,SELL,PEP,1,140.055,140.05,0.51,"PEP's RSI climbed to 69.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-08-13 14:17,RSI Agent,SELL,KO,1,87.33,87.33,0.73,"KO's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-08-13 16:11,MA Crossover,BUY,KO,1,87.6,87.6,,KO's 10-hour average price ($87.00) is above its 30-hour average ($86.94). This means short-term momentum is stronger than the longer trend — a bullish signal.
