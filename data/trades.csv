@@ -393,3 +393,8 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-12 16:10,RSI Agent,BUY,NFLX,1,73.755,73.75,,"NFLX's RSI is 24.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-08-12 17:09,Momentum Agent,BUY,MRK,1,132.9,132.9,,"MRK is ranked #2 out of 25 stocks by momentum. It gained 2.22% over the last 10 hours, showing strong upward price pressure."
 2026-08-12 17:09,MA Crossover,SELL,NFLX,1,73.9317,73.93,0.95,NFLX's 10-hour average ($74.49) dropped below its 30-hour average ($74.56). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-08-13 14:17,Momentum Agent,SELL,BAC,1,64.71,64.71,0.16,BAC dropped out of the top 5 momentum stocks (current momentum: 1.04%). Rotating into stronger performers.
+2026-08-13 14:17,Momentum Agent,BUY,NFLX,1,77.29,77.29,,"NFLX is ranked #2 out of 25 stocks by momentum. It gained 3.35% over the last 10 hours, showing strong upward price pressure."
+2026-08-13 14:17,RSI Agent,BUY,XOM,1,157.8,157.8,,"XOM's RSI is 29.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-13 14:17,RSI Agent,SELL,PEP,1,140.055,140.05,0.51,"PEP's RSI climbed to 69.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-08-13 14:17,RSI Agent,SELL,KO,1,87.33,87.33,0.73,"KO's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."

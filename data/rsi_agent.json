@@ -1,23 +1,19 @@
 {
   "name": "RSI Agent",
-  "cash": 186.30038452148438,
+  "cash": 255.8853759765625,
   "starting_capital": 600.0,
   "positions": {
-    "PEP": {
-      "shares": 1,
-      "avg_price": 139.5399932861328
-    },
     "PG": {
       "shares": 1,
       "avg_price": 144.6999969482422
     },
-    "KO": {
-      "shares": 1,
-      "avg_price": 86.5999984741211
-    },
     "NFLX": {
       "shares": 1,
       "avg_price": 73.75499725341797
+    },
+    "XOM": {
+      "shares": 1,
+      "avg_price": 157.8000030517578
     }
   },
   "trades": [
@@ -968,6 +964,35 @@
       "price": 73.75499725341797,
       "total": 73.75499725341797,
       "reason": "NFLX's RSI is 24.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-13T14:17:02.121756",
+      "action": "BUY",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 157.8000030517578,
+      "total": 157.8000030517578,
+      "reason": "XOM's RSI is 29.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-13T14:17:02.130068",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 140.05499267578125,
+      "total": 140.05499267578125,
+      "reason": "PEP's RSI climbed to 69.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.51
+    },
+    {
+      "time": "2026-08-13T14:17:02.132330",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 87.33000183105469,
+      "total": 87.33000183105469,
+      "reason": "KO's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.73
     }
   ]
 }
