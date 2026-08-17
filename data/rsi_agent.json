@@ -1,15 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 333.1653747558594,
+  "cash": 494.3403778076172,
   "starting_capital": 600.0,
   "positions": {
     "PG": {
       "shares": 1,
       "avg_price": 144.6999969482422
-    },
-    "XOM": {
-      "shares": 1,
-      "avg_price": 157.8000030517578
     }
   },
   "trades": [
@@ -999,6 +995,16 @@
       "total": 77.27999877929688,
       "reason": "NFLX's RSI climbed to 71.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 3.53
+    },
+    {
+      "time": "2026-08-17T16:56:58.071161",
+      "action": "SELL",
+      "symbol": "XOM",
+      "shares": 1,
+      "price": 161.1750030517578,
+      "total": 161.1750030517578,
+      "reason": "XOM's RSI climbed to 65.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 3.38
     }
   ]
 }
