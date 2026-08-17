@@ -1,13 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 498.04082107543945,
+  "cash": 627.1308174133301,
   "starting_capital": 600.0,
-  "positions": {
-    "BAC": {
-      "shares": 2,
-      "avg_price": 64.5999984741211
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -1328,6 +1323,16 @@
       "total": 76.9802017211914,
       "reason": "NFLX lost momentum: down 0.17% over the last 10 hours. Selling to avoid further losses.",
       "trade_pnl": -0.31
+    },
+    {
+      "time": "2026-08-17T17:49:12.960755",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 64.54499816894531,
+      "total": 129.08999633789062,
+      "reason": "BAC dropped out of the top 5 momentum stocks (current momentum: 0.12%). Rotating into stronger performers.",
+      "trade_pnl": -0.11
     }
   ]
 }

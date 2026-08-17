@@ -1,11 +1,15 @@
 {
   "name": "RSI Agent",
-  "cash": 494.3403778076172,
+  "cash": 407.4331741333008,
   "starting_capital": 600.0,
   "positions": {
     "PG": {
       "shares": 1,
       "avg_price": 144.6999969482422
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 86.9072036743164
     }
   },
   "trades": [
@@ -1005,6 +1009,15 @@
       "total": 161.1750030517578,
       "reason": "XOM's RSI climbed to 65.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 3.38
+    },
+    {
+      "time": "2026-08-17T17:49:12.984138",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 86.9072036743164,
+      "total": 86.9072036743164,
+      "reason": "KO's RSI is 30.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
