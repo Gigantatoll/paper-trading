@@ -413,3 +413,8 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-17 16:56,RSI Agent,SELL,XOM,1,161.175,161.18,3.38,"XOM's RSI climbed to 65.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-08-17 17:49,Momentum Agent,SELL,BAC,2,64.545,129.09,-0.11,BAC dropped out of the top 5 momentum stocks (current momentum: 0.12%). Rotating into stronger performers.
 2026-08-17 17:49,RSI Agent,BUY,KO,1,86.9072,86.91,,"KO's RSI is 30.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-17 18:58,RSI Agent,BUY,WMT,1,114.03,114.03,,"WMT's RSI is 29.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-17 18:58,RSI Agent,BUY,PEP,1,138.06,138.06,,"PEP's RSI is 29.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-17 18:58,RSI Agent,BUY,NFLX,2,75.56,151.12,,"NFLX's RSI is 21.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-17 18:58,MA Crossover,SELL,WMT,1,114.03,114.03,1.6,WMT's 10-hour average ($114.81) dropped below its 30-hour average ($114.88). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-08-17 18:58,MA Crossover,BUY,NFLX,1,75.56,75.56,,NFLX's 10-hour average price ($76.93) is above its 30-hour average ($76.24). This means short-term momentum is stronger than the longer trend — a bullish signal.
