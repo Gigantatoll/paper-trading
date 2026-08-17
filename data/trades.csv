@@ -418,3 +418,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-17 18:58,RSI Agent,BUY,NFLX,2,75.56,151.12,,"NFLX's RSI is 21.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-08-17 18:58,MA Crossover,SELL,WMT,1,114.03,114.03,1.6,WMT's 10-hour average ($114.81) dropped below its 30-hour average ($114.88). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-08-17 18:58,MA Crossover,BUY,NFLX,1,75.56,75.56,,NFLX's 10-hour average price ($76.93) is above its 30-hour average ($76.24). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-08-17 19:49,MA Crossover,SELL,PEP,1,138.265,138.26,-2.43,PEP's 10-hour average ($139.01) dropped below its 30-hour average ($139.21). This crossover is a classic bearish signal — the short-term trend has turned down.
