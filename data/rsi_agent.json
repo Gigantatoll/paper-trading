@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 92.98318481445312,
+  "cash": 29.223186492919922,
   "starting_capital": 600.0,
   "positions": {
     "PG": {
@@ -18,6 +18,10 @@
     "NFLX": {
       "shares": 2,
       "avg_price": 75.55999755859375
+    },
+    "BAC": {
+      "shares": 1,
+      "avg_price": 63.7599983215332
     }
   },
   "trades": [
@@ -1063,6 +1067,15 @@
       "total": 88.76000213623047,
       "reason": "KO's RSI climbed to 65.9, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 1.85
+    },
+    {
+      "time": "2026-08-18T16:46:56.222922",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 63.7599983215332,
+      "total": 63.7599983215332,
+      "reason": "BAC's RSI is 34.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
