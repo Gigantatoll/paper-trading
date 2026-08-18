@@ -421,3 +421,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-17 19:49,MA Crossover,SELL,PEP,1,138.265,138.26,-2.43,PEP's 10-hour average ($139.01) dropped below its 30-hour average ($139.21). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-08-18 14:48,MA Crossover,BUY,XOM,1,163.47,163.47,,XOM's 10-hour average price ($161.65) is above its 30-hour average ($160.31). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-08-18 14:48,MA Crossover,SELL,BAC,1,63.9,63.9,-0.02,BAC's 10-hour average ($64.41) dropped below its 30-hour average ($64.42). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-08-18 15:15,Momentum Agent,BUY,KO,1,88.82,88.82,,"KO is ranked #5 out of 25 stocks by momentum. It gained 1.47% over the last 10 hours, showing strong upward price pressure."

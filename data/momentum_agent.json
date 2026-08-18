@@ -1,8 +1,13 @@
 {
   "name": "Momentum Agent",
-  "cash": 627.1308174133301,
+  "cash": 538.3108177185059,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "KO": {
+      "shares": 1,
+      "avg_price": 88.81999969482422
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -1333,6 +1338,15 @@
       "total": 129.08999633789062,
       "reason": "BAC dropped out of the top 5 momentum stocks (current momentum: 0.12%). Rotating into stronger performers.",
       "trade_pnl": -0.11
+    },
+    {
+      "time": "2026-08-18T15:15:29.099469",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 88.81999969482422,
+      "total": 88.81999969482422,
+      "reason": "KO is ranked #5 out of 25 stocks by momentum. It gained 1.47% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }
