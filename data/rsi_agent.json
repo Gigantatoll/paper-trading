@@ -1,15 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 4.223182678222656,
+  "cash": 92.98318481445312,
   "starting_capital": 600.0,
   "positions": {
     "PG": {
       "shares": 1,
       "avg_price": 144.6999969482422
-    },
-    "KO": {
-      "shares": 1,
-      "avg_price": 86.9072036743164
     },
     "WMT": {
       "shares": 1,
@@ -1057,6 +1053,16 @@
       "price": 75.55999755859375,
       "total": 151.1199951171875,
       "reason": "NFLX's RSI is 21.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-18T16:11:36.295121",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 88.76000213623047,
+      "total": 88.76000213623047,
+      "reason": "KO's RSI climbed to 65.9, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.85
     }
   ]
 }

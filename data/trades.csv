@@ -423,3 +423,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-18 14:48,MA Crossover,SELL,BAC,1,63.9,63.9,-0.02,BAC's 10-hour average ($64.41) dropped below its 30-hour average ($64.42). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-08-18 15:15,Momentum Agent,BUY,KO,1,88.82,88.82,,"KO is ranked #5 out of 25 stocks by momentum. It gained 1.47% over the last 10 hours, showing strong upward price pressure."
 2026-08-18 15:47,Momentum Agent,SELL,KO,1,88.66,88.66,-0.16,KO dropped out of the top 5 momentum stocks (current momentum: 1.08%). Rotating into stronger performers.
+2026-08-18 16:11,RSI Agent,SELL,KO,1,88.76,88.76,1.85,"KO's RSI climbed to 65.9, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
