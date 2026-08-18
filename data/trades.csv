@@ -426,3 +426,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-18 16:11,RSI Agent,SELL,KO,1,88.76,88.76,1.85,"KO's RSI climbed to 65.9, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-08-18 16:46,Momentum Agent,BUY,NFLX,1,78.855,78.86,,"NFLX is ranked #3 out of 25 stocks by momentum. It gained 2.61% over the last 10 hours, showing strong upward price pressure."
 2026-08-18 16:46,RSI Agent,BUY,BAC,1,63.76,63.76,,"BAC's RSI is 34.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-18 19:56,Momentum Agent,BUY,KO,1,88.825,88.82,,"KO is ranked #5 out of 25 stocks by momentum. It gained 2.10% over the last 10 hours, showing strong upward price pressure."
