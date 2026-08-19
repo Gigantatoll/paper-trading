@@ -434,3 +434,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-19 14:15,RSI Agent,SELL,WMT,1,116.69,116.69,2.66,"WMT's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-08-19 14:15,RSI Agent,SELL,NFLX,2,80.31,160.62,9.5,"NFLX's RSI climbed to 71.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-08-19 14:15,MA Crossover,SELL,MRK,1,151.1,151.1,20.72,"TAKE-PROFIT: MRK is up 15.9% from the entry price (bought at $130.38, now $151.10). Locking in the gain before the price can reverse."
+2026-08-19 14:54,MA Crossover,BUY,WMT,1,116.565,116.57,,WMT's 10-hour average price ($115.63) is above its 30-hour average ($115.25). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-08-19 14:54,MA Crossover,BUY,PEP,1,141.33,141.33,,PEP's 10-hour average price ($140.29) is above its 30-hour average ($139.94). This means short-term momentum is stronger than the longer trend — a bullish signal.
