@@ -1,6 +1,6 @@
 {
   "name": "Momentum Agent",
-  "cash": 401.0853157043457,
+  "cash": 310.5502128601074,
   "starting_capital": 600.0,
   "positions": {
     "NFLX": {
@@ -10,6 +10,10 @@
     "MRK": {
       "shares": 1,
       "avg_price": 148.3300018310547
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 90.53510284423828
     }
   },
   "trades": [
@@ -1417,6 +1421,15 @@
       "total": 89.98500061035156,
       "reason": "KO dropped out of the top 5 momentum stocks (current momentum: 1.29%). Rotating into stronger performers.",
       "trade_pnl": -0.07
+    },
+    {
+      "time": "2026-08-19T18:17:14.927625",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 90.53510284423828,
+      "total": 90.53510284423828,
+      "reason": "KO is ranked #5 out of 25 stocks by momentum. It gained 1.93% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }

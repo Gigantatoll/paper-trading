@@ -438,3 +438,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-19 14:54,MA Crossover,BUY,PEP,1,141.33,141.33,,PEP's 10-hour average price ($140.29) is above its 30-hour average ($139.94). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-08-19 17:05,Momentum Agent,BUY,KO,1,90.05,90.05,,"KO is ranked #5 out of 25 stocks by momentum. It gained 1.92% over the last 10 hours, showing strong upward price pressure."
 2026-08-19 17:35,Momentum Agent,SELL,KO,1,89.985,89.99,-0.07,KO dropped out of the top 5 momentum stocks (current momentum: 1.29%). Rotating into stronger performers.
+2026-08-19 18:17,Momentum Agent,BUY,KO,1,90.5351,90.54,,"KO is ranked #5 out of 25 stocks by momentum. It gained 1.93% over the last 10 hours, showing strong upward price pressure."
