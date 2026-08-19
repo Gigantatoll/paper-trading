@@ -430,3 +430,7 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-19 13:37,Momentum Agent,BUY,MRK,1,148.33,148.33,,"MRK is ranked #1 out of 25 stocks by momentum. It gained 9.29% over the last 10 hours, showing strong upward price pressure."
 2026-08-19 13:37,RSI Agent,SELL,PG,1,145.2,145.2,0.5,"PG's RSI climbed to 70.5, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-08-19 13:37,RSI Agent,SELL,PEP,1,142.0769,142.08,4.02,"PEP's RSI climbed to 74.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-08-19 14:15,Momentum Agent,SELL,KO,1,90.1895,90.19,1.36,KO dropped out of the top 5 momentum stocks (current momentum: 3.57%). Rotating into stronger performers.
+2026-08-19 14:15,RSI Agent,SELL,WMT,1,116.69,116.69,2.66,"WMT's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-08-19 14:15,RSI Agent,SELL,NFLX,2,80.31,160.62,9.5,"NFLX's RSI climbed to 71.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-08-19 14:15,MA Crossover,SELL,MRK,1,151.1,151.1,20.72,"TAKE-PROFIT: MRK is up 15.9% from the entry price (bought at $130.38, now $151.10). Locking in the gain before the price can reverse."
