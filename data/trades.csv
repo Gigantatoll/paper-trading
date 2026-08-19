@@ -427,3 +427,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-18 16:46,Momentum Agent,BUY,NFLX,1,78.855,78.86,,"NFLX is ranked #3 out of 25 stocks by momentum. It gained 2.61% over the last 10 hours, showing strong upward price pressure."
 2026-08-18 16:46,RSI Agent,BUY,BAC,1,63.76,63.76,,"BAC's RSI is 34.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-08-18 19:56,Momentum Agent,BUY,KO,1,88.825,88.82,,"KO is ranked #5 out of 25 stocks by momentum. It gained 2.10% over the last 10 hours, showing strong upward price pressure."
+2026-08-19 13:37,Momentum Agent,BUY,MRK,1,148.33,148.33,,"MRK is ranked #1 out of 25 stocks by momentum. It gained 9.29% over the last 10 hours, showing strong upward price pressure."
+2026-08-19 13:37,RSI Agent,SELL,PG,1,145.2,145.2,0.5,"PG's RSI climbed to 70.5, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-08-19 13:37,RSI Agent,SELL,PEP,1,142.0769,142.08,4.02,"PEP's RSI climbed to 74.0, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."

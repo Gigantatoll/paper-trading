@@ -1,19 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 29.223186492919922,
+  "cash": 316.5000877380371,
   "starting_capital": 600.0,
   "positions": {
-    "PG": {
-      "shares": 1,
-      "avg_price": 144.6999969482422
-    },
     "WMT": {
       "shares": 1,
       "avg_price": 114.02999877929688
-    },
-    "PEP": {
-      "shares": 1,
-      "avg_price": 138.05999755859375
     },
     "NFLX": {
       "shares": 2,
@@ -1076,6 +1068,26 @@
       "price": 63.7599983215332,
       "total": 63.7599983215332,
       "reason": "BAC's RSI is 34.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-19T13:37:30.285093",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 145.1999969482422,
+      "total": 145.1999969482422,
+      "reason": "PG's RSI climbed to 70.5, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.5
+    },
+    {
+      "time": "2026-08-19T13:37:30.296686",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 142.076904296875,
+      "total": 142.076904296875,
+      "reason": "PEP's RSI climbed to 74.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 4.02
     }
   ]
 }
