@@ -1,12 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 309.89020919799805,
+  "cash": 390.33520889282227,
   "starting_capital": 600.0,
   "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 78.8550033569336
-    },
     "MRK": {
       "shares": 1,
       "avg_price": 148.3300018310547
@@ -1449,6 +1445,16 @@
       "price": 91.04000091552734,
       "total": 91.04000091552734,
       "reason": "KO is ranked #3 out of 25 stocks by momentum. It gained 2.45% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-08-20T16:40:41.722216",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 80.44499969482422,
+      "total": 80.44499969482422,
+      "reason": "NFLX dropped out of the top 5 momentum stocks (current momentum: 0.27%). Rotating into stronger performers.",
+      "trade_pnl": 1.59
     }
   ]
 }

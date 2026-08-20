@@ -443,3 +443,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-20 13:38,RSI Agent,BUY,WMT,1,105.3918,105.39,,"WMT's RSI is 17.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-08-20 13:38,MA Crossover,SELL,WMT,1,105.3918,105.39,-11.17,"STOP-LOSS: WMT dropped 9.6% from the entry price (bought at $116.57, now $105.39). Selling automatically to protect capital before losses grow further."
 2026-08-20 14:18,Momentum Agent,BUY,KO,1,91.04,91.04,,"KO is ranked #3 out of 25 stocks by momentum. It gained 2.45% over the last 10 hours, showing strong upward price pressure."
+2026-08-20 16:40,Momentum Agent,SELL,NFLX,1,80.445,80.44,1.59,NFLX dropped out of the top 5 momentum stocks (current momentum: 0.27%). Rotating into stronger performers.
