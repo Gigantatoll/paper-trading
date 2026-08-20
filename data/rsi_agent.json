@@ -1,11 +1,15 @@
 {
   "name": "RSI Agent",
-  "cash": 593.8100852966309,
+  "cash": 488.41828536987305,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
       "shares": 1,
       "avg_price": 63.7599983215332
+    },
+    "WMT": {
+      "shares": 1,
+      "avg_price": 105.39179992675781
     }
   },
   "trades": [
@@ -1100,6 +1104,15 @@
       "total": 160.6199951171875,
       "reason": "NFLX's RSI climbed to 71.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 9.5
+    },
+    {
+      "time": "2026-08-20T13:38:54.084494",
+      "action": "BUY",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 105.39179992675781,
+      "total": 105.39179992675781,
+      "reason": "WMT's RSI is 17.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
