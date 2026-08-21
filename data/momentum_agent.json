@@ -1,13 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 539.7352027893066,
+  "cash": 630.395206451416,
   "starting_capital": 600.0,
-  "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 91.04000091552734
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -1461,6 +1456,16 @@
       "total": 149.39999389648438,
       "reason": "MRK lost momentum: down 1.13% over the last 10 hours. Selling to avoid further losses.",
       "trade_pnl": 1.07
+    },
+    {
+      "time": "2026-08-21T13:38:32.710351",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 90.66000366210938,
+      "total": 90.66000366210938,
+      "reason": "KO dropped out of the top 5 momentum stocks (current momentum: 0.14%). Rotating into stronger performers.",
+      "trade_pnl": -0.38
     }
   ]
 }

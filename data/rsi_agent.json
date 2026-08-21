@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 488.41828536987305,
+  "cash": 345.6032829284668,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -10,6 +10,10 @@
     "WMT": {
       "shares": 1,
       "avg_price": 105.39179992675781
+    },
+    "PG": {
+      "shares": 1,
+      "avg_price": 142.81500244140625
     }
   },
   "trades": [
@@ -1113,6 +1117,15 @@
       "price": 105.39179992675781,
       "total": 105.39179992675781,
       "reason": "WMT's RSI is 17.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-21T13:38:32.722600",
+      "action": "BUY",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 142.81500244140625,
+      "total": 142.81500244140625,
+      "reason": "PG's RSI is 26.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
