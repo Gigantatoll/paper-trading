@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 345.6032829284668,
+  "cash": 491.90827560424805,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -10,10 +10,6 @@
     "WMT": {
       "shares": 1,
       "avg_price": 105.39179992675781
-    },
-    "PG": {
-      "shares": 1,
-      "avg_price": 142.81500244140625
     }
   },
   "trades": [
@@ -1126,6 +1122,16 @@
       "price": 142.81500244140625,
       "total": 142.81500244140625,
       "reason": "PG's RSI is 26.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-24T13:43:04.154161",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 146.30499267578125,
+      "total": 146.30499267578125,
+      "reason": "PG's RSI climbed to 78.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 3.49
     }
   ]
 }

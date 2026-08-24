@@ -447,3 +447,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-20 19:49,Momentum Agent,SELL,MRK,1,149.4,149.4,1.07,MRK lost momentum: down 1.13% over the last 10 hours. Selling to avoid further losses.
 2026-08-21 13:38,Momentum Agent,SELL,KO,1,90.66,90.66,-0.38,KO dropped out of the top 5 momentum stocks (current momentum: 0.14%). Rotating into stronger performers.
 2026-08-21 13:38,RSI Agent,BUY,PG,1,142.815,142.82,,"PG's RSI is 26.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-24 13:43,RSI Agent,SELL,PG,1,146.305,146.3,3.49,"PG's RSI climbed to 78.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
