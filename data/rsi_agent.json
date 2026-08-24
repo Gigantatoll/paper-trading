@@ -1,15 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 491.90827560424805,
+  "cash": 597.533275604248,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
       "shares": 1,
       "avg_price": 63.7599983215332
-    },
-    "WMT": {
-      "shares": 1,
-      "avg_price": 105.39179992675781
     }
   },
   "trades": [
@@ -1132,6 +1128,16 @@
       "total": 146.30499267578125,
       "reason": "PG's RSI climbed to 78.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 3.49
+    },
+    {
+      "time": "2026-08-24T17:59:18.879127",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 105.625,
+      "total": 105.625,
+      "reason": "WMT's RSI climbed to 67.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.23
     }
   ]
 }
