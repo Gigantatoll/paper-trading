@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 22.25049591064453,
+  "cash": 164.47058868408203,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
@@ -10,10 +10,6 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 75.55999755859375
-    },
-    "PEP": {
-      "shares": 1,
-      "avg_price": 141.3300018310547
     },
     "WMT": {
       "shares": 1,
@@ -1513,6 +1509,16 @@
       "price": 145.39500427246094,
       "total": 145.39500427246094,
       "reason": "PG's 10-hour average price ($145.65) is above its 30-hour average ($144.74). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-08-25T19:48:55.633904",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 142.2200927734375,
+      "total": 142.2200927734375,
+      "reason": "PEP's 10-hour average ($143.18) dropped below its 30-hour average ($143.20). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 0.89
     }
   ]
 }
