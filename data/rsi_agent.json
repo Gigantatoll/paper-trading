@@ -1,13 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 597.533275604248,
+  "cash": 659.9982757568359,
   "starting_capital": 600.0,
-  "positions": {
-    "BAC": {
-      "shares": 1,
-      "avg_price": 63.7599983215332
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.515089",
@@ -1138,6 +1133,16 @@
       "total": 105.625,
       "reason": "WMT's RSI climbed to 67.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 0.23
+    },
+    {
+      "time": "2026-08-25T18:50:53.942818",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 62.46500015258789,
+      "total": 62.46500015258789,
+      "reason": "BAC's RSI climbed to 65.1, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -1.29
     }
   ]
 }
