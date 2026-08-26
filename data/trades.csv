@@ -462,3 +462,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-26 14:28,RSI Agent,BUY,PG,1,145.33,145.33,,"PG's RSI is 33.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-08-26 14:28,RSI Agent,BUY,PEP,1,142.01,142.01,,"PEP's RSI is 10.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-08-26 15:58,MA Crossover,BUY,BAC,2,62.355,124.71,,BAC's 10-hour average price ($62.30) is above its 30-hour average ($62.24). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-08-26 16:47,Momentum Agent,SELL,NFLX,1,81.52,81.52,0.09,NFLX lost momentum: down 0.06% over the last 10 hours. Selling to avoid further losses.
+2026-08-26 16:47,MA Crossover,SELL,KO,1,90.615,90.61,3.01,KO's 10-hour average ($91.28) dropped below its 30-hour average ($91.31). This crossover is a classic bearish signal — the short-term trend has turned down.
