@@ -459,3 +459,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-25 19:48,MA Crossover,SELL,PEP,1,142.2201,142.22,0.89,PEP's 10-hour average ($143.18) dropped below its 30-hour average ($143.20). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-08-26 13:46,RSI Agent,BUY,BAC,2,62.325,124.65,,"BAC's RSI is 34.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-08-26 13:46,RSI Agent,BUY,KO,1,90.59,90.59,,"KO's RSI is 23.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-26 14:28,RSI Agent,BUY,PG,1,145.33,145.33,,"PG's RSI is 33.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-26 14:28,RSI Agent,BUY,PEP,1,142.01,142.01,,"PEP's RSI is 10.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
