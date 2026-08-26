@@ -1,8 +1,17 @@
 {
   "name": "RSI Agent",
-  "cash": 659.9982757568359,
+  "cash": 444.7582778930664,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "BAC": {
+      "shares": 2,
+      "avg_price": 62.32500076293945
+    },
+    "KO": {
+      "shares": 1,
+      "avg_price": 90.58999633789062
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.515089",
@@ -1143,6 +1152,24 @@
       "total": 62.46500015258789,
       "reason": "BAC's RSI climbed to 65.1, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -1.29
+    },
+    {
+      "time": "2026-08-26T13:46:16.539228",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 62.32500076293945,
+      "total": 124.6500015258789,
+      "reason": "BAC's RSI is 34.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-26T13:46:16.547000",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 90.58999633789062,
+      "total": 90.58999633789062,
+      "reason": "KO's RSI is 23.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }

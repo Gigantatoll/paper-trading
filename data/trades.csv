@@ -457,3 +457,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-08-25 18:50,MA Crossover,BUY,WMT,1,105.665,105.67,,WMT's 10-hour average price ($105.49) is above its 30-hour average ($105.34). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-08-25 18:50,MA Crossover,BUY,PG,1,145.395,145.4,,PG's 10-hour average price ($145.65) is above its 30-hour average ($144.74). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-08-25 19:48,MA Crossover,SELL,PEP,1,142.2201,142.22,0.89,PEP's 10-hour average ($143.18) dropped below its 30-hour average ($143.20). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-08-26 13:46,RSI Agent,BUY,BAC,2,62.325,124.65,,"BAC's RSI is 34.5, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-08-26 13:46,RSI Agent,BUY,KO,1,90.59,90.59,,"KO's RSI is 23.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
