@@ -1,19 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 157.41828155517578,
+  "cash": 426.79827880859375,
   "starting_capital": 600.0,
   "positions": {
-    "BAC": {
-      "shares": 2,
-      "avg_price": 62.32500076293945
-    },
     "KO": {
       "shares": 1,
       "avg_price": 90.58999633789062
-    },
-    "PG": {
-      "shares": 1,
-      "avg_price": 145.3300018310547
     },
     "PEP": {
       "shares": 1,
@@ -1196,6 +1188,26 @@
       "price": 142.00999450683594,
       "total": 142.00999450683594,
       "reason": "PEP's RSI is 10.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-08-31T19:19:08.313616",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 145.25,
+      "total": 145.25,
+      "reason": "PG's RSI climbed to 69.7, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -0.08
+    },
+    {
+      "time": "2026-08-31T19:19:08.317643",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 62.064998626708984,
+      "total": 124.12999725341797,
+      "reason": "BAC's RSI climbed to 69.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -0.52
     }
   ]
 }
