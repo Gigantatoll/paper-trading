@@ -1,12 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 426.79827880859375,
+  "cash": 515.8432769775391,
   "starting_capital": 600.0,
   "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 90.58999633789062
-    },
     "PEP": {
       "shares": 1,
       "avg_price": 142.00999450683594
@@ -1208,6 +1204,16 @@
       "total": 124.12999725341797,
       "reason": "BAC's RSI climbed to 69.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -0.52
+    },
+    {
+      "time": "2026-09-03T16:46:47.085883",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 89.04499816894531,
+      "total": 89.04499816894531,
+      "reason": "KO's RSI climbed to 70.5, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -1.54
     }
   ]
 }
