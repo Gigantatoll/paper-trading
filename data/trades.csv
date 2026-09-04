@@ -476,3 +476,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-09-04 16:40,Momentum Agent,SELL,WMT,1,107.455,107.46,-1.82,WMT lost momentum: down 0.03% over the last 10 hours. Selling to avoid further losses.
 2026-09-04 16:40,RSI Agent,BUY,NFLX,1,79.32,79.32,,"NFLX's RSI is 24.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-09-04 16:40,MA Crossover,SELL,NFLX,1,79.32,79.32,3.76,NFLX's 10-hour average ($81.41) dropped below its 30-hour average ($81.60). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-09-04 19:08,MA Crossover,SELL,PG,1,146.42,146.42,1.02,PG's 10-hour average ($146.85) dropped below its 30-hour average ($146.93). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-09-04 19:08,MA Crossover,SELL,KO,1,87.995,88.0,-1.1,KO's 10-hour average ($88.53) dropped below its 30-hour average ($88.54). This crossover is a classic bearish signal — the short-term trend has turned down.
