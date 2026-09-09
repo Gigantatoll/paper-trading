@@ -485,3 +485,7 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-09-08 16:56,MA Crossover,SELL,WMT,1,105.905,105.9,0.24,WMT's 10-hour average ($106.77) dropped below its 30-hour average ($106.98). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-09-08 16:56,MA Crossover,SELL,BAC,2,62.625,125.25,0.54,BAC's 10-hour average ($62.56) dropped below its 30-hour average ($62.57). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-09-08 19:42,Momentum Agent,SELL,BAC,1,62.5355,62.54,-0.09,BAC lost momentum: down 0.19% over the last 10 hours. Selling to avoid further losses.
+2026-09-09 16:57,Momentum Agent,BUY,BAC,1,62.8,62.8,,"BAC is ranked #4 out of 25 stocks by momentum. It gained 0.91% over the last 10 hours, showing strong upward price pressure."
+2026-09-09 16:57,RSI Agent,SELL,XOM,1,163.84,163.84,4.73,"XOM's RSI climbed to 65.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-09-09 16:57,RSI Agent,BUY,MRK,1,147.745,147.74,,"MRK's RSI is 25.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-09-09 16:57,MA Crossover,BUY,BAC,1,62.8,62.8,,BAC's 10-hour average price ($62.69) is above its 30-hour average ($62.67). This means short-term momentum is stronger than the longer trend — a bullish signal.
