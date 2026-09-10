@@ -490,3 +490,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-09-09 16:57,RSI Agent,BUY,MRK,1,147.745,147.74,,"MRK's RSI is 25.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-09-09 16:57,MA Crossover,BUY,BAC,1,62.8,62.8,,BAC's 10-hour average price ($62.69) is above its 30-hour average ($62.67). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-09-09 19:35,Momentum Agent,SELL,BAC,1,62.895,62.9,0.1,BAC dropped out of the top 5 momentum stocks (current momentum: 0.34%). Rotating into stronger performers.
+2026-09-10 16:47,MA Crossover,SELL,BAC,1,62.235,62.24,-0.56,BAC's 10-hour average ($62.59) dropped below its 30-hour average ($62.66). This crossover is a classic bearish signal — the short-term trend has turned down.
