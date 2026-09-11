@@ -1,8 +1,13 @@
 {
   "name": "MA Crossover",
-  "cash": 585.6055870056152,
+  "cash": 497.2605857849121,
   "starting_capital": 600.0,
-  "positions": {},
+  "positions": {
+    "KO": {
+      "shares": 1,
+      "avg_price": 88.34500122070312
+    }
+  },
   "trades": [
     {
       "time": "2026-04-20T15:22:16.518918",
@@ -1599,6 +1604,15 @@
       "total": 62.23500061035156,
       "reason": "BAC's 10-hour average ($62.59) dropped below its 30-hour average ($62.66). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -0.56
+    },
+    {
+      "time": "2026-09-11T16:50:09.375006",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 88.34500122070312,
+      "total": 88.34500122070312,
+      "reason": "KO's 10-hour average price ($88.19) is above its 30-hour average ($88.11). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }

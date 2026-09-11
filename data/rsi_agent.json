@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 42.64838409423828,
+  "cash": 187.75838470458984,
   "starting_capital": 600.0,
   "positions": {
     "PEP": {
@@ -14,10 +14,6 @@
     "WMT": {
       "shares": 1,
       "avg_price": 105.90499877929688
-    },
-    "PG": {
-      "shares": 1,
-      "avg_price": 144.9550018310547
     },
     "MRK": {
       "shares": 1,
@@ -1285,6 +1281,16 @@
       "price": 147.7449951171875,
       "total": 147.7449951171875,
       "reason": "MRK's RSI is 25.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-09-11T16:50:09.364693",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 145.11000061035156,
+      "total": 145.11000061035156,
+      "reason": "PG's RSI climbed to 71.3, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.15
     }
   ]
 }
