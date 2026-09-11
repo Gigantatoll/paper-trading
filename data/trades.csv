@@ -493,3 +493,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-09-10 16:47,MA Crossover,SELL,BAC,1,62.235,62.24,-0.56,BAC's 10-hour average ($62.59) dropped below its 30-hour average ($62.66). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-09-11 16:50,RSI Agent,SELL,PG,1,145.11,145.11,0.15,"PG's RSI climbed to 71.3, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-09-11 16:50,MA Crossover,BUY,KO,1,88.345,88.35,,KO's 10-hour average price ($88.19) is above its 30-hour average ($88.11). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-09-11 19:19,RSI Agent,SELL,NFLX,1,77.45,77.45,-1.87,"NFLX's RSI climbed to 77.8, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-09-11 19:19,MA Crossover,BUY,WMT,1,107.065,107.07,,WMT's 10-hour average price ($106.23) is above its 30-hour average ($106.19). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-09-11 19:19,MA Crossover,BUY,BAC,2,62.875,125.75,,BAC's 10-hour average price ($62.64) is above its 30-hour average ($62.63). This means short-term momentum is stronger than the longer trend — a bullish signal.
