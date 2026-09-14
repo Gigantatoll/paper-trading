@@ -1,19 +1,19 @@
 {
   "name": "RSI Agent",
-  "cash": 265.20838165283203,
+  "cash": 255.97838592529297,
   "starting_capital": 600.0,
   "positions": {
     "PEP": {
       "shares": 1,
       "avg_price": 142.00999450683594
     },
-    "WMT": {
-      "shares": 1,
-      "avg_price": 105.90499877929688
-    },
     "MRK": {
       "shares": 1,
       "avg_price": 147.7449951171875
+    },
+    "BAC": {
+      "shares": 2,
+      "avg_price": 59.334999084472656
     }
   },
   "trades": [
@@ -1297,6 +1297,25 @@
       "total": 77.44999694824219,
       "reason": "NFLX's RSI climbed to 77.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -1.87
+    },
+    {
+      "time": "2026-09-14T18:16:39.507058",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 109.44000244140625,
+      "total": 109.44000244140625,
+      "reason": "WMT's RSI climbed to 87.9, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 3.54
+    },
+    {
+      "time": "2026-09-14T18:16:39.512025",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 59.334999084472656,
+      "total": 118.66999816894531,
+      "reason": "BAC's RSI is 16.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
