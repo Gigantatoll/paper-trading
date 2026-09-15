@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 302.4855842590332,
+  "cash": 155.6855812072754,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
@@ -14,6 +14,10 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 80.62999725341797
+    },
+    "PG": {
+      "shares": 1,
+      "avg_price": 146.8000030517578
     }
   },
   "trades": [
@@ -1658,6 +1662,15 @@
       "price": 80.62999725341797,
       "total": 80.62999725341797,
       "reason": "NFLX's 10-hour average price ($78.80) is above its 30-hour average ($77.14). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-09-15T17:24:45.446658",
+      "action": "BUY",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 146.8000030517578,
+      "total": 146.8000030517578,
+      "reason": "PG's 10-hour average price ($146.36) is above its 30-hour average ($144.56). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
