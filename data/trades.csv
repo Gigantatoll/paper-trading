@@ -515,3 +515,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-09-17 17:22,RSI Agent,BUY,CVX,1,211.0402,211.04,,"CVX's RSI is 29.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-09-17 17:22,MA Crossover,SELL,WMT,1,106.735,106.74,-0.33,WMT's 10-hour average ($107.51) dropped below its 30-hour average ($108.07). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-09-17 17:22,Dividend Agent,SELL,O,1,57.185,57.19,-5.33,"STOP-LOSS: O dropped 8.5% from the entry price (bought at $62.51, now $57.19). Selling automatically to protect capital before losses grow further."
+2026-09-18 16:50,RSI Agent,SELL,PEP,1,130.26,130.26,-11.75,"STOP-LOSS: PEP dropped 8.3% from the entry price (bought at $142.01, now $130.26). Selling automatically to protect capital before losses grow further."
+2026-09-18 16:50,RSI Agent,BUY,PEP,1,130.26,130.26,,"PEP's RSI is 17.6, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-09-18 16:50,MA Crossover,SELL,PG,1,146.29,146.29,-0.51,PG's 10-hour average ($146.83) dropped below its 30-hour average ($146.88). This crossover is a classic bearish signal — the short-term trend has turned down.
