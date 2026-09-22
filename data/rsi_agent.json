@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 7.598182678222656,
+  "cash": 117.46818542480469,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -10,10 +10,6 @@
     "NFLX": {
       "shares": 1,
       "avg_price": 77.26499938964844
-    },
-    "WMT": {
-      "shares": 1,
-      "avg_price": 106.73500061035156
     },
     "CVX": {
       "shares": 1,
@@ -1380,6 +1376,16 @@
       "price": 130.25999450683594,
       "total": 130.25999450683594,
       "reason": "PEP's RSI is 17.6, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-09-22T17:26:55.961656",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 109.87000274658203,
+      "total": 109.87000274658203,
+      "reason": "WMT's RSI climbed to 78.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 3.14
     }
   ]
 }
