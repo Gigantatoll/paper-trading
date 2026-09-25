@@ -525,3 +525,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-09-22 17:26,MA Crossover,BUY,WMT,1,109.87,109.87,,WMT's 10-hour average price ($108.09) is above its 30-hour average ($107.52). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-09-23 17:36,MA Crossover,BUY,KO,1,87.9368,87.94,,KO's 10-hour average price ($88.35) is above its 30-hour average ($88.06). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-09-24 17:39,Momentum Agent,SELL,WMT,1,108.35,108.35,-1.52,WMT lost momentum: down 1.33% over the last 10 hours. Selling to avoid further losses.
+2026-09-25 17:39,RSI Agent,BUY,WMT,1,107.825,107.82,,"WMT's RSI is 25.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-09-25 17:39,RSI Agent,SELL,BAC,2,56.495,112.99,-5.68,"BAC's RSI climbed to 66.4, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-09-25 17:39,MA Crossover,SELL,WMT,1,107.825,107.82,-2.05,WMT's 10-hour average ($107.96) dropped below its 30-hour average ($108.85). This crossover is a classic bearish signal — the short-term trend has turned down.

@@ -1,12 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 376.61877059936523,
+  "cash": 484.4437675476074,
   "starting_capital": 600.0,
   "positions": {
-    "WMT": {
-      "shares": 1,
-      "avg_price": 109.87000274658203
-    },
     "KO": {
       "shares": 1,
       "avg_price": 87.93679809570312
@@ -1721,6 +1717,16 @@
       "price": 87.93679809570312,
       "total": 87.93679809570312,
       "reason": "KO's 10-hour average price ($88.35) is above its 30-hour average ($88.06). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-09-25T17:39:16.588806",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 107.82499694824219,
+      "total": 107.82499694824219,
+      "reason": "WMT's 10-hour average ($107.96) dropped below its 30-hour average ($108.85). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -2.05
     }
   ]
 }
