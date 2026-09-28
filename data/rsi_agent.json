@@ -1,12 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 122.63318634033203,
+  "cash": 231.4381866455078,
   "starting_capital": 600.0,
   "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 77.26499938964844
-    },
     "CVX": {
       "shares": 1,
       "avg_price": 211.0402069091797
@@ -15,9 +11,9 @@
       "shares": 1,
       "avg_price": 130.25999450683594
     },
-    "WMT": {
+    "NFLX": {
       "shares": 1,
-      "avg_price": 107.82499694824219
+      "avg_price": 69.06999969482422
     }
   },
   "trades": [
@@ -1405,6 +1401,35 @@
       "total": 112.98999786376953,
       "reason": "BAC's RSI climbed to 66.4, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -5.68
+    },
+    {
+      "time": "2026-09-28T19:55:19.450622",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 69.06999969482422,
+      "total": 69.06999969482422,
+      "reason": "STOP-LOSS: NFLX dropped 10.6% from the entry price (bought at $77.26, now $69.07). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -8.19
+    },
+    {
+      "time": "2026-09-28T19:55:19.461604",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 108.80500030517578,
+      "total": 108.80500030517578,
+      "reason": "WMT's RSI climbed to 73.1, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.98
+    },
+    {
+      "time": "2026-09-28T19:55:19.471158",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 69.06999969482422,
+      "total": 69.06999969482422,
+      "reason": "NFLX's RSI is 11.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
