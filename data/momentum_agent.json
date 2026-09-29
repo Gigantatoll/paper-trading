@@ -1,11 +1,15 @@
 {
   "name": "Momentum Agent",
-  "cash": 515.365795135498,
+  "cash": 423.12080001831055,
   "starting_capital": 600.0,
   "positions": {
-    "WMT": {
+    "NFLX": {
       "shares": 1,
-      "avg_price": 108.80500030517578
+      "avg_price": 70.21499633789062
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 128.55999755859375
     }
   },
   "trades": [
@@ -1689,6 +1693,34 @@
       "price": 108.80500030517578,
       "total": 108.80500030517578,
       "reason": "WMT is ranked #5 out of 25 stocks by momentum. It gained 0.95% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-09-29T18:23:38.923044",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 106.52999877929688,
+      "total": 106.52999877929688,
+      "reason": "WMT lost momentum: down 2.31% over the last 10 hours. Selling to avoid further losses.",
+      "trade_pnl": -2.28
+    },
+    {
+      "time": "2026-09-29T18:23:38.924960",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 70.21499633789062,
+      "total": 70.21499633789062,
+      "reason": "NFLX is ranked #3 out of 25 stocks by momentum. It gained 1.09% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-09-29T18:23:38.926942",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 128.55999755859375,
+      "total": 128.55999755859375,
+      "reason": "PEP is ranked #4 out of 25 stocks by momentum. It gained 0.81% over the last 10 hours, showing strong upward price pressure."
     }
   ]
 }

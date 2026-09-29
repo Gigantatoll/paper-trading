@@ -533,3 +533,8 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-09-28 19:55,RSI Agent,SELL,WMT,1,108.805,108.81,0.98,"WMT's RSI climbed to 73.1, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
 2026-09-28 19:55,RSI Agent,BUY,NFLX,1,69.07,69.07,,"NFLX's RSI is 11.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-09-28 19:55,MA Crossover,SELL,KO,1,87.335,87.33,-0.6,KO's 10-hour average ($87.43) dropped below its 30-hour average ($88.01). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-09-29 18:23,Momentum Agent,SELL,WMT,1,106.53,106.53,-2.28,WMT lost momentum: down 2.31% over the last 10 hours. Selling to avoid further losses.
+2026-09-29 18:23,Momentum Agent,BUY,NFLX,1,70.215,70.21,,"NFLX is ranked #3 out of 25 stocks by momentum. It gained 1.09% over the last 10 hours, showing strong upward price pressure."
+2026-09-29 18:23,Momentum Agent,BUY,PEP,1,128.56,128.56,,"PEP is ranked #4 out of 25 stocks by momentum. It gained 0.81% over the last 10 hours, showing strong upward price pressure."
+2026-09-29 18:23,RSI Agent,BUY,BAC,2,55.06,110.12,,"BAC's RSI is 21.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-09-29 18:23,Dividend Agent,SELL,T,4,24.635,98.54,-8.88,"STOP-LOSS: T dropped 8.3% from the entry price (bought at $26.85, now $24.64). Selling automatically to protect capital before losses grow further."
