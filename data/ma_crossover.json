@@ -1,19 +1,19 @@
 {
   "name": "MA Crossover",
-  "cash": 269.84875869750977,
+  "cash": 306.98376083374023,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
       "shares": 1,
       "avg_price": 106.95500183105469
     },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 54.095001220703125
-    },
     "KO": {
       "shares": 1,
       "avg_price": 86.78500366210938
+    },
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 69.59500122070312
     }
   },
   "trades": [
@@ -1772,6 +1772,25 @@
       "price": 86.78500366210938,
       "total": 86.78500366210938,
       "reason": "KO's 10-hour average price ($86.72) is above its 30-hour average ($86.22). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-10-07T19:08:47.265295",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 53.3650016784668,
+      "total": 106.7300033569336,
+      "reason": "BAC's 10-hour average ($53.67) dropped below its 30-hour average ($53.84). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -1.46
+    },
+    {
+      "time": "2026-10-07T19:08:47.269220",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 69.59500122070312,
+      "total": 69.59500122070312,
+      "reason": "NFLX's 10-hour average price ($68.82) is above its 30-hour average ($67.85). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
