@@ -1,12 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 191.33318328857422,
+  "cash": 403.27318572998047,
   "starting_capital": 600.0,
   "positions": {
-    "CVX": {
-      "shares": 1,
-      "avg_price": 211.0402069091797
-    },
     "PEP": {
       "shares": 1,
       "avg_price": 130.25999450683594
@@ -1468,6 +1464,16 @@
       "total": 68.23500061035156,
       "reason": "NFLX's RSI climbed to 67.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -0.83
+    },
+    {
+      "time": "2026-10-08T19:04:58.360687",
+      "action": "SELL",
+      "symbol": "CVX",
+      "shares": 1,
+      "price": 211.94000244140625,
+      "total": 211.94000244140625,
+      "reason": "CVX's RSI climbed to 65.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 0.9
     }
   ]
 }
