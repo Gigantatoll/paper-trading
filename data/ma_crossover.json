@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 156.60375595092773,
+  "cash": 48.093753814697266,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
@@ -18,6 +18,10 @@
     "PG": {
       "shares": 1,
       "avg_price": 150.3800048828125
+    },
+    "BAC": {
+      "shares": 2,
+      "avg_price": 54.255001068115234
     }
   },
   "trades": [
@@ -1804,6 +1808,15 @@
       "price": 150.3800048828125,
       "total": 150.3800048828125,
       "reason": "PG's 10-hour average price ($148.98) is above its 30-hour average ($147.69). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-10-09T18:35:49.067607",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 54.255001068115234,
+      "total": 108.51000213623047,
+      "reason": "BAC's 10-hour average price ($53.72) is above its 30-hour average ($53.68). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
     }
   ]
 }
