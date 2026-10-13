@@ -562,3 +562,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-10-09 18:35,MA Crossover,BUY,BAC,2,54.255,108.51,,BAC's 10-hour average price ($53.72) is above its 30-hour average ($53.68). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-10-09 18:35,Dividend Agent,SELL,VZ,3,41.2984,123.9,-21.36,"STOP-LOSS: VZ dropped 14.7% from the entry price (bought at $48.42, now $41.30). Selling automatically to protect capital before losses grow further."
 2026-10-09 18:35,Dividend Agent,BUY,PEP,1,126.07,126.07,,"PEP pays a 4.61% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($126.07) is above its 30-hour average ($125.65), confirming a healthy trend. Buying to collect steady income while holding."
+2026-10-13 19:40,Momentum Agent,SELL,BAC,2,54.18,108.36,-0.15,BAC lost momentum: down 0.43% over the last 10 hours. Selling to avoid further losses.
+2026-10-13 19:40,Momentum Agent,BUY,KO,1,90.32,90.32,,"KO is ranked #5 out of 25 stocks by momentum. It gained 1.16% over the last 10 hours, showing strong upward price pressure."
+2026-10-13 19:40,RSI Agent,SELL,PEP,1,127.42,127.42,-2.84,"PEP's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."

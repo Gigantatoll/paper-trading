@@ -1,12 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 403.27318572998047,
+  "cash": 530.6931838989258,
   "starting_capital": 600.0,
   "positions": {
-    "PEP": {
-      "shares": 1,
-      "avg_price": 130.25999450683594
-    },
     "BAC": {
       "shares": 2,
       "avg_price": 55.060001373291016
@@ -1474,6 +1470,16 @@
       "total": 211.94000244140625,
       "reason": "CVX's RSI climbed to 65.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 0.9
+    },
+    {
+      "time": "2026-10-13T19:40:44.536016",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 127.41999816894531,
+      "total": 127.41999816894531,
+      "reason": "PEP's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": -2.84
     }
   ]
 }
