@@ -565,3 +565,6 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-10-13 19:40,Momentum Agent,SELL,BAC,2,54.18,108.36,-0.15,BAC lost momentum: down 0.43% over the last 10 hours. Selling to avoid further losses.
 2026-10-13 19:40,Momentum Agent,BUY,KO,1,90.32,90.32,,"KO is ranked #5 out of 25 stocks by momentum. It gained 1.16% over the last 10 hours, showing strong upward price pressure."
 2026-10-13 19:40,RSI Agent,SELL,PEP,1,127.42,127.42,-2.84,"PEP's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought — buyers are exhausted and a pullback is likely. Selling to lock in gains."
+2026-10-14 17:41,MA Crossover,SELL,BAC,2,50.6701,101.34,-7.17,BAC's 10-hour average ($52.25) dropped below its 30-hour average ($53.46). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-10-14 17:41,MA Crossover,BUY,MRK,1,147.91,147.91,,MRK's 10-hour average price ($144.59) is above its 30-hour average ($144.57). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-10-14 17:41,MA Crossover,SELL,NFLX,1,70.115,70.11,0.52,NFLX's 10-hour average ($70.32) dropped below its 30-hour average ($70.71). This crossover is a classic bearish signal — the short-term trend has turned down.

@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 48.093753814697266,
+  "cash": 71.63895034790039,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
@@ -11,17 +11,13 @@
       "shares": 1,
       "avg_price": 86.78500366210938
     },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 69.59500122070312
-    },
     "PG": {
       "shares": 1,
       "avg_price": 150.3800048828125
     },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 54.255001068115234
+    "MRK": {
+      "shares": 1,
+      "avg_price": 147.91000366210938
     }
   },
   "trades": [
@@ -1817,6 +1813,35 @@
       "price": 54.255001068115234,
       "total": 108.51000213623047,
       "reason": "BAC's 10-hour average price ($53.72) is above its 30-hour average ($53.68). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-10-14T17:41:33.033950",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 50.670101165771484,
+      "total": 101.34020233154297,
+      "reason": "BAC's 10-hour average ($52.25) dropped below its 30-hour average ($53.46). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -7.17
+    },
+    {
+      "time": "2026-10-14T17:41:33.036847",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 147.91000366210938,
+      "total": 147.91000366210938,
+      "reason": "MRK's 10-hour average price ($144.59) is above its 30-hour average ($144.57). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-10-14T17:41:33.040151",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 70.11499786376953,
+      "total": 70.11499786376953,
+      "reason": "NFLX's 10-hour average ($70.32) dropped below its 30-hour average ($70.71). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 0.52
     }
   ]
 }
