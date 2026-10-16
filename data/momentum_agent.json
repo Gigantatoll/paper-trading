@@ -1,21 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 331.08349227905273,
+  "cash": 623.6334953308105,
   "starting_capital": 600.0,
-  "positions": {
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 72.67109680175781
-    },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 51.9650993347168
-    },
-    "WMT": {
-      "shares": 1,
-      "avg_price": 118.5250015258789
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.486506",
@@ -1867,6 +1854,36 @@
       "price": 118.5250015258789,
       "total": 118.5250015258789,
       "reason": "WMT is ranked #5 out of 25 stocks by momentum. It gained 3.29% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-10-16T17:06:04.907064",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 70.6050033569336,
+      "total": 70.6050033569336,
+      "reason": "NFLX lost momentum: down 2.44% over the last 10 hours. Selling to avoid further losses.",
+      "trade_pnl": -2.07
+    },
+    {
+      "time": "2026-10-16T17:06:04.909236",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 51.619998931884766,
+      "total": 103.23999786376953,
+      "reason": "BAC dropped out of the top 5 momentum stocks (current momentum: 0.61%). Rotating into stronger performers.",
+      "trade_pnl": -0.69
+    },
+    {
+      "time": "2026-10-16T17:06:04.911341",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 118.70500183105469,
+      "total": 118.70500183105469,
+      "reason": "WMT lost momentum: down 1.51% over the last 10 hours. Selling to avoid further losses.",
+      "trade_pnl": 0.18
     }
   ]
 }
