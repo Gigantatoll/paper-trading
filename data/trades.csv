@@ -577,3 +577,10 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-10-16 17:06,Momentum Agent,SELL,WMT,1,118.705,118.71,0.18,WMT lost momentum: down 1.51% over the last 10 hours. Selling to avoid further losses.
 2026-10-16 17:06,MA Crossover,BUY,NFLX,1,70.605,70.61,,NFLX's 10-hour average price ($71.91) is above its 30-hour average ($71.07). This means short-term momentum is stronger than the longer trend — a bullish signal.
 2026-10-16 19:54,Momentum Agent,BUY,KO,1,93.46,93.46,,"KO is ranked #5 out of 25 stocks by momentum. It gained 1.14% over the last 10 hours, showing strong upward price pressure."
+2026-10-19 18:55,Momentum Agent,SELL,KO,1,93.745,93.75,0.29,KO dropped out of the top 5 momentum stocks (current momentum: 0.51%). Rotating into stronger performers.
+2026-10-19 18:55,RSI Agent,SELL,BAC,2,50.4,100.8,-9.32,"STOP-LOSS: BAC dropped 8.5% from the entry price (bought at $55.06, now $50.40). Selling automatically to protect capital before losses grow further."
+2026-10-19 18:55,RSI Agent,BUY,BAC,2,50.4,100.8,,"BAC's RSI is 28.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-10-19 18:55,RSI Agent,BUY,NFLX,1,69.715,69.71,,"NFLX's RSI is 15.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
+2026-10-19 18:55,MA Crossover,SELL,MRK,1,144.02,144.02,-3.89,MRK's 10-hour average ($145.45) dropped below its 30-hour average ($146.25). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-10-19 18:55,MA Crossover,BUY,PEP,1,133.445,133.45,,PEP's 10-hour average price ($132.07) is above its 30-hour average ($130.20). This means short-term momentum is stronger than the longer trend — a bullish signal.
+2026-10-19 18:55,MA Crossover,SELL,NFLX,1,69.715,69.71,-0.89,NFLX's 10-hour average ($69.91) dropped below its 30-hour average ($70.76). This crossover is a classic bearish signal — the short-term trend has turned down.

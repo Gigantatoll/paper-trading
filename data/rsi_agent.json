@@ -1,11 +1,15 @@
 {
   "name": "RSI Agent",
-  "cash": 530.6931838989258,
+  "cash": 460.97818756103516,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
       "shares": 2,
-      "avg_price": 55.060001373291016
+      "avg_price": 50.400001525878906
+    },
+    "NFLX": {
+      "shares": 1,
+      "avg_price": 69.71499633789062
     }
   },
   "trades": [
@@ -1480,6 +1484,34 @@
       "total": 127.41999816894531,
       "reason": "PEP's RSI climbed to 67.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": -2.84
+    },
+    {
+      "time": "2026-10-19T18:55:02.074110",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 50.400001525878906,
+      "total": 100.80000305175781,
+      "reason": "STOP-LOSS: BAC dropped 8.5% from the entry price (bought at $55.06, now $50.40). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -9.32
+    },
+    {
+      "time": "2026-10-19T18:55:02.092220",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 50.400001525878906,
+      "total": 100.80000305175781,
+      "reason": "BAC's RSI is 28.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-10-19T18:55:02.102859",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 69.71499633789062,
+      "total": 69.71499633789062,
+      "reason": "NFLX's RSI is 15.2, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
