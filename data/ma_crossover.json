@@ -1,16 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 81.32394027709961,
+  "cash": 291.9089469909668,
   "starting_capital": 600.0,
   "positions": {
-    "WMT": {
-      "shares": 1,
-      "avg_price": 106.95500183105469
-    },
-    "KO": {
-      "shares": 1,
-      "avg_price": 86.78500366210938
-    },
     "PG": {
       "shares": 1,
       "avg_price": 150.3800048828125
@@ -1880,6 +1872,26 @@
       "total": 69.71499633789062,
       "reason": "NFLX's 10-hour average ($69.91) dropped below its 30-hour average ($70.76). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -0.89
+    },
+    {
+      "time": "2026-10-21T17:47:42.193123",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 117.91000366210938,
+      "total": 117.91000366210938,
+      "reason": "WMT's 10-hour average ($117.97) dropped below its 30-hour average ($118.43). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 10.96
+    },
+    {
+      "time": "2026-10-21T17:47:42.195555",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 92.67500305175781,
+      "total": 92.67500305175781,
+      "reason": "KO's 10-hour average ($92.95) dropped below its 30-hour average ($93.06). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 5.89
     }
   ]
 }
