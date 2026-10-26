@@ -1,15 +1,19 @@
 {
   "name": "RSI Agent",
-  "cash": 465.42317962646484,
+  "cash": 309.7381820678711,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
       "shares": 2,
       "avg_price": 50.400001525878906
     },
-    "NFLX": {
+    "KO": {
       "shares": 1,
-      "avg_price": 69.71499633789062
+      "avg_price": 92.52999877929688
+    },
+    "NFLX": {
+      "shares": 2,
+      "avg_price": 63.154998779296875
     }
   },
   "trades": [
@@ -1550,6 +1554,34 @@
       "total": 94.83000183105469,
       "reason": "KO's RSI climbed to 74.6, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 2.15
+    },
+    {
+      "time": "2026-10-26T18:57:23.324227",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 63.154998779296875,
+      "total": 63.154998779296875,
+      "reason": "STOP-LOSS: NFLX dropped 9.4% from the entry price (bought at $69.71, now $63.15). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -6.56
+    },
+    {
+      "time": "2026-10-26T18:57:23.350525",
+      "action": "BUY",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 92.52999877929688,
+      "total": 92.52999877929688,
+      "reason": "KO's RSI is 19.9, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-10-26T18:57:23.353525",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 2,
+      "price": 63.154998779296875,
+      "total": 126.30999755859375,
+      "reason": "NFLX's RSI is 11.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }

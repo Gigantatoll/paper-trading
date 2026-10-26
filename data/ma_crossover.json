@@ -1,24 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 26.92894744873047,
+  "cash": 464.6465530395508,
   "starting_capital": 600.0,
   "positions": {
-    "PG": {
-      "shares": 1,
-      "avg_price": 150.3800048828125
-    },
-    "PEP": {
-      "shares": 1,
-      "avg_price": 133.44500732421875
-    },
-    "BAC": {
-      "shares": 1,
-      "avg_price": 50.935001373291016
-    },
-    "KO": {
-      "shares": 1,
-      "avg_price": 94.83000183105469
-    },
     "WMT": {
       "shares": 1,
       "avg_price": 119.21499633789062
@@ -1931,6 +1915,46 @@
       "price": 119.21499633789062,
       "total": 119.21499633789062,
       "reason": "WMT's 10-hour average price ($120.15) is above its 30-hour average ($118.94). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-10-26T18:57:23.358508",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 159.02000427246094,
+      "total": 159.02000427246094,
+      "reason": "PG's 10-hour average ($160.27) dropped below its 30-hour average ($161.01). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 8.64
+    },
+    {
+      "time": "2026-10-26T18:57:23.361155",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 1,
+      "price": 50.70500183105469,
+      "total": 50.70500183105469,
+      "reason": "BAC's 10-hour average ($50.81) dropped below its 30-hour average ($50.84). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.23
+    },
+    {
+      "time": "2026-10-26T18:57:23.364751",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 135.4626007080078,
+      "total": 135.4626007080078,
+      "reason": "PEP's 10-hour average ($135.69) dropped below its 30-hour average ($135.86). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 2.02
+    },
+    {
+      "time": "2026-10-26T18:57:23.367329",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 92.52999877929688,
+      "total": 92.52999877929688,
+      "reason": "KO's 10-hour average ($92.60) dropped below its 30-hour average ($93.30). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -2.3
     }
   ]
 }
