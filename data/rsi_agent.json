@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 309.7381820678711,
+  "cash": 35.34497833251953,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -14,6 +14,14 @@
     "NFLX": {
       "shares": 2,
       "avg_price": 63.154998779296875
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 141.75
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 132.64320373535156
     }
   },
   "trades": [
@@ -1582,6 +1590,24 @@
       "price": 63.154998779296875,
       "total": 126.30999755859375,
       "reason": "NFLX's RSI is 11.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-10-27T18:29:08.859728",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 141.75,
+      "total": 141.75,
+      "reason": "MRK's RSI is 31.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-10-27T18:29:08.865931",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 132.64320373535156,
+      "total": 132.64320373535156,
+      "reason": "PEP's RSI is 27.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }
