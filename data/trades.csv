@@ -603,3 +603,4 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-10-27 18:29,RSI Agent,BUY,MRK,1,141.75,141.75,,"MRK's RSI is 31.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-10-27 18:29,RSI Agent,BUY,PEP,1,132.6432,132.64,,"PEP's RSI is 27.4, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold — statistically likely to bounce back up."
 2026-10-27 18:29,MA Crossover,SELL,WMT,1,118.894,118.89,-0.32,WMT's 10-hour average ($119.56) dropped below its 30-hour average ($119.59). This crossover is a classic bearish signal — the short-term trend has turned down.
+2026-10-28 18:34,MA Crossover,BUY,BAC,2,50.84,101.68,,BAC's 10-hour average price ($50.81) is above its 30-hour average ($50.80). This means short-term momentum is stronger than the longer trend — a bullish signal.
