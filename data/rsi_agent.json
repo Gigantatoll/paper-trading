@@ -1,6 +1,6 @@
 {
   "name": "RSI Agent",
-  "cash": 274.2599792480469,
+  "cash": 412.53997802734375,
   "starting_capital": 600.0,
   "positions": {
     "BAC": {
@@ -10,10 +10,6 @@
     "NFLX": {
       "shares": 2,
       "avg_price": 63.154998779296875
-    },
-    "PEP": {
-      "shares": 1,
-      "avg_price": 132.64320373535156
     }
   },
   "trades": [
@@ -1620,6 +1616,16 @@
       "total": 92.6050033569336,
       "reason": "KO's RSI climbed to 66.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 0.08
+    },
+    {
+      "time": "2026-10-30T18:20:19.442098",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 138.27999877929688,
+      "total": 138.27999877929688,
+      "reason": "PEP's RSI climbed to 91.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 5.64
     }
   ]
 }

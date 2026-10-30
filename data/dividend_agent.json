@@ -1,16 +1,8 @@
 {
   "name": "Dividend Agent",
-  "cash": 25.430526733398438,
+  "cash": 19.144031524658203,
   "starting_capital": 600.0,
   "positions": {
-    "DOW": {
-      "shares": 6,
-      "avg_price": 29.725000381469727
-    },
-    "MO": {
-      "shares": 1,
-      "avg_price": 66.58000183105469
-    },
     "NEE": {
       "shares": 1,
       "avg_price": 76.15499877929688
@@ -22,6 +14,14 @@
     "PEP": {
       "shares": 1,
       "avg_price": 126.06999969482422
+    },
+    "VZ": {
+      "shares": 3,
+      "avg_price": 45.064998626708984
+    },
+    "MO": {
+      "shares": 2,
+      "avg_price": 78.5114974975586
     }
   },
   "trades": [
@@ -316,6 +316,44 @@
       "price": 126.06999969482422,
       "total": 126.06999969482422,
       "reason": "PEP pays a 4.61% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($126.07) is above its 30-hour average ($125.65), confirming a healthy trend. Buying to collect steady income while holding."
+    },
+    {
+      "time": "2026-10-30T18:20:19.457153",
+      "action": "SELL",
+      "symbol": "DOW",
+      "shares": 6,
+      "price": 34.56999969482422,
+      "total": 207.4199981689453,
+      "reason": "TAKE-PROFIT: DOW is up 16.3% from the entry price (bought at $29.73, now $34.57). Locking in the gain before the price can reverse.",
+      "trade_pnl": 29.07
+    },
+    {
+      "time": "2026-10-30T18:20:19.457543",
+      "action": "SELL",
+      "symbol": "MO",
+      "shares": 1,
+      "price": 78.5114974975586,
+      "total": 78.5114974975586,
+      "reason": "TAKE-PROFIT: MO is up 17.9% from the entry price (bought at $66.58, now $78.51). Locking in the gain before the price can reverse.",
+      "trade_pnl": 11.93
+    },
+    {
+      "time": "2026-10-30T18:20:19.460587",
+      "action": "BUY",
+      "symbol": "VZ",
+      "shares": 3,
+      "price": 45.064998626708984,
+      "total": 135.19499588012695,
+      "reason": "VZ pays a 6.48% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($45.06) is above its 30-hour average ($43.81), confirming a healthy trend. Buying to collect steady income while holding."
+    },
+    {
+      "time": "2026-10-30T18:20:19.461455",
+      "action": "BUY",
+      "symbol": "MO",
+      "shares": 2,
+      "price": 78.5114974975586,
+      "total": 157.0229949951172,
+      "reason": "MO pays a 5.79% annual dividend yield, ranking it among the top dividend payers on the watchlist. Its price ($78.51) is above its 30-hour average ($74.77), confirming a healthy trend. Buying to collect steady income while holding."
     }
   ]
 }
