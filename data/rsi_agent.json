@@ -1,17 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 412.53997802734375,
+  "cash": 648.2663879394531,
   "starting_capital": 600.0,
-  "positions": {
-    "BAC": {
-      "shares": 2,
-      "avg_price": 50.400001525878906
-    },
-    "NFLX": {
-      "shares": 2,
-      "avg_price": 63.154998779296875
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.515089",
@@ -1626,6 +1617,26 @@
       "total": 138.27999877929688,
       "reason": "PEP's RSI climbed to 91.2, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 5.64
+    },
+    {
+      "time": "2026-11-04T20:10:16.485809",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 51.32820129394531,
+      "total": 102.65640258789062,
+      "reason": "BAC's RSI climbed to 74.0, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.86
+    },
+    {
+      "time": "2026-11-04T20:10:16.492601",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 2,
+      "price": 66.53500366210938,
+      "total": 133.07000732421875,
+      "reason": "NFLX's RSI climbed to 95.3, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 6.76
     }
   ]
 }
