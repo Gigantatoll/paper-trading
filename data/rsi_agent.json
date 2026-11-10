@@ -1,15 +1,11 @@
 {
   "name": "RSI Agent",
-  "cash": 295.61658477783203,
+  "cash": 397.16658782958984,
   "starting_capital": 600.0,
   "positions": {
     "WMT": {
       "shares": 1,
       "avg_price": 125.63999938964844
-    },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 49.77000045776367
     },
     "NFLX": {
       "shares": 2,
@@ -1677,6 +1673,16 @@
       "price": 63.734901428222656,
       "total": 127.46980285644531,
       "reason": "NFLX's RSI is 23.3, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-11-10T20:06:16.363145",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 50.775001525878906,
+      "total": 101.55000305175781,
+      "reason": "BAC's RSI climbed to 70.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 2.01
     }
   ]
 }

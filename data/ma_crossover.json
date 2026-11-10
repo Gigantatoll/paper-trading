@@ -1,19 +1,23 @@
 {
   "name": "MA Crossover",
-  "cash": 248.23914337158203,
+  "cash": 66.18743896484375,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
       "shares": 1,
       "avg_price": 94.49500274658203
     },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 66.53500366210938
-    },
     "PG": {
       "shares": 1,
       "avg_price": 166.51499938964844
+    },
+    "BAC": {
+      "shares": 2,
+      "avg_price": 50.775001525878906
+    },
+    "PEP": {
+      "shares": 1,
+      "avg_price": 143.3300018310547
     }
   },
   "trades": [
@@ -2057,6 +2061,34 @@
       "total": 99.54000091552734,
       "reason": "BAC's 10-hour average ($49.96) dropped below its 30-hour average ($50.27). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -3.12
+    },
+    {
+      "time": "2026-11-10T20:06:16.377337",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 50.775001525878906,
+      "total": 101.55000305175781,
+      "reason": "BAC's 10-hour average price ($50.72) is above its 30-hour average ($50.48). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-11-10T20:06:16.380963",
+      "action": "BUY",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 143.3300018310547,
+      "total": 143.3300018310547,
+      "reason": "PEP's 10-hour average price ($142.70) is above its 30-hour average ($142.48). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-11-10T20:06:16.383629",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 62.82830047607422,
+      "total": 62.82830047607422,
+      "reason": "NFLX's 10-hour average ($63.17) dropped below its 30-hour average ($64.21). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -3.71
     }
   ]
 }
