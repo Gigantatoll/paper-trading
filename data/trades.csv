@@ -639,3 +639,5 @@ time,agent,action,symbol,shares,price,total,trade_pnl,reason
 2026-11-10 20:06,MA Crossover,SELL,NFLX,1,62.8283,62.83,-3.71,NFLX's 10-hour average ($63.17) dropped below its 30-hour average ($64.21). This crossover is a classic bearish signal — the short-term trend has turned down.
 2026-11-11 19:56,Momentum Agent,SELL,KO,1,97.195,97.19,0.32,KO dropped out of the top 5 momentum stocks (current momentum: 0.34%). Rotating into stronger performers.
 2026-11-11 19:56,Momentum Agent,BUY,NFLX,1,64.24,64.24,,"NFLX is ranked #5 out of 25 stocks by momentum. It gained 2.37% over the last 10 hours, showing strong upward price pressure."
+2026-11-12 20:33,Momentum Agent,SELL,NFLX,1,62.98,62.98,-1.26,NFLX lost momentum: down 1.51% over the last 10 hours. Selling to avoid further losses.
+2026-11-12 20:33,MA Crossover,BUY,NFLX,1,62.98,62.98,,NFLX's 10-hour average price ($63.68) is above its 30-hour average ($63.50). This means short-term momentum is stronger than the longer trend — a bullish signal.
