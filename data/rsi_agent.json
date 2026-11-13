@@ -1,12 +1,8 @@
 {
   "name": "RSI Agent",
-  "cash": 397.16658782958984,
+  "cash": 524.6065902709961,
   "starting_capital": 600.0,
   "positions": {
-    "WMT": {
-      "shares": 1,
-      "avg_price": 125.63999938964844
-    },
     "NFLX": {
       "shares": 2,
       "avg_price": 63.734901428222656
@@ -1683,6 +1679,16 @@
       "total": 101.55000305175781,
       "reason": "BAC's RSI climbed to 70.8, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 2.01
+    },
+    {
+      "time": "2026-11-13T20:10:20.646674",
+      "action": "SELL",
+      "symbol": "WMT",
+      "shares": 1,
+      "price": 127.44000244140625,
+      "total": 127.44000244140625,
+      "reason": "WMT's RSI climbed to 68.4, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
+      "trade_pnl": 1.8
     }
   ]
 }

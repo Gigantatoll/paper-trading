@@ -1,6 +1,6 @@
 {
   "name": "MA Crossover",
-  "cash": 3.207439422607422,
+  "cash": 167.14243698120117,
   "starting_capital": 600.0,
   "positions": {
     "KO": {
@@ -11,17 +11,9 @@
       "shares": 1,
       "avg_price": 166.51499938964844
     },
-    "BAC": {
-      "shares": 2,
-      "avg_price": 50.775001525878906
-    },
     "PEP": {
       "shares": 1,
       "avg_price": 143.3300018310547
-    },
-    "NFLX": {
-      "shares": 1,
-      "avg_price": 62.97999954223633
     }
   },
   "trades": [
@@ -2102,6 +2094,26 @@
       "price": 62.97999954223633,
       "total": 62.97999954223633,
       "reason": "NFLX's 10-hour average price ($63.68) is above its 30-hour average ($63.50). This means short-term momentum is stronger than the longer trend \u2014 a bullish signal."
+    },
+    {
+      "time": "2026-11-13T20:10:20.656477",
+      "action": "SELL",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 50.834999084472656,
+      "total": 101.66999816894531,
+      "reason": "BAC's 10-hour average ($50.65) dropped below its 30-hour average ($50.69). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 0.12
+    },
+    {
+      "time": "2026-11-13T20:10:20.659041",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 1,
+      "price": 62.26499938964844,
+      "total": 62.26499938964844,
+      "reason": "NFLX's 10-hour average ($62.76) dropped below its 30-hour average ($63.26). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -0.72
     }
   ]
 }
