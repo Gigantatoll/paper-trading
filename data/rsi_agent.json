@@ -1,11 +1,19 @@
 {
   "name": "RSI Agent",
-  "cash": 524.6065902709961,
+  "cash": 296.57659912109375,
   "starting_capital": 600.0,
   "positions": {
+    "BAC": {
+      "shares": 2,
+      "avg_price": 47.17499923706055
+    },
+    "MRK": {
+      "shares": 1,
+      "avg_price": 133.67999267578125
+    },
     "NFLX": {
       "shares": 2,
-      "avg_price": 63.734901428222656
+      "avg_price": 56.97010040283203
     }
   },
   "trades": [
@@ -1689,6 +1697,43 @@
       "total": 127.44000244140625,
       "reason": "WMT's RSI climbed to 68.4, above 65. RSI above 65 means the stock is overbought \u2014 buyers are exhausted and a pullback is likely. Selling to lock in gains.",
       "trade_pnl": 1.8
+    },
+    {
+      "time": "2026-11-20T20:51:39.139272",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 2,
+      "price": 56.97010040283203,
+      "total": 113.94020080566406,
+      "reason": "STOP-LOSS: NFLX dropped 10.6% from the entry price (bought at $63.73, now $56.97). Selling automatically to protect capital before losses grow further.",
+      "trade_pnl": -13.53
+    },
+    {
+      "time": "2026-11-20T20:51:39.158040",
+      "action": "BUY",
+      "symbol": "BAC",
+      "shares": 2,
+      "price": 47.17499923706055,
+      "total": 94.3499984741211,
+      "reason": "BAC's RSI is 10.7, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-11-20T20:51:39.162985",
+      "action": "BUY",
+      "symbol": "MRK",
+      "shares": 1,
+      "price": 133.67999267578125,
+      "total": 133.67999267578125,
+      "reason": "MRK's RSI is 33.1, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
+    },
+    {
+      "time": "2026-11-20T20:51:39.170751",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 2,
+      "price": 56.97010040283203,
+      "total": 113.94020080566406,
+      "reason": "NFLX's RSI is 19.8, which is below 35. RSI below 35 means the stock has been sold off heavily and is considered oversold \u2014 statistically likely to bounce back up."
     }
   ]
 }

@@ -1,12 +1,8 @@
 {
   "name": "Momentum Agent",
-  "cash": 398.8983917236328,
+  "cash": 495.83338928222656,
   "starting_capital": 600.0,
   "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 99.16010284423828
-    },
     "WMT": {
       "shares": 1,
       "avg_price": 127.44000244140625
@@ -2025,6 +2021,16 @@
       "price": 127.44000244140625,
       "total": 127.44000244140625,
       "reason": "WMT is ranked #3 out of 25 stocks by momentum. It gained 0.83% over the last 10 hours, showing strong upward price pressure."
+    },
+    {
+      "time": "2026-11-20T20:51:39.137017",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 96.93499755859375,
+      "total": 96.93499755859375,
+      "reason": "KO dropped out of the top 5 momentum stocks (current momentum: 0.57%). Rotating into stronger performers.",
+      "trade_pnl": -2.23
     }
   ]
 }

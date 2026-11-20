@@ -1,21 +1,8 @@
 {
   "name": "MA Crossover",
-  "cash": 167.14243698120117,
+  "cash": 573.8274345397949,
   "starting_capital": 600.0,
-  "positions": {
-    "KO": {
-      "shares": 1,
-      "avg_price": 94.49500274658203
-    },
-    "PG": {
-      "shares": 1,
-      "avg_price": 166.51499938964844
-    },
-    "PEP": {
-      "shares": 1,
-      "avg_price": 143.3300018310547
-    }
-  },
+  "positions": {},
   "trades": [
     {
       "time": "2026-04-20T15:22:16.518918",
@@ -2114,6 +2101,36 @@
       "total": 62.26499938964844,
       "reason": "NFLX's 10-hour average ($62.76) dropped below its 30-hour average ($63.26). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
       "trade_pnl": -0.72
+    },
+    {
+      "time": "2026-11-20T20:51:39.175740",
+      "action": "SELL",
+      "symbol": "PG",
+      "shares": 1,
+      "price": 169.50999450683594,
+      "total": 169.50999450683594,
+      "reason": "PG's 10-hour average ($169.73) dropped below its 30-hour average ($170.60). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 2.99
+    },
+    {
+      "time": "2026-11-20T20:51:39.179798",
+      "action": "SELL",
+      "symbol": "PEP",
+      "shares": 1,
+      "price": 140.24000549316406,
+      "total": 140.24000549316406,
+      "reason": "PEP's 10-hour average ($140.89) dropped below its 30-hour average ($141.70). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": -3.09
+    },
+    {
+      "time": "2026-11-20T20:51:39.182332",
+      "action": "SELL",
+      "symbol": "KO",
+      "shares": 1,
+      "price": 96.93499755859375,
+      "total": 96.93499755859375,
+      "reason": "KO's 10-hour average ($97.02) dropped below its 30-hour average ($97.76). This crossover is a classic bearish signal \u2014 the short-term trend has turned down.",
+      "trade_pnl": 2.44
     }
   ]
 }
